@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<!-- Rule 606 Report Generator was created by staff of the U.S. Securities and Exchange Commission.
+Data and content created by government employees within the scope of their employment 
+are not subject to domestic copyright protection. 17 U.S.C. 105. -->
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Rule 606 Report Generator</title>
+<script type="text/javascript">
+	window.onload = function() {
+		var ie7 = navigator.appVersion.indexOf("MSIE 7");
+		var ie8 = navigator.appVersion.indexOf("MSIE 8");
+		if ((ie7 > 0) || (ie8 > 0)) {
+			var note = 'The browser mode you are running is not compatible with this application.';
+			browserName = 'Microsoft Internet Explorer';
+			note += 'You are currently running ' + browserName + ' '
+					+ ((ie7 > 0) ? 7 : 8) + '.0.';
+			var userAgent = window.navigator.userAgent.toLowerCase();
+			if (userAgent.indexOf('ipad') != -1
+					|| userAgent.indexOf('iphone') != -1
+					|| userAgent.indexOf('apple') != -1) {
+				note += ' Please use a more current version of ' + browserName
+						+ ' in order to use the application.';
+			} else if (userAgent.indexOf('android') != -1) {
+				note += ' Please use a more current version of Google Chrome or Mozilla Firefox in order to use the application.';
+			} else {
+				note += ' Please use a more current version of Microsoft Internet Explorer, Google Chrome or Mozilla Firefox in order to use the application.';
+			}
+			alert(note);
+			document.getElementById('browser-compatibility').innerHTML = note;
+			return;
+		}
+	};
+</script>
+<script src="http://code.jquery.com/jquery-2.2.2.min.js"
+  integrity="sha256-36cp2Co+/62rEAAYHLmRCPIych47CvdM+uTBJwSzWjI="
+  crossorigin="anonymous"></script>
+<script type='text/javascript'
+  src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.38/pdfmake.min.js"></script>
+<script type='text/javascript'
+  src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.38/vfs_fonts.js"></script>
+<script
+  src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
+  integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+  crossorigin="anonymous"></script>
+<script type='text/javascript'
+  src="https://syssgx.github.io/xml.js/js/xmllint.js"></script>
+<link rel="stylesheet"
+  href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+  integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
+  crossorigin="anonymous">
+<link rel="stylesheet"
+  href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css"
+  integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r"
+  crossorigin="anonymous">
+<link rel="stylesheet"
+  href="http://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
+  type="text/css">
+<style>
+.btn-file {
+	position: relative;
+	overflow: hidden;
+}
+
+.btn-file input[type=file] {
+	position: absolute;
+	top: 0;
+	right: 0;
+	min-width: 100%;
+	min-height: 100%;
+	font-size: 100px;
+	text-align: right;
+	filter: alpha(opacity = 0);
+	opacity: 0;
+	background: red;
+	cursor: inherit;
+	display: block;
+}
+
+input[readonly] {
+	background-color: white !important;
+	cursor: text !important;
+}
+</style>
+<script type="text/javascript" src="Rule606ReportGenerator.js" ></script>
+</head>
+<body>
+  <div class="container">
+    <div class="page-header">
+      <h1>Rule 606 PDF Report Generator</h1>
+      <h4>Please browse to the XSD file and then to the XML file to
+        generate a report in the PDF format:</h4>
+    </div>
+    <form id="rule606Form">
+      <div>
+        <span class="file-input btn btn-primary btn-file"> Browse to the
+          XSD File&hellip; <input id="xsdFile" type="file" onchange="loadXSD();">
+        </span>
+      </div>
+      <br />
+      <div>
+        <span class="file-input btn btn-primary btn-file"> Browse to the
+          XML File&hellip; <input id="xmlFile" type="file" onchange="loadXML();">
+        </span>
+      </div>
+    </form>
+  </div>
+</body>
+</html>

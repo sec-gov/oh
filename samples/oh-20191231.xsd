@@ -1,0 +1,850 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+This schema was created by staff of the U.S. Securities and Exchange Commission.
+Data and content created by government employees within the scope of their employment
+are not subject to domestic copyright protection. 17 U.S.C. 105.
+-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+	<!-- Held Order Routing Public Report, rule 242.606 (a)(1). -->
+	<xs:element name="heldOrderRoutingPublicReport">
+		<xs:annotation>
+			<xs:documentation xml:lang="en"> Document root element for an order routing public report encompassing data for one calendar quarter, supporting rule 242.606 (a)(1). </xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="version"/>
+				<xs:element ref="bd"/>
+				<xs:element ref="year"/>
+				<xs:element ref="qtr"/>
+				<xs:element ref="timestamp" minOccurs="0"/>
+				<xs:element ref="rMonthly" maxOccurs="3"/>
+			</xs:sequence>
+		</xs:complexType>
+		<xs:unique name="orderRoutingReport_month">
+			<xs:selector xpath="rMonthly"/>
+			<xs:field xpath="mon"/>
+		</xs:unique>
+	</xs:element>
+	<xs:element name="rMonthly">
+		<xs:annotation>
+			<xs:documentation xml:lang="en"> One month of order routing data, for S&amp;P500 stocks, other stocks, or options sections, supporting rule 242.606 (a)(1). </xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="year"/>
+				<xs:element ref="mon"/>
+				<xs:element ref="rSP500" minOccurs="0"/>
+				<xs:element ref="rOtherStocks" minOccurs="0"/>
+				<xs:element ref="rOptions" minOccurs="0"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:complexType name="OrderRoutingType">
+		<xs:annotation>
+			<xs:documentation xml:lang="en"> Order routing data for one month, for S&amp;P500 stocks, other stocks, or options sections, aggregated across all execution venues, supporting rule 242.606 (a)(1). </xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element ref="ndoPct"/>
+			<xs:element ref="ndoMarketPct"/>
+			<xs:element ref="ndoMarketableLimitPct"/>
+			<xs:element ref="ndoNonmarketableLimitPct"/>
+			<xs:element ref="ndoOtherPct"/>
+			<xs:element ref="rVenues"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="ndoPct" type="PctOrNmType">
+		<xs:annotation>
+			<xs:documentation xml:lang="en"> The percentage of total orders (for this report section) that were non-directed orders, supporting rule 242.606 (a)(1)(i). </xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="ndoMarketPct" type="PctOrNmType">
+		<xs:annotation>
+			<xs:documentation xml:lang="en"> The percentage of total non-directed orders (for this report section) that were market orders, supporting rule 242.606 (a)(1)(i). </xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="ndoMarketableLimitPct" type="PctOrNmType">
+		<xs:annotation>
+			<xs:documentation xml:lang="en"> The percentage of total non-directed orders (for this report section) that were marketable limit orders, supporting rule 242.606 (a)(1)(i). </xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="ndoNonmarketableLimitPct" type="PctOrNmType">
+		<xs:annotation>
+			<xs:documentation xml:lang="en"> The percentage of total non-directed orders (for this report section) that were non-marketable limit orders, supporting rule 242.606 (a)(1)(i). </xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="ndoOtherPct" type="PctOrNmType">
+		<xs:annotation>
+			<xs:documentation xml:lang="en"> The percentage of total non-directed orders (for this report section) that were not market orders and were not limit orders, supporting rule 242.606 (a)(1)(i). </xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="rVenues">
+		<xs:annotation>
+			<xs:documentation xml:lang="en"> Order routing data for all venues, not aggregated, supporting rule 242.606 (a)(1)(ii). </xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="rVenue" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+		<xs:unique name="uniqueVenues">
+			<xs:selector xpath="rVenue"/>
+			<xs:field xpath="name"/>
+			<xs:field xpath="mic"/>
+		</xs:unique>
+		<xs:unique name="uniqueMics">
+			<xs:selector xpath="rVenue"/>
+			<xs:field xpath="mic"/>
+		</xs:unique>
+	</xs:element>
+	<xs:element name="rVenue">
+		<xs:annotation>
+			<xs:documentation xml:lang="en"> All order routing data for one venue, supporting rule 242.606 (a)(1)(ii). </xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:choice>
+					<xs:sequence>
+						<xs:element ref="name"/>
+						<xs:element ref="mic" minOccurs="0"/>
+					</xs:sequence>
+					<xs:element ref="mic"/>
+				</xs:choice>
+				<xs:element ref="orderPct"/>
+				<xs:element name="marketPct" type="PctOrNmType">
+					<xs:annotation>
+						<xs:documentation xml:lang="en"> The percentage of total non-directed orders (for this report section) that were market orders, supporting rule 242.606 (a)(1)(i) </xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="marketableLimitPct" type="PctOrNmType">
+					<xs:annotation>
+						<xs:documentation xml:lang="en"> The percentage of total non-directed orders (for this report section) that were marketable limit orders, supporting rule 242.606 (a)(1)(i) </xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="nonMarketableLimitPct" type="PctOrNmType">
+					<xs:annotation>
+						<xs:documentation xml:lang="en"> The percentage of total non-directed orders (for this report section) that were non marketable limit orders, supporting rule 242.606 (a)(1)(i). </xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="otherPct" type="PctOrNmType">
+					<xs:annotation>
+						<xs:documentation xml:lang="en"> The percentage of total non-directed orders (for this report section) that were not market orders and were not limit orders, supporting rule 242.606 (a)(1)(i). </xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element ref="netPmtPaidRecvMarketOrdersUsd"/>
+				<xs:element ref="netPmtPaidRecvMarketOrdersCph"/>
+				<xs:element ref="netPmtPaidRecvMarketableLimitOrdersUsd"/>
+				<xs:element ref="netPmtPaidRecvMarketableLimitOrdersCph"/>
+				<xs:element ref="netPmtPaidRecvNonMarketableLimitOrdersUsd"/>
+				<xs:element ref="netPmtPaidRecvNonMarketableLimitOrdersCph"/>
+				<xs:element ref="netPmtPaidRecvOtherOrdersUsd"/>
+				<xs:element ref="netPmtPaidRecvOtherOrdersCph"/>
+				<xs:element ref="materialAspects"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="rSP500" type="OrderRoutingType">
+		<xs:annotation>
+			<xs:documentation xml:lang="en"> Order routing data for one month at one venue, for S&amp;P 500 stocks, supporting rule 242.606 (a)(1)(ii). </xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="rOtherStocks" type="OrderRoutingType">
+		<xs:annotation>
+			<xs:documentation xml:lang="en"> Order routing data for one month at one venue, for non-S&amp;P 500 stocks, supporting rule 242.606 (a)(1)(ii). </xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="rOptions" type="OrderRoutingType">
+		<xs:annotation>
+			<xs:documentation xml:lang="en"> Handling data for one month at one venue, for the options section, supporting rule 242.606 (a)(1)(ii). </xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="name" type="VenueNameType">
+		<xs:annotation>
+			<xs:documentation xml:lang="en"> The venue to which orders were routed by the broker or dealer, supporting rule 242.606 (a)(1)(ii). </xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="orderPct" type="PctOrNmType">
+		<xs:annotation>
+			<xs:documentation xml:lang="en"> The percentage of total non-directed orders for the section routed to the venue, supporting rule 242.606 (a)(1)(ii). </xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="netPmtPaidRecvMarketOrdersUsd" type="UsdType">
+		<xs:annotation>
+			<xs:documentation xml:lang="en"> The net aggregate amount for non-directed market orders (in dollars) of any (A) payment for order flow received, (B) payment from any profit-sharing relationship received, (C) transaction fees paid, and (D) transaction rebates received, supporting rule 242.606 (a)(1)(iii). </xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="netPmtPaidRecvMarketOrdersCph" type="CphType">
+		<xs:annotation>
+			<xs:documentation xml:lang="en"> The net aggregate amount for non-directed market orders (in cents per hundred shares) of any (A) payment for order flow received, (B) payment from any profit-sharing relationship received, (C) transaction fees paid, and (D) transaction rebates received, supporting rule 242.606 (a)(1)(iii). </xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="netPmtPaidRecvMarketableLimitOrdersUsd" type="UsdType">
+		<xs:annotation>
+			<xs:documentation xml:lang="en"> The net aggregate amount for non-directed marketable limit orders (in dollars) of any (A) payment for order flow received, (B) payment from any profit-sharing relationship received, (C) transaction fees paid, and (D) transaction rebates received, supporting rule 242.606 (a)(1)(iii). </xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="netPmtPaidRecvMarketableLimitOrdersCph" type="CphType">
+		<xs:annotation>
+			<xs:documentation xml:lang="en"> The net aggregate amount for non-directed marketable limit orders (in cents per hundred shares) of any (A) payment for order flow received, (B) payment from any profit-sharing relationship received, (C) transaction fees paid, and (D) transaction rebates received, supporting rule 242.606 (a)(1)(iii). </xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="netPmtPaidRecvNonMarketableLimitOrdersUsd" type="UsdType">
+		<xs:annotation>
+			<xs:documentation xml:lang="en"> The net aggregate amount for non-directed non-marketable limit orders (in dollars) of any (A) payment for order flow received, (B) payment from any profit-sharing relationship received, (C) transaction fees paid, and (D) transaction rebates received, supporting rule 242.606 (a)(1)(iii). </xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="netPmtPaidRecvNonMarketableLimitOrdersCph" type="CphType">
+		<xs:annotation>
+			<xs:documentation xml:lang="en"> The net aggregate amount for non-directed non-marketable limit orders (in cents per hundred shares) of any (A) payment for order flow received, (B) payment from any profit-sharing relationship received, (C) transaction fees paid, and (D) transaction rebates received, supporting rule 242.606 (a)(1)(iii). </xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="netPmtPaidRecvOtherOrdersUsd" type="UsdType">
+		<xs:annotation>
+			<xs:documentation xml:lang="en"> The net aggregate amount for non-directed other orders (in dollars) of any (A) payment for order flow received, (B) payment from any profit-sharing relationship received, (C) transaction fees paid, and (D) transaction rebates received, supporting rule 242.606 (a)(1)(iii). </xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="netPmtPaidRecvOtherOrdersCph" type="CphType">
+		<xs:annotation>
+			<xs:documentation xml:lang="en"> The net aggregate amount for non-directed other orders (in cents per hundred shares) of any (A) payment for order flow received, (B) payment from any profit-sharing relationship received, (C) transaction fees paid, and (D) transaction rebates received, supporting rule 242.606 (a)(1)(iii). </xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="materialAspects" type="xs:string">
+		<xs:annotation>
+			<xs:documentation xml:lang="en"> A discussion of the material aspects of the broker's or dealer's relationship with each venue, supporting rule 242.606 (a)(i)(iv). </xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+	<!-- Order Routing Customer Report, rule 242.606 (b)(1). -->
+	<xs:element name="heldExemptNotHeldOrderRoutingCustomerReport">
+		<xs:annotation>
+			<xs:documentation xml:lang="en"> Order routing report on order execution times, for up to six months, supporting rule 242.606 (b)(1). </xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="version"/>
+				<xs:element ref="customer"/>
+				<xs:element ref="bd"/>
+				<xs:element ref="timestamp" minOccurs="0"/>
+				<xs:element ref="startDate"/>
+				<xs:element ref="endDate"/>
+				<xs:element name="held" type="ORDER_LIST" minOccurs="0"/>
+				<xs:element name="notHeldExempt" type="ORDER_LIST" minOccurs="0"/>
+				<xs:element name="options" type="ORDER_LIST" minOccurs="0"/>
+			</xs:sequence>
+		</xs:complexType>
+		<xs:unique name="uniqueHeldOrderId">
+			<xs:selector xpath="held/order"/>
+			<xs:field xpath="orderId"/>
+		</xs:unique>
+		<xs:unique name="uniqueNotHeldExemptOrderId">
+			<xs:selector xpath="notHeldExempt/order"/>
+			<xs:field xpath="orderId"/>
+		</xs:unique>
+		<xs:unique name="uniqueOptionsOrderId">
+			<xs:selector xpath="options/order"/>
+			<xs:field xpath="orderId"/>
+		</xs:unique>
+	</xs:element>
+	<xs:complexType name="ORDER_LIST">
+		<xs:sequence>
+			<xs:element ref="order" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="order">
+		<xs:annotation>
+			<xs:documentation xml:lang="en"> For each order, the identity of the venue(s) to which the customer's orders were routed for execution, whether the order was a directed or non-directed order, and the time of the transactions, if any, that resulted from such orders, supporting rule 242.606 (b)(1). </xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="orderId"/>
+				<xs:element ref="directed"/>
+				<xs:element ref="route" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="directed">
+		<xs:annotation>
+			<xs:documentation xml:lang="en"> Y or N indicating whether the order was directed, supporting rule 242.606 (b)(1). </xs:documentation>
+		</xs:annotation>
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:enumeration value="N"/>
+				<xs:enumeration value="Y"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="orderId">
+		<xs:annotation>
+			<xs:documentation xml:lang="en"> Nonempty identifier for a customer order. Each order identifier must be unique within one customer order routing report, supporting rule 242.606 (b)(1). </xs:documentation>
+		</xs:annotation>
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:minLength value="1"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="route">
+		<xs:annotation>
+			<xs:documentation xml:lang="en"> An order route, supporting rule 242.606 (b)(1). </xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:choice>
+					<xs:sequence>
+						<xs:element ref="venueName"/>
+						<xs:element ref="mic" minOccurs="0"/>
+					</xs:sequence>
+					<xs:element ref="mic"/>
+				</xs:choice>
+				<xs:element ref="transaction" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="transaction">
+		<xs:annotation>
+			<xs:documentation xml:lang="en"> A transaction executing a order, supporting rule 242.606 (b)(1). </xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="date"/>
+				<xs:element ref="time"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="date">
+		<xs:annotation>
+			<xs:documentation xml:lang="en"> The UTC date of transaction execution, supporting rule 242.606 (b)(1). </xs:documentation>
+		</xs:annotation>
+		<xs:simpleType>
+			<xs:restriction base="xs:date">
+				<xs:pattern value="....-..-.."/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="time">
+		<xs:annotation>
+			<xs:documentation xml:lang="en"> The UTC time of transaction execution, rounded to the nearest second, with half seconds rounded up, supporting rule 242.606 (b)(1). </xs:documentation>
+		</xs:annotation>
+		<xs:simpleType>
+			<xs:restriction base="xs:time">
+				<xs:pattern value="..:..:.."/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="venueName" type="VenueNameType">
+		<xs:annotation>
+			<xs:documentation xml:lang="en"> The venue to which orders were routed or were exposed via Actionable IOI by the broker or dealer, supporting rule 242.606 (b)(1) &amp; (b)(3). </xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="mic">
+		<xs:annotation>
+			<xs:documentation xml:lang="en"> The ISO 10383 (MIC) code of the venue to facilitate aggregation of data across reports, supporting rule 242.606 (a)(1), (b)(1) &amp; (b)(3). </xs:documentation>
+		</xs:annotation>
+		<xs:simpleType>
+			<xs:union memberTypes="MicType NmType"/>
+		</xs:simpleType>
+	</xs:element>
+	<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+	<!-- Order Handling Customer Report, rule 242.606 (b)(3) -->
+	<xs:element name="notHeldOrderHandlingCustomerReport">
+		<xs:annotation>
+			<xs:documentation xml:lang="en"> Document root element for an order handling report encompassing orders from one to six months, supporting rule 242.606 (b)(3). </xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="version"/>
+				<xs:element ref="customer"/>
+				<xs:element ref="bd"/>
+				<xs:element ref="timestamp" minOccurs="0"/>
+				<xs:element ref="startDate"/>
+				<xs:element ref="endDate"/>
+				<xs:element name="hDirected" type="OH_DND_DATA" minOccurs="0">
+					<xs:unique name="hdMonthly">
+						<xs:selector xpath="hMonthly"/>
+						<xs:field xpath="mon"/>
+					</xs:unique>
+				</xs:element>
+				<xs:element name="hNondirected" type="OH_DND_DATA" minOccurs="0">
+					<xs:unique name="hndMonthly">
+						<xs:selector xpath="hMonthly"/>
+						<xs:field xpath="mon"/>
+					</xs:unique>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:complexType name="OH_DND_DATA">
+		<xs:annotation>
+			<xs:documentation xml:lang="en"> Order handling data for directed and non-directed orders, supporting rule 242.606 (b)(3). </xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element ref="hMonthly" minOccurs="0" maxOccurs="7"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="hMonthly">
+		<xs:annotation>
+			<xs:documentation xml:lang="en"> One month of order handling data, supporting rule 242.606 (b)(3). </xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="year"/>
+				<xs:element ref="mon"/>
+				<xs:element ref="sentShr"/>
+				<xs:element ref="executedAsPrincipalShr"/>
+				<xs:element ref="ioiExposedOrd"/>
+				<xs:element name="ioiExposedVenueList" type="IOI_EXPOSED_VENUE_LIST"/>
+				<xs:element name="routingVenueList" type="ROUTING_VENUE_LIST"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:complexType name="IOI_EXPOSED_VENUE_LIST">
+		<xs:sequence>
+			<xs:element ref="ioiExposedVenue" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="ROUTING_VENUE_LIST">
+		<xs:sequence>
+			<xs:element ref="iVenue" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="ioiExposedVenue">
+		<xs:annotation>
+			<xs:documentation xml:lang="en">
+A venue to which orders were exposed via Actionable IOI by the broker or dealer, supporting rule 242.606 (b)(1) &amp; (b)(3).
+      </xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="venueName"/>
+				<xs:element ref="mic" minOccurs="0"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="iVenue">
+		<xs:annotation>
+			<xs:documentation xml:lang="en"> order handling data in one execution venue, supporting rule 242.606 (b)(3). </xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="venueName"/>
+				<xs:element ref="services" minOccurs="0"/>
+				<xs:choice minOccurs="0">
+					<xs:element ref="mic"/>
+					<xs:element ref="mpid"/>
+				</xs:choice>
+				<xs:element name="routedShr" type="ShrType">
+					<xs:annotation>
+						<xs:documentation xml:lang="en"> The number of shares routed totaling across all strategies, supporting rule 242.606 (b)(3)(i)(A). </xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="iocRoutedShr" type="ShrType">
+					<xs:annotation>
+						<xs:documentation xml:lang="en"> Shares routed marked immediate or cancel (IOC) totaling across all strategies, supporting rule 242.606 (b)(3)(i)(B). </xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="furtherRoutableShr" type="ShrType">
+					<xs:annotation>
+						<xs:documentation xml:lang="en"> Shares routed that were further routable totaling across all strategies, supporting rule 242.606 (b)(3)(i)(C). </xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="orderSizeShr" type="ShrType">
+					<xs:annotation>
+						<xs:documentation xml:lang="en"> Average order size (in shares) routed averaging across all strategies, supporting rule 242.606 (b)(3)(i)(D). </xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="executedShr" type="ShrType">
+					<xs:annotation>
+						<xs:documentation xml:lang="en"> Number of shares executed totaling across all strategies, supporting rule 242.606 (b)(3)(ii)(A). </xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="filledPct" type="PctOrNmType">
+					<xs:annotation>
+						<xs:documentation xml:lang="en"> Fill rate across all strategies, supporting rule 242.606 (b)(3)(ii)(B). </xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="fillSizeShr" type="ShrType">
+					<xs:annotation>
+						<xs:documentation xml:lang="en"> Average order fill size averaged aross all strategies, supporting rule 242.606 (b)(3)(ii)(C). </xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="netFeeOrRebateCph" type="CphType">
+					<xs:annotation>
+						<xs:documentation xml:lang="en"> Average net execution fee (negative value) or rebate (positive value), supporting rule 242.606 (b)(3)(ii)(D). </xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="midpointShr" type="ShrType">
+					<xs:annotation>
+						<xs:documentation xml:lang="en"> Number of shares executed at the midpoint, supporting rule 242.606 (b)(3)(ii)(E). </xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="midpointPct" type="PctOrNmType">
+					<xs:annotation>
+						<xs:documentation xml:lang="en"> Percentage of shares executed at the midpoint (equal to midpointExecutedShr / executedShr), supporting rule 242.606 (b)(3)(ii)(F). </xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="nearsideShr" type="ShrType">
+					<xs:annotation>
+						<xs:documentation xml:lang="en"> Number of shares executed that were priced on the side of the spread more favorable to the order, supporting rule 242.606 (b)(3)(ii)(G). </xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="nearsidePct" type="PctOrNmType">
+					<xs:annotation>
+						<xs:documentation xml:lang="en"> Percentage of shares executed that were priced at the side of the spread more favorable to the order (equal to nearsideExecuted / executed), supporting rule 242.606 (b)(3)(ii)(H). </xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="farsideShr" type="ShrType">
+					<xs:annotation>
+						<xs:documentation xml:lang="en"> Number of shares executed that were priced on the side of the spread less favorable to the order, supporting rule 242.606 (b)(3)(ii)(I). </xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="farsidePct" type="PctOrNmType">
+					<xs:annotation>
+						<xs:documentation xml:lang="en"> Percentage of shares executed that were priced on the side of the spread less favorable to the order, supporting rule 242.606 (b)(3)(ii)(J). </xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="providedLiqudityShr" type="ShrType">
+					<xs:annotation>
+						<xs:documentation xml:lang="en"> Number of shares executed of orders providing liquidity, supporting rule 242.606 (b)(3)(iii)(A). </xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="providedLiquidityPct" type="PctOrNmType">
+					<xs:annotation>
+						<xs:documentation xml:lang="en"> Percentage of shares executed of orders providing liquidity, supporting rule 242.606 (b)(3)(iii)(B). </xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="orderDurationMsec" type="MsecType">
+					<xs:annotation>
+						<xs:documentation xml:lang="en"> Average time between order entry and execution or cancellation, for orders providing liquidity (in milliseconds), supporting rule 242.606 (b)(3)(iii)(C). </xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="providedLiquidityNetCph" type="CphType">
+					<xs:annotation>
+						<xs:documentation xml:lang="en"> Average net execution fee (negative value) or rebate (positive value) for shares executed of orders providing liquidity (in cents per hundred shares to four decimal places), supporting rule 242.606 (b)(3)(iii)(D). </xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="removedLiquidityShr" type="ShrType">
+					<xs:annotation>
+						<xs:documentation xml:lang="en"> Number of shares executed of orders removing liquidity, supporting rule 242.606 (b)(3)(iv)(A). </xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="removedLiquidityPct" type="PctOrNmType">
+					<xs:annotation>
+						<xs:documentation xml:lang="en"> Percentage of shares executed of orders removing liquidity, supporting rule 242.606 (b)(3)(iv)(B). </xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="removedLiquidityNetCph" type="CphType">
+					<xs:annotation>
+						<xs:documentation xml:lang="en"> Average net execution fee (negative value) or rebate (positive value) for shares of orders removing liquidity (in cents per hundred shares to four decimal places), supporting rule 242.606 (b)(3)(iv)(C). </xs:documentation>
+					</xs:annotation>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<!-- - - - - - - - - - - - - - - - - - - - - -->
+	<!-- Simple type elements common to reports  -->
+	<xs:element name="version">
+		<xs:annotation>
+			<xs:documentation xml:lang="en"> The versions of the Order Handling Report schema instances validated, supporting rule 242.606. </xs:documentation>
+		</xs:annotation>
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:enumeration value="1.2"/>
+				<xs:enumeration value="1.3"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="bd" type="BrokerDealerNameType">
+		<xs:annotation>
+			<xs:documentation xml:lang="en"> The name of the broker-dealer providing the handling report, supporting rule 242.606. </xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="customer" type="CustomerNameType">
+		<xs:annotation>
+			<xs:documentation xml:lang="en"> The name of the customer receiving the handling report, supporting rule 242.606. </xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="year" type="YearType">
+		<xs:annotation>
+			<xs:documentation xml:lang="en"> The calendar year in which the most recent month of handling data is included, supporting rule 242.606. </xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="qtr" type="QuarterType">
+		<xs:annotation>
+			<xs:documentation xml:lang="en"> The calendar quarter in which the most recent month of handling data is included, supporting rule 242.606. </xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="mon" type="MonthType">
+		<xs:annotation>
+			<xs:documentation xml:lang="en"> Calendar month number from 1 to 12 inclusive, supporting rule 242.606. </xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="timestamp">
+		<xs:annotation>
+			<xs:documentation xml:lang="en"> The UTC date and time rounded to the nearest second for which the report data was generated, with half seconds rounded up, supporting rule 242.606. </xs:documentation>
+		</xs:annotation>
+		<xs:simpleType>
+			<xs:restriction base="xs:dateTime">
+				<xs:pattern value="....-..-..T..:..:..Z"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+	<!-- - - - - - -  -->
+	<!-- simple type elements -->
+	<xs:element name="sentShr" type="ShrType">
+		<xs:annotation>
+			<xs:documentation xml:lang="en"> The number of shares of orders sent to the broker or dealer by the customer during the relevant period, supporting rule 242.606 (b)(3). </xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="executedAsPrincipalShr" type="ShrType">
+		<xs:annotation>
+			<xs:documentation xml:lang="en"> The number of shares executed by the broker or dealer as principal for its own account, supporting rule 242.606 (b)(3). </xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="ioiExposedOrd" type="OrdType">
+		<xs:annotation>
+			<xs:documentation xml:lang="en"> The number of orders exposed by the broker or dealer through an actionable indication of interest, supporting rule 242.606 (b)(3). </xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="services" type="ServicesType">
+		<xs:annotation>
+			<xs:documentation xml:lang="en"> Routing venue category, supporting rule 242.606 (b)(3). </xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="mpid">
+		<xs:annotation>
+			<xs:documentation xml:lang="en"> Market Participant ID (MPID) code of a venue to facilitate aggregation of data across reports, supporting rule 242.606 (b)(3). </xs:documentation>
+		</xs:annotation>
+		<xs:simpleType>
+			<xs:union memberTypes="MpidType NmType"/>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="startDate">
+		<xs:annotation>
+			<xs:documentation xml:lang="en"> The precise UTC start date for the six month report, supporting rule 242.606 (b). </xs:documentation>
+		</xs:annotation>
+		<xs:simpleType>
+			<xs:restriction base="xs:date">
+				<xs:pattern value="....-..-.."/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="endDate">
+		<xs:annotation>
+			<xs:documentation xml:lang="en"> The precise UTC end date for the six month report, supporting rule 242.606 (b). </xs:documentation>
+		</xs:annotation>
+		<xs:simpleType>
+			<xs:restriction base="xs:date">
+				<xs:pattern value="....-..-.."/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+	<!-- - - - - - -  -->
+	<!-- simple types-->
+	<xs:simpleType name="NmType">
+		<xs:annotation>
+			<xs:documentation xml:lang="en"> Empty string indicating that a numeric value is not meaningful. </xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:whiteSpace value="collapse"/>
+			<xs:enumeration value=""/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="ServicesType">
+		<xs:annotation>
+			<xs:documentation xml:lang="en"> A flag indicating a primary venue (PRV) or execution/secondary venue (EV/SRV).</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="PRV"/>
+			<xs:enumeration value="EV/SRV"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="MpidType">
+		<xs:annotation>
+			<xs:documentation xml:lang="en"> A Market Participant ID consisting of four or five digits or uppercase letters. </xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:pattern value="[A-Z0-9]{4,5}"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="MicType">
+		<xs:annotation>
+			<xs:documentation xml:lang="en"> An ISO 10383 (MIC) exchange code consisting of exactly four uppercase letters or digits. </xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:pattern value="[A-Z0-9]{4}"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="BrokerDealerNameType">
+		<xs:annotation>
+			<xs:documentation xml:lang="en"> Name of the reporting broker-dealer of up to 50 characters with white space normalized. </xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:minLength value="1"/>
+			<xs:maxLength value="50"/>
+			<xs:whiteSpace value="collapse"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="CustomerNameType">
+		<xs:annotation>
+			<xs:documentation xml:lang="en"> Name of the customer receiving the report of up to 80 characters with white space normalized, or empty if the report is the aggregate of all customers. </xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:minLength value="0"/>
+			<xs:maxLength value="80"/>
+			<xs:whiteSpace value="collapse"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="VenueNameType">
+		<xs:annotation>
+			<xs:documentation xml:lang="en"> Name of an execution venue of up to 80 characters with white space normalized. </xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:minLength value="1"/>
+			<xs:maxLength value="80"/>
+			<xs:whiteSpace value="collapse"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="QuarterType">
+		<xs:annotation>
+			<xs:documentation xml:lang="en"> A calendar quarter for 1 to 4 inclusive. </xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:integer">
+			<xs:minInclusive value="1"/>
+			<xs:maxInclusive value="4"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="MonthType">
+		<xs:annotation>
+			<xs:documentation xml:lang="en"> A calendar month from 1 to 12 inclusive. </xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:integer">
+			<xs:minInclusive value="1"/>
+			<xs:maxInclusive value="12"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="YearType">
+		<xs:annotation>
+			<xs:documentation xml:lang="en"> A calendar year from 2000 to 2099 inclusive. </xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:integer">
+			<xs:minInclusive value="2000"/>
+			<xs:maxInclusive value="2099"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="UsdType">
+		<xs:annotation>
+			<xs:documentation xml:lang="en"> An amount in US dollars, or blank.</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="DecimalOrNmType"/>
+	</xs:simpleType>
+	<xs:simpleType name="OrdType">
+		<xs:annotation>
+			<xs:documentation xml:lang="en"> A nonnegative whole number representing a number of orders, or blank. </xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="NonnegativeIntegerOrNmType"/>
+	</xs:simpleType>
+	<xs:simpleType name="ShrType">
+		<xs:annotation>
+			<xs:documentation xml:lang="en"> A nonnegative number representing a number of shares, or blank. </xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="NonnegativeDecimalOrNmType"/>
+	</xs:simpleType>
+	<xs:simpleType name="CphType">
+		<xs:annotation>
+			<xs:documentation xml:lang="en"> A number with at least four digits to the right of the decimal point representing cents per hundred shares, or blank. </xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="Decimal4OrNmType"/>
+	</xs:simpleType>
+	<xs:simpleType name="PctOrNmType">
+		<xs:annotation>
+			<xs:documentation xml:lang="en"> A number between 0 and 100 inclusive with at least two digits to the right of the decimal point representing a percentage, or blank. </xs:documentation>
+		</xs:annotation>
+		<xs:union memberTypes="PctType NmType"/>
+	</xs:simpleType>
+	<xs:simpleType name="MsecType">
+		<xs:annotation>
+			<xs:documentation xml:lang="en"> A nonnegative integer representing milliseconds, or blank. </xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="NonnegativeIntegerOrNmType"/>
+	</xs:simpleType>
+	<xs:simpleType name="DecimalOrNmType">
+		<xs:annotation>
+			<xs:documentation xml:lang="en"> A decimal number or blank. </xs:documentation>
+		</xs:annotation>
+		<xs:union memberTypes="xs:decimal NmType"/>
+	</xs:simpleType>
+	<xs:simpleType name="NonnegativeDecimalOrNmType">
+		<xs:annotation>
+			<xs:documentation xml:lang="en"> A decimal number greater than or equal to zero, or blank. </xs:documentation>
+		</xs:annotation>
+		<xs:union memberTypes="NonnegativeDecimalType NmType"/>
+	</xs:simpleType>
+	<xs:simpleType name="Decimal4OrNmType">
+		<xs:annotation>
+			<xs:documentation xml:lang="en"> A number with at least four digits to the right of the decimal point, or blank. </xs:documentation>
+		</xs:annotation>
+		<xs:union memberTypes="Decimal4Type NmType"/>
+	</xs:simpleType>
+	<xs:simpleType name="Decimal2OrNmType">
+		<xs:annotation>
+			<xs:documentation xml:lang="en"> A number with at least two digits to the right of the decimal point, or blank. </xs:documentation>
+		</xs:annotation>
+		<xs:union memberTypes="Decimal2Type NmType"/>
+	</xs:simpleType>
+	<xs:simpleType name="NonnegativeDecimalType">
+		<xs:annotation>
+			<xs:documentation xml:lang="en"> A decimal number greater than or equal to zero. </xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:decimal">
+			<xs:minInclusive value="0"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="NonnegativeIntegerOrNmType">
+		<xs:annotation>
+			<xs:documentation xml:lang="en"> A nonnegative integer, or blank. </xs:documentation>
+		</xs:annotation>
+		<xs:union memberTypes="NonnegativeIntegerType NmType"/>
+	</xs:simpleType>
+	<xs:simpleType name="PctType">
+		<xs:annotation>
+			<xs:documentation xml:lang="en"> A number between 0 and 100 inclusive with at least two digits to the right of the decimal point representing a percentage. </xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:decimal">
+			<xs:minInclusive value="0.00"/>
+			<xs:maxInclusive value="100.00"/>
+			<xs:pattern value="[0-9]*\.[0-9]{2,}"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="IoiExposedFlagType">
+		<xs:annotation>
+			<xs:documentation xml:lang="en"> The character "X" or empty string. </xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:enumeration value=""/>
+			<xs:enumeration value="X"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="Decimal4Type">
+		<xs:annotation>
+			<xs:documentation xml:lang="en"> A number with at least four digits to the right of the decimal point. </xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:decimal">
+			<xs:pattern value="-?[0-9]*\.[0-9]{4}[0-9]*"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="Decimal2Type">
+		<xs:annotation>
+			<xs:documentation xml:lang="en"> A number with at least two digits to the right of the decimal point. </xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:decimal">
+			<xs:pattern value="-?[0-9]*\.[0-9]{2}[0-9]*"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="NonnegativeIntegerType">
+		<xs:annotation>
+			<xs:documentation xml:lang="en"> A nonnegative integer. </xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:decimal">
+			<xs:pattern value="[0-9]+"/>
+		</xs:restriction>
+	</xs:simpleType>
+</xs:schema>
