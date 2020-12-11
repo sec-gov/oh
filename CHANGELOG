@@ -1,6 +1,7 @@
 12/??/2020 update:
 * Relax the pattern for MIC codes, to permit digits as well as uppercase letters.
 * Add a footnote regarding the providedLiquidtyShr element to the technical guide.
+* Enhance the pdfmake package in ./lib to support marked ("tagged") PDF-UA output.
 
 10/27/2020 update:
 
