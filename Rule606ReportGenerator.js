@@ -266,7 +266,7 @@ function getprivateData(orderType) { /* b1 */
 				if (oChild.tagName == b1OrderTags[0]) {
 					orderId = getNodeValue(oChild, true);
 				} else if (oChild.tagName == b1OrderTags[1]) {
-					if (getNodeValue(oChild) == 'Y') {
+					if (getNodeValue(oChild,true) == 'Y') {
 						type = 'Directed';
 					} else {
 						type = 'Non-Directed';
@@ -307,12 +307,12 @@ function getprivateData(orderType) { /* b1 */
 					$.each(rtChildNodes, function(rtChildIndex, rtChild) {
 						/* construct venue name and count transactions */
 						if (rtChild.tagName == b1RouteTags[0]) {
-							venueName = getNodeValue(rtChild);
+							venueName = getNodeValue(rtChild,true);
 						} else if (rtChild.tagName == b1RouteTags[1]) {
 							if (venueName != NS) {
-								venueName = venueName + ' (' + getNodeValue(rtChild) + ')';
+								venueName = venueName + ' (' + getNodeValue(rtChild,true) + ')';
 							} else {
-								venueName = getNodeValue(rtChild);
+								venueName = getNodeValue(rtChild,true);
 							};
 						} else if (rtChild.tagName == b1RouteTags[2]) {
 							transactions.push(rtChild);
@@ -381,7 +381,18 @@ function createNotHeldOrderHandlingCustomerReportPDF(opts) { /* b3 */
 	((hasTimeStamp) ? {tags: ['H1','/H1'],
 	                    style: 'header4', unbreakable:true,
 	                    text: 'Generated on ' + formatDate(getElementValue('timestamp'))}
-		            : {text: ' - ', tags: []}));
+		            : {text: ' - ', tags: []}),
+	{ tags: ['H2', '/H2'],
+	  text : [ { text : ' For ',
+		     style : 'header3' },
+		   { text : getElementValue("customer"),
+		     style : TEXTSTYLE } ] },
+	{ tags: ['H2', '/H2'],
+	  text : [ { text : ' Reporting Period ',
+		     style : 'header3' },
+		   { text : getElementValue("startDate") + ' to ' + getElementValue("endDate"),
+		     style : TEXTSTYLE }
+		 ]});
 	var years = getAllYears();
 	$.each(years,
 			function(yearIndex, year) {
@@ -391,7 +402,7 @@ function createNotHeldOrderHandlingCustomerReportPDF(opts) { /* b3 */
 				 var monthFound = false;
 				 $.each(dateElements,
 						function(dateIndex,dateNode)
-						{ var date = getNodeValue(dateNode);
+						{ var date = getNodeValue(dateNode,true);
 					      if (date == monthVal && getYearForMonth(dateNode) == year) {
 							 monthFound = true;
 							 return false;
@@ -593,7 +604,7 @@ function getDetailData(isDirected, month, year) { /* b3 */
 									nodeVal = WS;
 									$.each(venueChildElts,function(index,elt) {
 										if (elt.tagName == tag) {
-											nodeVal = getNodeValue(elt, true);
+											nodeVal = getNodeValue(elt);
 											verified(nodeVal, 'nodeVal');
 											return true;
 										};
@@ -781,6 +792,7 @@ function getVenuesByMonth(month, year, securityType) { /* a1 */
 											.concat((isLastCol && isLastRow)?['/Table']:[]),
 											style: TABLEVALUE, unbreakable:true});
 									} else if (nodeVal != NS) {
+										nodeVal = getNodeValue(elt,true);
 										matrAspectsArr.push({text: venueName + ':', style: TEXTSTYLE, unbreakable:true, tags: ((isFirstMa)?['L']:[]).concat(['LI','Lbl','/Lbl'])});
 										matrAspectsArr.push({text: nodeVal + '\n\n', style: TEXTSTYLE, unbreakable:true, tags: ['LBody','/LBody','/LI']});
 										isFirstMa = false;
