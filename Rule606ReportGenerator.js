@@ -381,7 +381,18 @@ function createNotHeldOrderHandlingCustomerReportPDF(opts) { /* b3 */
 	((hasTimeStamp) ? {tags: ['H1','/H1'],
 	                    style: 'header4', unbreakable:true,
 	                    text: 'Generated on ' + formatDate(getElementValue('timestamp'))}
-		            : {text: ' - ', tags: []}));
+		            : {text: ' - ', tags: []}),
+	{ tags: ['H2', '/H2'],
+	  text : [ { text : ' For ',
+		     style : 'header3' },
+		   { text : getElementValue("customer"),
+		     style : TEXTSTYLE } ] },
+	{ tags: ['H2', '/H2'],
+	  text : [ { text : ' Reporting Period ',
+		     style : 'header3' },
+		   { text : getElementValue("startDate") + ' to ' + getElementValue("endDate"),
+		     style : TEXTSTYLE }
+		 ]});
 	var years = getAllYears();
 	$.each(years,
 			function(yearIndex, year) {
