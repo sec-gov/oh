@@ -810,7 +810,7 @@ function getVenuesByMonth(month, year, securityType) { /* a1 */
 
 function getPublicRoutingBody(section, monthVal, year) { // a1
     var empty = true;
-    for (var i=0;i<a1SummaryTableTags[i];i++) {
+    for (var i=0;i<a1SummaryTableTags.length;i++) {
     	if (NS != getElementValueByMonth(a1SummaryTableTags[i],section, monthVal, year)) {
     		empty = false;
     		break;
