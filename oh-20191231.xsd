@@ -675,7 +675,7 @@ A venue to which orders were exposed via Actionable IOI by the broker or dealer,
 	</xs:simpleType>
 	<xs:simpleType name="BrokerDealerNameType">
 		<xs:annotation>
-			<xs:documentation xml:lang="en"> Name of the reporting broker-dealer of up to 50 characters with white space normalized. </xs:documentation>
+			<xs:documentation xml:lang="en"> Name of the reporting broker-dealer of up to 80 characters with white space normalized. </xs:documentation>
 		</xs:annotation>
 		<xs:restriction base="xs:string">
 			<xs:minLength value="1"/>

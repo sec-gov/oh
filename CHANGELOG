@@ -1,3 +1,6 @@
+1/15/2015 update:
+* Correct regressions of validation and rendering behavior from pre-3/19/2020 version.
+
 12/19/2020 update:
 * Relax the pattern for MIC codes, to permit digits as well as uppercase letters.
 * Add a footnote regarding the providedLiquidtyShr element to the technical guide.
