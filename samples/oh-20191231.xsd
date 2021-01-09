@@ -679,7 +679,7 @@ A venue to which orders were exposed via Actionable IOI by the broker or dealer,
 		</xs:annotation>
 		<xs:restriction base="xs:string">
 			<xs:minLength value="1"/>
-			<xs:maxLength value="50"/>
+			<xs:maxLength value="80"/>
 			<xs:whiteSpace value="collapse"/>
 		</xs:restriction>
 	</xs:simpleType>
