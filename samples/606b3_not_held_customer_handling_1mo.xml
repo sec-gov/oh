@@ -77,6 +77,7 @@ are not subject to domestic copyright protection. 17 U.S.C. 105.
 				<iVenue>
 					<venueName>BATS Exchange, Inc</venueName>
 					<mic>BATS</mic>
+					<mpid>STAB</mpid>
 					<routedShr>37674872.000</routedShr>
 					<iocRoutedShr>21233797.000</iocRoutedShr>
 					<furtherRoutableShr>31099782.000</furtherRoutableShr>
@@ -101,6 +102,7 @@ are not subject to domestic copyright protection. 17 U.S.C. 105.
 				</iVenue>
 								<iVenue>
 					<venueName>ATS One</venueName>
+					<mpid>ATS1</mpid>
 					<routedShr>37674872.000</routedShr>
 					<iocRoutedShr>21233797.000</iocRoutedShr>
 					<furtherRoutableShr>31099782.000</furtherRoutableShr>

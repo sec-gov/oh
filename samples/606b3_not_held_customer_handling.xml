@@ -28,9 +28,10 @@ are not subject to domestic copyright protection. 17 U.S.C. 105.
       </ioiExposedVenueList>
       <routingVenueList>
         <iVenue>
-          <venueName>BD1</venueName>
+          <venueName>Bee Dee One, Ltd., Shangri-La / Basket Order Nanosecond Execution Platform, Inc.</venueName>
           <services>PRV</services>
-          <mpid>BONE</mpid>
+          <mic>B1NX</mic>
+          <mpid>BD01</mpid>
           <routedShr>37674872</routedShr>
           <iocRoutedShr>21233797</iocRoutedShr>
           <furtherRoutableShr>31099782</furtherRoutableShr>

@@ -39,7 +39,7 @@ const a1VenueTableTags = [ 'orderPct', 'marketPct', 'marketableLimitPct',
 
 const b1TableHeaders = [ 'Order ID', 'Type', 'Venue', 'Time of Transaction (UTC)' ];
 const b1OrderTags = [ 'orderId', 'directed', 'route' ];
-const b1RouteTags = [ 'venueName', 'mic', 'transaction' ]
+const b1RouteTags = [ 'venueName', 'mic', 'mpid', 'transaction' ]
 const b1TransactionTags = [ 'date', 'time' ];
 
 const b3SummaryTableHeaders = [ 'Total Shares Sent to Broker/Dealer',
@@ -96,6 +96,7 @@ const monthEnum = {
 const NS = ''; /* null string */
 const WS = ' '; /* one whitespace */
 const NL = '\n';
+const SEMI = ';'; /* one semicolon */
 const AUTO = 'auto';
 const TEXTSTYLE = 'textStyle';
 const TABLEVALUE = 'tableValue';
@@ -300,6 +301,7 @@ function getprivateData(orderType) { /* b1 */
 					row = [];
 					var venueName = NS;
 					var mic = NS;
+					var mpid = NS;
 					var isFirstRoute = (rtIndex == 0);
 					var isLastRoute = (rtIndex == (routes.length - 1))
 					var rtChildNodes = route.childNodes;
@@ -308,13 +310,13 @@ function getprivateData(orderType) { /* b1 */
 						/* construct venue name and count transactions */
 						if (rtChild.tagName == b1RouteTags[0]) {
 							venueName = getNodeValue(rtChild,true);
-						} else if (rtChild.tagName == b1RouteTags[1]) {
+						} else if (rtChild.tagName == b1RouteTags[1] || rtChild.tagName == b1RouteTags[2]) {
 							if (venueName != NS) {
 								venueName = venueName + ' (' + getNodeValue(rtChild,true) + ')';
 							} else {
 								venueName = getNodeValue(rtChild,true);
 							};
-						} else if (rtChild.tagName == b1RouteTags[2]) {
+						} else if (rtChild.tagName == b1RouteTags[2]) { /* b1RouteTags = [ 'venueName', 'mic', 'mpid', 'transaction' ] */
 							transactions.push(rtChild);
 						}
 					});
@@ -772,7 +774,7 @@ function getVenuesByMonth(month, year, securityType) { /* a1 */
 					var isLastRow = (l == (venues.length - 1));
 					var row = [];
 					var venueElt = venues[l];
-					if (!venueElt.tagName == 'rVenue') continue;
+					if (venueElt.tagName != 'rVenue') continue;
 					var venueName = getVenueName(venueElt);
 					row.push({tags: ['TR','TD','/TD'], text: venueName, style: 'tableNameValue', unbreakable:true});
 					var venueChildNodes = venueElt.children;
@@ -930,14 +932,16 @@ function getYearForMonth(month) { /* a1 and b3 */
 }
 
 function getVenueName(venueElt) {
-	/* both a1 and b3 - specially concatenate two or four columns to one value */
+	/* both a1 and b3 - specially concatenate up to three fields, all into one string */
 	var venueChildNodes = venueElt.children;
 	var venueNameVal = NS; //
-	['venueName','name','services','mic','mpid'].forEach(
+	['venueName','name','services','mic','mpid','otherNames'].forEach(
 			function (tag) {
 				var nodeVal = NS;
+				var node = null;
 				$.each(venueChildNodes,function(index,elt) {
 					if (elt.tagName == tag) {
+						node = elt;
 						nodeVal = getNodeValue(elt, true);
 						verified(nodeVal, 'nodeVal');
 						nodeVal = nodeVal.replace(/\s+/g, WS).trim();

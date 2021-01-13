@@ -1,1564 +1,1566 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2020 rel. 2 (x64) (http://www.altova.com) by  (US SECURITIES EXCHANGE COMMISSION) -->
 <!--
 This sample file was created by staff of the U.S. Securities and Exchange Commission.
 Data and content created by government employees within the scope of their employment
 are not subject to domestic copyright protection. 17 U.S.C. 105.
 -->
 <heldOrderRoutingPublicReport xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="oh-20191231.xsd">
-  <version>1.2</version>
-  <bd>Ziffren, Brittenham, Branca, Fisher, Gill-Lurie, Stifelman, Johnson &amp; Wolf, Inc.</bd>
-  <year>2020</year>
-  <qtr>1</qtr>
-  <timestamp>2020-04-01T22:55:48Z</timestamp>
-  <rMonthly>
-    <year>2020</year>
-    <mon>1</mon>
-    <rSP500>
-      <ndoPct>13.60</ndoPct>
-      <ndoMarketPct>0.00</ndoMarketPct>
-      <ndoMarketableLimitPct>1.10</ndoMarketableLimitPct>
-      <ndoNonmarketableLimitPct>1.00</ndoNonmarketableLimitPct>
-      <ndoOtherPct>97.90</ndoOtherPct>
-      <rVenues>
-        <rVenue>
-          <name>New York ... Stock Exchange, LLC.</name>
-          <mic>XNYS</mic>
-          <orderPct>39.80</orderPct>
-          <marketPct>36.70</marketPct>
-          <marketableLimitPct>10.00</marketableLimitPct>
-          <nonMarketableLimitPct>39.00</nonMarketableLimitPct>
-          <otherPct>29.50</otherPct>
-          <netPmtPaidRecvMarketOrdersUsd>1000</netPmtPaidRecvMarketOrdersUsd>
-          <netPmtPaidRecvMarketOrdersCph>0.0021</netPmtPaidRecvMarketOrdersCph>
-          <netPmtPaidRecvMarketableLimitOrdersUsd>1000</netPmtPaidRecvMarketableLimitOrdersUsd>
-          <netPmtPaidRecvMarketableLimitOrdersCph>0.0021</netPmtPaidRecvMarketableLimitOrdersCph>
-          <netPmtPaidRecvNonMarketableLimitOrdersUsd>1000</netPmtPaidRecvNonMarketableLimitOrdersUsd>
-          <netPmtPaidRecvNonMarketableLimitOrdersCph>0.0021</netPmtPaidRecvNonMarketableLimitOrdersCph>
-          <netPmtPaidRecvOtherOrdersUsd>1000</netPmtPaidRecvOtherOrdersUsd>
-          <netPmtPaidRecvOtherOrdersCph>0.0021</netPmtPaidRecvOtherOrdersCph>
-          <materialAspects>[Insert discussion of the material ... aspects of the relationship with this ... venue pursuant to rule 606(a)(1)(iv).]</materialAspects>
-        </rVenue>
-        <rVenue>
-          <name>NYSE Arca, Inc.</name>
-          <mic>ARCA</mic>
-          <orderPct>11.70</orderPct>
-          <marketPct>1.10</marketPct>
-          <marketableLimitPct>10.00</marketableLimitPct>
-          <nonMarketableLimitPct>2.40</nonMarketableLimitPct>
-          <otherPct>11.70</otherPct>
-          <netPmtPaidRecvMarketOrdersUsd>1000</netPmtPaidRecvMarketOrdersUsd>
-          <netPmtPaidRecvMarketOrdersCph>0.0021</netPmtPaidRecvMarketOrdersCph>
-          <netPmtPaidRecvMarketableLimitOrdersUsd>1000</netPmtPaidRecvMarketableLimitOrdersUsd>
-          <netPmtPaidRecvMarketableLimitOrdersCph>0.0021</netPmtPaidRecvMarketableLimitOrdersCph>
-          <netPmtPaidRecvNonMarketableLimitOrdersUsd>1000</netPmtPaidRecvNonMarketableLimitOrdersUsd>
-          <netPmtPaidRecvNonMarketableLimitOrdersCph>0.0021</netPmtPaidRecvNonMarketableLimitOrdersCph>
-          <netPmtPaidRecvOtherOrdersUsd>1000</netPmtPaidRecvOtherOrdersUsd>
-          <netPmtPaidRecvOtherOrdersCph>0.0021</netPmtPaidRecvOtherOrdersCph>
-          <materialAspects>[Insert discussion of the material aspects of the relationship with this venue pursuant to rule 606(a)(1)(iv).]</materialAspects>
-        </rVenue>
-        <rVenue>
-          <name>BATS Exchange, Inc.</name>
-          <mic>BATS</mic>
-          <orderPct>13.20</orderPct>
-          <marketPct>6.80</marketPct>
-          <marketableLimitPct>3.00</marketableLimitPct>
-          <nonMarketableLimitPct>4.40</nonMarketableLimitPct>
-          <otherPct>13.30</otherPct>
-          <netPmtPaidRecvMarketOrdersUsd>1000</netPmtPaidRecvMarketOrdersUsd>
-          <netPmtPaidRecvMarketOrdersCph>0.0021</netPmtPaidRecvMarketOrdersCph>
-          <netPmtPaidRecvMarketableLimitOrdersUsd>1000</netPmtPaidRecvMarketableLimitOrdersUsd>
-          <netPmtPaidRecvMarketableLimitOrdersCph>0.0021</netPmtPaidRecvMarketableLimitOrdersCph>
-          <netPmtPaidRecvNonMarketableLimitOrdersUsd>1000</netPmtPaidRecvNonMarketableLimitOrdersUsd>
-          <netPmtPaidRecvNonMarketableLimitOrdersCph>0.0021</netPmtPaidRecvNonMarketableLimitOrdersCph>
-          <netPmtPaidRecvOtherOrdersUsd>1000</netPmtPaidRecvOtherOrdersUsd>
-          <netPmtPaidRecvOtherOrdersCph>0.0021</netPmtPaidRecvOtherOrdersCph>
-          <materialAspects>[Insert discussion of the material aspects of the relationship with this venue pursuant to rule 606(a)(1)(iv).]</materialAspects>
-        </rVenue>
-        <rVenue>
-          <name>EDGX Exchange, Inc.</name>
-          <mic>EDGX</mic>
-          <orderPct>11.70</orderPct>
-          <marketPct>1.10</marketPct>
-          <marketableLimitPct>3.00</marketableLimitPct>
-          <nonMarketableLimitPct>9.40</nonMarketableLimitPct>
-          <otherPct>11.70</otherPct>
-          <netPmtPaidRecvMarketOrdersUsd>1000</netPmtPaidRecvMarketOrdersUsd>
-          <netPmtPaidRecvMarketOrdersCph>0.0021</netPmtPaidRecvMarketOrdersCph>
-          <netPmtPaidRecvMarketableLimitOrdersUsd>1000</netPmtPaidRecvMarketableLimitOrdersUsd>
-          <netPmtPaidRecvMarketableLimitOrdersCph>0.0021</netPmtPaidRecvMarketableLimitOrdersCph>
-          <netPmtPaidRecvNonMarketableLimitOrdersUsd>1000</netPmtPaidRecvNonMarketableLimitOrdersUsd>
-          <netPmtPaidRecvNonMarketableLimitOrdersCph>0.0021</netPmtPaidRecvNonMarketableLimitOrdersCph>
-          <netPmtPaidRecvOtherOrdersUsd>1000</netPmtPaidRecvOtherOrdersUsd>
-          <netPmtPaidRecvOtherOrdersCph>0.0021</netPmtPaidRecvOtherOrdersCph>
-          <materialAspects>[Insert discussion of the material aspects of the relationship with this venue pursuant to rule 606(a)(1)(iv).]</materialAspects>
-        </rVenue>
-        <rVenue>
-          <name>The Nasdaq Stock Market LLC.</name>
-          <mic>XNAS</mic>
-          <orderPct>6.80</orderPct>
-          <marketPct>2.30</marketPct>
-          <marketableLimitPct>3.00</marketableLimitPct>
-          <nonMarketableLimitPct>21.70</nonMarketableLimitPct>
-          <otherPct>6.50</otherPct>
-          <netPmtPaidRecvMarketOrdersUsd>1000</netPmtPaidRecvMarketOrdersUsd>
-          <netPmtPaidRecvMarketOrdersCph>0.0021</netPmtPaidRecvMarketOrdersCph>
-          <netPmtPaidRecvMarketableLimitOrdersUsd>1000</netPmtPaidRecvMarketableLimitOrdersUsd>
-          <netPmtPaidRecvMarketableLimitOrdersCph>0.0021</netPmtPaidRecvMarketableLimitOrdersCph>
-          <netPmtPaidRecvNonMarketableLimitOrdersUsd>1000</netPmtPaidRecvNonMarketableLimitOrdersUsd>
-          <netPmtPaidRecvNonMarketableLimitOrdersCph>0.0021</netPmtPaidRecvNonMarketableLimitOrdersCph>
-          <netPmtPaidRecvOtherOrdersUsd>1000</netPmtPaidRecvOtherOrdersUsd>
-          <netPmtPaidRecvOtherOrdersCph>0.0021</netPmtPaidRecvOtherOrdersCph>
-          <materialAspects>[Insert discussion of the material aspects of the relationship with this venue pursuant to rule 606(a)(1)(iv).]</materialAspects>
-        </rVenue>
-        <rVenue>
-          <name>B. Roker Exec and Clrng</name>
-          <mic>180T</mic>
-          <orderPct>6.10</orderPct>
-          <marketPct>9.50</marketPct>
-          <marketableLimitPct>0.40</marketableLimitPct>
-          <nonMarketableLimitPct>0.10</nonMarketableLimitPct>
-          <otherPct>6.20</otherPct>
-          <netPmtPaidRecvMarketOrdersUsd>1000</netPmtPaidRecvMarketOrdersUsd>
-          <netPmtPaidRecvMarketOrdersCph>0.0021</netPmtPaidRecvMarketOrdersCph>
-          <netPmtPaidRecvMarketableLimitOrdersUsd>1000</netPmtPaidRecvMarketableLimitOrdersUsd>
-          <netPmtPaidRecvMarketableLimitOrdersCph>0.0021</netPmtPaidRecvMarketableLimitOrdersCph>
-          <netPmtPaidRecvNonMarketableLimitOrdersUsd>1000</netPmtPaidRecvNonMarketableLimitOrdersUsd>
-          <netPmtPaidRecvNonMarketableLimitOrdersCph>0.0021</netPmtPaidRecvNonMarketableLimitOrdersCph>
-          <netPmtPaidRecvOtherOrdersUsd>1000</netPmtPaidRecvOtherOrdersUsd>
-          <netPmtPaidRecvOtherOrdersCph>0.0021</netPmtPaidRecvOtherOrdersCph>
-          <materialAspects>[Insert discussion of the material aspects of the relationship with this venue pursuant to rule 606(a)(1)(iv).]</materialAspects>
-        </rVenue>
-        <rVenue>
-          <name>EDGA Exchange,Inc.</name>
-          <mic>EDGA</mic>
-          <orderPct>3.90</orderPct>
-          <marketPct>3.40</marketPct>
-          <marketableLimitPct>3.00</marketableLimitPct>
-          <nonMarketableLimitPct>0.10</nonMarketableLimitPct>
-          <otherPct>3.90</otherPct>
-          <netPmtPaidRecvMarketOrdersUsd>1000</netPmtPaidRecvMarketOrdersUsd>
-          <netPmtPaidRecvMarketOrdersCph>0.0021</netPmtPaidRecvMarketOrdersCph>
-          <netPmtPaidRecvMarketableLimitOrdersUsd>1000</netPmtPaidRecvMarketableLimitOrdersUsd>
-          <netPmtPaidRecvMarketableLimitOrdersCph>0.0021</netPmtPaidRecvMarketableLimitOrdersCph>
-          <netPmtPaidRecvNonMarketableLimitOrdersUsd>1000</netPmtPaidRecvNonMarketableLimitOrdersUsd>
-          <netPmtPaidRecvNonMarketableLimitOrdersCph>0.0021</netPmtPaidRecvNonMarketableLimitOrdersCph>
-          <netPmtPaidRecvOtherOrdersUsd>1000</netPmtPaidRecvOtherOrdersUsd>
-          <netPmtPaidRecvOtherOrdersCph>0.0021</netPmtPaidRecvOtherOrdersCph>
-          <materialAspects>[Insert discussion of the material aspects of the relationship with this venue pursuant to rule 606(a)(1)(iv).]</materialAspects>
-        </rVenue>
-        <rVenue>
-          <name>TUBS Exchange, Inc.</name>
-          <mic>TUBS</mic>
-          <orderPct>3.30</orderPct>
-          <marketPct>0.00</marketPct>
-          <marketableLimitPct>1.70</marketableLimitPct>
-          <nonMarketableLimitPct>1.00</nonMarketableLimitPct>
-          <otherPct>3.40</otherPct>
-          <netPmtPaidRecvMarketOrdersUsd>1000</netPmtPaidRecvMarketOrdersUsd>
-          <netPmtPaidRecvMarketOrdersCph>0.0021</netPmtPaidRecvMarketOrdersCph>
-          <netPmtPaidRecvMarketableLimitOrdersUsd>1000</netPmtPaidRecvMarketableLimitOrdersUsd>
-          <netPmtPaidRecvMarketableLimitOrdersCph>0.0021</netPmtPaidRecvMarketableLimitOrdersCph>
-          <netPmtPaidRecvNonMarketableLimitOrdersUsd>1000</netPmtPaidRecvNonMarketableLimitOrdersUsd>
-          <netPmtPaidRecvNonMarketableLimitOrdersCph>0.0021</netPmtPaidRecvNonMarketableLimitOrdersCph>
-          <netPmtPaidRecvOtherOrdersUsd>1000</netPmtPaidRecvOtherOrdersUsd>
-          <netPmtPaidRecvOtherOrdersCph>0.0021</netPmtPaidRecvOtherOrdersCph>
-          <materialAspects>[Insert discussion of the material aspects of the relationship with this venue pursuant to rule 606(a)(1)(iv).]</materialAspects>
-        </rVenue>
-        <rVenue>
-          <name>NASDAQ OMX BX.</name>
-          <mic>BOSE</mic>
-          <orderPct>2.10</orderPct>
-          <marketPct>0.00</marketPct>
-          <marketableLimitPct>1.60</marketableLimitPct>
-          <nonMarketableLimitPct>1.00</nonMarketableLimitPct>
-          <otherPct>2.10</otherPct>
-          <netPmtPaidRecvMarketOrdersUsd>1000</netPmtPaidRecvMarketOrdersUsd>
-          <netPmtPaidRecvMarketOrdersCph>0.0021</netPmtPaidRecvMarketOrdersCph>
-          <netPmtPaidRecvMarketableLimitOrdersUsd>1000</netPmtPaidRecvMarketableLimitOrdersUsd>
-          <netPmtPaidRecvMarketableLimitOrdersCph>0.0021</netPmtPaidRecvMarketableLimitOrdersCph>
-          <netPmtPaidRecvNonMarketableLimitOrdersUsd>1000</netPmtPaidRecvNonMarketableLimitOrdersUsd>
-          <netPmtPaidRecvNonMarketableLimitOrdersCph>0.0021</netPmtPaidRecvNonMarketableLimitOrdersCph>
-          <netPmtPaidRecvOtherOrdersUsd>1000</netPmtPaidRecvOtherOrdersUsd>
-          <netPmtPaidRecvOtherOrdersCph>0.0021</netPmtPaidRecvOtherOrdersCph>
-          <materialAspects>[Insert discussion of the material aspects of the relationship with this venue pursuant to rule 606(a)(1)(iv).]</materialAspects>
-        </rVenue>
-      </rVenues>
-    </rSP500>
-    <rOtherStocks>
-      <ndoPct>13.60</ndoPct>
-      <ndoMarketPct>0.00</ndoMarketPct>
-      <ndoMarketableLimitPct>1.10</ndoMarketableLimitPct>
-      <ndoNonmarketableLimitPct>1.00</ndoNonmarketableLimitPct>
-      <ndoOtherPct>97.90</ndoOtherPct>
-      <rVenues>
-        <rVenue>
-          <name>New York Stock Exchange LLC.</name>
-          <mic>NYSE</mic>
-          <orderPct>39.80</orderPct>
-          <marketPct>36.70</marketPct>
-          <marketableLimitPct>10.00</marketableLimitPct>
-          <nonMarketableLimitPct>39.00</nonMarketableLimitPct>
-          <otherPct>29.50</otherPct>
-          <netPmtPaidRecvMarketOrdersUsd>1000</netPmtPaidRecvMarketOrdersUsd>
-          <netPmtPaidRecvMarketOrdersCph>0.0021</netPmtPaidRecvMarketOrdersCph>
-          <netPmtPaidRecvMarketableLimitOrdersUsd>1000</netPmtPaidRecvMarketableLimitOrdersUsd>
-          <netPmtPaidRecvMarketableLimitOrdersCph>0.0021</netPmtPaidRecvMarketableLimitOrdersCph>
-          <netPmtPaidRecvNonMarketableLimitOrdersUsd>1000</netPmtPaidRecvNonMarketableLimitOrdersUsd>
-          <netPmtPaidRecvNonMarketableLimitOrdersCph>0.0021</netPmtPaidRecvNonMarketableLimitOrdersCph>
-          <netPmtPaidRecvOtherOrdersUsd>1000</netPmtPaidRecvOtherOrdersUsd>
-          <netPmtPaidRecvOtherOrdersCph>0.0021</netPmtPaidRecvOtherOrdersCph>
-          <materialAspects>[Insert discussion of the material aspects of the relationship with this venue pursuant to rule 606(a)(1)(iv).]</materialAspects>
-        </rVenue>
-        <rVenue>
-          <name>NYSE Arca, Inc.</name>
-          <mic>ARCA</mic>
-          <orderPct>11.70</orderPct>
-          <marketPct>1.10</marketPct>
-          <marketableLimitPct>10.00</marketableLimitPct>
-          <nonMarketableLimitPct>2.40</nonMarketableLimitPct>
-          <otherPct>11.70</otherPct>
-          <netPmtPaidRecvMarketOrdersUsd>1000</netPmtPaidRecvMarketOrdersUsd>
-          <netPmtPaidRecvMarketOrdersCph>0.0021</netPmtPaidRecvMarketOrdersCph>
-          <netPmtPaidRecvMarketableLimitOrdersUsd>1000</netPmtPaidRecvMarketableLimitOrdersUsd>
-          <netPmtPaidRecvMarketableLimitOrdersCph>0.0021</netPmtPaidRecvMarketableLimitOrdersCph>
-          <netPmtPaidRecvNonMarketableLimitOrdersUsd>1000</netPmtPaidRecvNonMarketableLimitOrdersUsd>
-          <netPmtPaidRecvNonMarketableLimitOrdersCph>0.0021</netPmtPaidRecvNonMarketableLimitOrdersCph>
-          <netPmtPaidRecvOtherOrdersUsd>1000</netPmtPaidRecvOtherOrdersUsd>
-          <netPmtPaidRecvOtherOrdersCph>0.0021</netPmtPaidRecvOtherOrdersCph>
-          <materialAspects>[Insert discussion of the material aspects of the relationship with this venue pursuant to rule 606(a)(1)(iv).]</materialAspects>
-        </rVenue>
-        <rVenue>
-          <name>BATS Exchange, Inc.</name>
-          <mic>BATS</mic>
-          <orderPct>13.20</orderPct>
-          <marketPct>6.80</marketPct>
-          <marketableLimitPct>3.00</marketableLimitPct>
-          <nonMarketableLimitPct>4.40</nonMarketableLimitPct>
-          <otherPct>13.30</otherPct>
-          <netPmtPaidRecvMarketOrdersUsd>1000</netPmtPaidRecvMarketOrdersUsd>
-          <netPmtPaidRecvMarketOrdersCph>0.0021</netPmtPaidRecvMarketOrdersCph>
-          <netPmtPaidRecvMarketableLimitOrdersUsd>1000</netPmtPaidRecvMarketableLimitOrdersUsd>
-          <netPmtPaidRecvMarketableLimitOrdersCph>0.0021</netPmtPaidRecvMarketableLimitOrdersCph>
-          <netPmtPaidRecvNonMarketableLimitOrdersUsd>1000</netPmtPaidRecvNonMarketableLimitOrdersUsd>
-          <netPmtPaidRecvNonMarketableLimitOrdersCph>0.0021</netPmtPaidRecvNonMarketableLimitOrdersCph>
-          <netPmtPaidRecvOtherOrdersUsd>1000</netPmtPaidRecvOtherOrdersUsd>
-          <netPmtPaidRecvOtherOrdersCph>0.0021</netPmtPaidRecvOtherOrdersCph>
-          <materialAspects>[Insert discussion of the material aspects of the relationship with this venue pursuant to rule 606(a)(1)(iv).]</materialAspects>
-        </rVenue>
-        <rVenue>
-          <name>EDGX Exchange, Inc.</name>
-          <mic>EDGX</mic>
-          <orderPct>11.70</orderPct>
-          <marketPct>1.10</marketPct>
-          <marketableLimitPct>3.00</marketableLimitPct>
-          <nonMarketableLimitPct>9.40</nonMarketableLimitPct>
-          <otherPct>11.70</otherPct>
-          <netPmtPaidRecvMarketOrdersUsd>1000</netPmtPaidRecvMarketOrdersUsd>
-          <netPmtPaidRecvMarketOrdersCph>0.0021</netPmtPaidRecvMarketOrdersCph>
-          <netPmtPaidRecvMarketableLimitOrdersUsd>1000</netPmtPaidRecvMarketableLimitOrdersUsd>
-          <netPmtPaidRecvMarketableLimitOrdersCph>0.0021</netPmtPaidRecvMarketableLimitOrdersCph>
-          <netPmtPaidRecvNonMarketableLimitOrdersUsd>1000</netPmtPaidRecvNonMarketableLimitOrdersUsd>
-          <netPmtPaidRecvNonMarketableLimitOrdersCph>0.0021</netPmtPaidRecvNonMarketableLimitOrdersCph>
-          <netPmtPaidRecvOtherOrdersUsd>1000</netPmtPaidRecvOtherOrdersUsd>
-          <netPmtPaidRecvOtherOrdersCph>0.0021</netPmtPaidRecvOtherOrdersCph>
-          <materialAspects>[Insert discussion of the material aspects of the relationship with this venue pursuant to rule 606(a)(1)(iv).]</materialAspects>
-        </rVenue>
-        <rVenue>
-          <name>The Nasdaq Stock Market LLC.</name>
-          <mic>XNAS</mic>
-          <orderPct>6.80</orderPct>
-          <marketPct>2.30</marketPct>
-          <marketableLimitPct>3.00</marketableLimitPct>
-          <nonMarketableLimitPct>21.70</nonMarketableLimitPct>
-          <otherPct>6.50</otherPct>
-          <netPmtPaidRecvMarketOrdersUsd>1000</netPmtPaidRecvMarketOrdersUsd>
-          <netPmtPaidRecvMarketOrdersCph>0.0021</netPmtPaidRecvMarketOrdersCph>
-          <netPmtPaidRecvMarketableLimitOrdersUsd>1000</netPmtPaidRecvMarketableLimitOrdersUsd>
-          <netPmtPaidRecvMarketableLimitOrdersCph>0.0021</netPmtPaidRecvMarketableLimitOrdersCph>
-          <netPmtPaidRecvNonMarketableLimitOrdersUsd>1000</netPmtPaidRecvNonMarketableLimitOrdersUsd>
-          <netPmtPaidRecvNonMarketableLimitOrdersCph>0.0021</netPmtPaidRecvNonMarketableLimitOrdersCph>
-          <netPmtPaidRecvOtherOrdersUsd>1000</netPmtPaidRecvOtherOrdersUsd>
-          <netPmtPaidRecvOtherOrdersCph>0.0021</netPmtPaidRecvOtherOrdersCph>
-          <materialAspects>[Insert discussion of the material aspects of the relationship with this venue pursuant to rule 606(a)(1)(iv).]</materialAspects>
-        </rVenue>
-        <rVenue>
-          <name>B. Roker Exec and Clrng</name>
-          <mic>180T</mic>
-          <orderPct>6.10</orderPct>
-          <marketPct>9.50</marketPct>
-          <marketableLimitPct>0.40</marketableLimitPct>
-          <nonMarketableLimitPct>0.10</nonMarketableLimitPct>
-          <otherPct>6.20</otherPct>
-          <netPmtPaidRecvMarketOrdersUsd>1000</netPmtPaidRecvMarketOrdersUsd>
-          <netPmtPaidRecvMarketOrdersCph>0.0021</netPmtPaidRecvMarketOrdersCph>
-          <netPmtPaidRecvMarketableLimitOrdersUsd>1000</netPmtPaidRecvMarketableLimitOrdersUsd>
-          <netPmtPaidRecvMarketableLimitOrdersCph>0.0021</netPmtPaidRecvMarketableLimitOrdersCph>
-          <netPmtPaidRecvNonMarketableLimitOrdersUsd>1000</netPmtPaidRecvNonMarketableLimitOrdersUsd>
-          <netPmtPaidRecvNonMarketableLimitOrdersCph>0.0021</netPmtPaidRecvNonMarketableLimitOrdersCph>
-          <netPmtPaidRecvOtherOrdersUsd>1000</netPmtPaidRecvOtherOrdersUsd>
-          <netPmtPaidRecvOtherOrdersCph>0.0021</netPmtPaidRecvOtherOrdersCph>
-          <materialAspects>[Insert discussion of the material aspects of the relationship with this venue pursuant to rule 606(a)(1)(iv).]</materialAspects>
-        </rVenue>
-        <rVenue>
-          <name>EDGA Exchange,Inc.</name>
-          <mic>EDGA</mic>
-          <orderPct>3.90</orderPct>
-          <marketPct>3.40</marketPct>
-          <marketableLimitPct>3.00</marketableLimitPct>
-          <nonMarketableLimitPct>0.10</nonMarketableLimitPct>
-          <otherPct>3.90</otherPct>
-          <netPmtPaidRecvMarketOrdersUsd>1000</netPmtPaidRecvMarketOrdersUsd>
-          <netPmtPaidRecvMarketOrdersCph>0.0021</netPmtPaidRecvMarketOrdersCph>
-          <netPmtPaidRecvMarketableLimitOrdersUsd>1000</netPmtPaidRecvMarketableLimitOrdersUsd>
-          <netPmtPaidRecvMarketableLimitOrdersCph>0.0021</netPmtPaidRecvMarketableLimitOrdersCph>
-          <netPmtPaidRecvNonMarketableLimitOrdersUsd>1000</netPmtPaidRecvNonMarketableLimitOrdersUsd>
-          <netPmtPaidRecvNonMarketableLimitOrdersCph>0.0021</netPmtPaidRecvNonMarketableLimitOrdersCph>
-          <netPmtPaidRecvOtherOrdersUsd>1000</netPmtPaidRecvOtherOrdersUsd>
-          <netPmtPaidRecvOtherOrdersCph>0.0021</netPmtPaidRecvOtherOrdersCph>
-          <materialAspects>[Insert discussion of the material aspects of the relationship with this venue pursuant to rule 606(a)(1)(iv).]</materialAspects>
-        </rVenue>
-        <rVenue>
-          <name>TUBS Exchange, Inc.</name>
-          <mic>TUBS</mic>
-          <orderPct>3.30</orderPct>
-          <marketPct>0.00</marketPct>
-          <marketableLimitPct>1.70</marketableLimitPct>
-          <nonMarketableLimitPct>1.00</nonMarketableLimitPct>
-          <otherPct>3.40</otherPct>
-          <netPmtPaidRecvMarketOrdersUsd>1000</netPmtPaidRecvMarketOrdersUsd>
-          <netPmtPaidRecvMarketOrdersCph>0.0021</netPmtPaidRecvMarketOrdersCph>
-          <netPmtPaidRecvMarketableLimitOrdersUsd>1000</netPmtPaidRecvMarketableLimitOrdersUsd>
-          <netPmtPaidRecvMarketableLimitOrdersCph>0.0021</netPmtPaidRecvMarketableLimitOrdersCph>
-          <netPmtPaidRecvNonMarketableLimitOrdersUsd>1000</netPmtPaidRecvNonMarketableLimitOrdersUsd>
-          <netPmtPaidRecvNonMarketableLimitOrdersCph>0.0021</netPmtPaidRecvNonMarketableLimitOrdersCph>
-          <netPmtPaidRecvOtherOrdersUsd>1000</netPmtPaidRecvOtherOrdersUsd>
-          <netPmtPaidRecvOtherOrdersCph>0.0021</netPmtPaidRecvOtherOrdersCph>
-          <materialAspects>[Insert discussion of the material aspects of the relationship with this venue pursuant to rule 606(a)(1)(iv).]</materialAspects>
-        </rVenue>
-        <rVenue>
-          <name>NASDAQ OMX BX.</name>
-          <mic>BOSE</mic>
-          <orderPct>2.10</orderPct>
-          <marketPct>0.00</marketPct>
-          <marketableLimitPct>1.60</marketableLimitPct>
-          <nonMarketableLimitPct>1.00</nonMarketableLimitPct>
-          <otherPct>2.10</otherPct>
-          <netPmtPaidRecvMarketOrdersUsd>1000</netPmtPaidRecvMarketOrdersUsd>
-          <netPmtPaidRecvMarketOrdersCph>0.0021</netPmtPaidRecvMarketOrdersCph>
-          <netPmtPaidRecvMarketableLimitOrdersUsd>1000</netPmtPaidRecvMarketableLimitOrdersUsd>
-          <netPmtPaidRecvMarketableLimitOrdersCph>0.0021</netPmtPaidRecvMarketableLimitOrdersCph>
-          <netPmtPaidRecvNonMarketableLimitOrdersUsd>1000</netPmtPaidRecvNonMarketableLimitOrdersUsd>
-          <netPmtPaidRecvNonMarketableLimitOrdersCph>0.0021</netPmtPaidRecvNonMarketableLimitOrdersCph>
-          <netPmtPaidRecvOtherOrdersUsd>1000</netPmtPaidRecvOtherOrdersUsd>
-          <netPmtPaidRecvOtherOrdersCph>0.0021</netPmtPaidRecvOtherOrdersCph>
-          <materialAspects>[Insert discussion of the material aspects of the relationship with this venue pursuant to rule 606(a)(1)(iv).]</materialAspects>
-        </rVenue>
-      </rVenues>
-    </rOtherStocks>
-    <rOptions>
-      <ndoPct>53.90</ndoPct>
-      <ndoMarketPct>0.00</ndoMarketPct>
-      <ndoMarketableLimitPct>0.50</ndoMarketableLimitPct>
-      <ndoNonmarketableLimitPct>0.60</ndoNonmarketableLimitPct>
-      <ndoOtherPct>98.90</ndoOtherPct>
-      <rVenues>
-        <rVenue>
-          <name>BATS Options Exchange.</name>
-          <mic>BATO</mic>
-          <orderPct>21.80</orderPct>
-          <marketPct>0.00</marketPct>
-          <marketableLimitPct>10.00</marketableLimitPct>
-          <nonMarketableLimitPct>7.30</nonMarketableLimitPct>
-          <otherPct>21.90</otherPct>
-          <netPmtPaidRecvMarketOrdersUsd>1000</netPmtPaidRecvMarketOrdersUsd>
-          <netPmtPaidRecvMarketOrdersCph>0.0021</netPmtPaidRecvMarketOrdersCph>
-          <netPmtPaidRecvMarketableLimitOrdersUsd>1000</netPmtPaidRecvMarketableLimitOrdersUsd>
-          <netPmtPaidRecvMarketableLimitOrdersCph>0.0021</netPmtPaidRecvMarketableLimitOrdersCph>
-          <netPmtPaidRecvNonMarketableLimitOrdersUsd>1000</netPmtPaidRecvNonMarketableLimitOrdersUsd>
-          <netPmtPaidRecvNonMarketableLimitOrdersCph>0.0021</netPmtPaidRecvNonMarketableLimitOrdersCph>
-          <netPmtPaidRecvOtherOrdersUsd>1000</netPmtPaidRecvOtherOrdersUsd>
-          <netPmtPaidRecvOtherOrdersCph>0.0021</netPmtPaidRecvOtherOrdersCph>
-          <materialAspects>[Insert discussion of the material aspects of the relationship with this venue pursuant to rule 606(a)(1)(iv).]</materialAspects>
-        </rVenue>
-        <rVenue>
-          <name>NYSE Arca, Inc.</name>
-          <mic>PCXX</mic>
-          <orderPct>13.60</orderPct>
-          <marketPct>0.00</marketPct>
-          <marketableLimitPct>10.30</marketableLimitPct>
-          <nonMarketableLimitPct>2.00</nonMarketableLimitPct>
-          <otherPct>13.70</otherPct>
-          <netPmtPaidRecvMarketOrdersUsd>1000</netPmtPaidRecvMarketOrdersUsd>
-          <netPmtPaidRecvMarketOrdersCph>0.0021</netPmtPaidRecvMarketOrdersCph>
-          <netPmtPaidRecvMarketableLimitOrdersUsd>1000</netPmtPaidRecvMarketableLimitOrdersUsd>
-          <netPmtPaidRecvMarketableLimitOrdersCph>0.0021</netPmtPaidRecvMarketableLimitOrdersCph>
-          <netPmtPaidRecvNonMarketableLimitOrdersUsd>1000</netPmtPaidRecvNonMarketableLimitOrdersUsd>
-          <netPmtPaidRecvNonMarketableLimitOrdersCph>0.0021</netPmtPaidRecvNonMarketableLimitOrdersCph>
-          <netPmtPaidRecvOtherOrdersUsd>1000</netPmtPaidRecvOtherOrdersUsd>
-          <netPmtPaidRecvOtherOrdersCph>0.0021</netPmtPaidRecvOtherOrdersCph>
-          <materialAspects>[Insert discussion of the material aspects of the relationship with this venue pursuant to rule 606(a)(1)(iv).]</materialAspects>
-        </rVenue>
-        <rVenue>
-          <name>International Securities Exch</name>
-          <mic>ISEE</mic>
-          <orderPct>13.20</orderPct>
-          <marketPct>0.00</marketPct>
-          <marketableLimitPct>7.20</marketableLimitPct>
-          <nonMarketableLimitPct>2.00</nonMarketableLimitPct>
-          <otherPct>13.70</otherPct>
-          <netPmtPaidRecvMarketOrdersUsd>1000</netPmtPaidRecvMarketOrdersUsd>
-          <netPmtPaidRecvMarketOrdersCph>0.0021</netPmtPaidRecvMarketOrdersCph>
-          <netPmtPaidRecvMarketableLimitOrdersUsd>1000</netPmtPaidRecvMarketableLimitOrdersUsd>
-          <netPmtPaidRecvMarketableLimitOrdersCph>0.0021</netPmtPaidRecvMarketableLimitOrdersCph>
-          <netPmtPaidRecvNonMarketableLimitOrdersUsd>1000</netPmtPaidRecvNonMarketableLimitOrdersUsd>
-          <netPmtPaidRecvNonMarketableLimitOrdersCph>0.0021</netPmtPaidRecvNonMarketableLimitOrdersCph>
-          <netPmtPaidRecvOtherOrdersUsd>1000</netPmtPaidRecvOtherOrdersUsd>
-          <netPmtPaidRecvOtherOrdersCph>0.0021</netPmtPaidRecvOtherOrdersCph>
-          <materialAspects>[Insert discussion of the material aspects of the relationship with this venue pursuant to rule 606(a)(1)(iv).]</materialAspects>
-        </rVenue>
-        <rVenue>
-          <name>Nasdaq Options Market LLC.</name>
-          <mic>NOMM</mic>
-          <orderPct>10.00</orderPct>
-          <marketPct>0.00</marketPct>
-          <marketableLimitPct>7.00</marketableLimitPct>
-          <nonMarketableLimitPct>8.90</nonMarketableLimitPct>
-          <otherPct>9.90</otherPct>
-          <netPmtPaidRecvMarketOrdersUsd>1000</netPmtPaidRecvMarketOrdersUsd>
-          <netPmtPaidRecvMarketOrdersCph>0.0021</netPmtPaidRecvMarketOrdersCph>
-          <netPmtPaidRecvMarketableLimitOrdersUsd>1000</netPmtPaidRecvMarketableLimitOrdersUsd>
-          <netPmtPaidRecvMarketableLimitOrdersCph>0.0021</netPmtPaidRecvMarketableLimitOrdersCph>
-          <netPmtPaidRecvNonMarketableLimitOrdersUsd>1000</netPmtPaidRecvNonMarketableLimitOrdersUsd>
-          <netPmtPaidRecvNonMarketableLimitOrdersCph>0.0021</netPmtPaidRecvNonMarketableLimitOrdersCph>
-          <netPmtPaidRecvOtherOrdersUsd>1000</netPmtPaidRecvOtherOrdersUsd>
-          <netPmtPaidRecvOtherOrdersCph>0.0021</netPmtPaidRecvOtherOrdersCph>
-          <materialAspects>[Insert discussion of the material aspects of the relationship with this venue pursuant to rule 606(a)(1)(iv).]</materialAspects>
-        </rVenue>
-        <rVenue>
-          <name>Chicago Board Options Exchange</name>
-          <mic>CBOE</mic>
-          <orderPct>14.70</orderPct>
-          <marketPct>0.00</marketPct>
-          <marketableLimitPct>7.00</marketableLimitPct>
-          <nonMarketableLimitPct>4.40</nonMarketableLimitPct>
-          <otherPct>14.70</otherPct>
-          <netPmtPaidRecvMarketOrdersUsd>1000</netPmtPaidRecvMarketOrdersUsd>
-          <netPmtPaidRecvMarketOrdersCph>0.0021</netPmtPaidRecvMarketOrdersCph>
-          <netPmtPaidRecvMarketableLimitOrdersUsd>1000</netPmtPaidRecvMarketableLimitOrdersUsd>
-          <netPmtPaidRecvMarketableLimitOrdersCph>0.0021</netPmtPaidRecvMarketableLimitOrdersCph>
-          <netPmtPaidRecvNonMarketableLimitOrdersUsd>1000</netPmtPaidRecvNonMarketableLimitOrdersUsd>
-          <netPmtPaidRecvNonMarketableLimitOrdersCph>0.0021</netPmtPaidRecvNonMarketableLimitOrdersCph>
-          <netPmtPaidRecvOtherOrdersUsd>1000</netPmtPaidRecvOtherOrdersUsd>
-          <netPmtPaidRecvOtherOrdersCph>0.0021</netPmtPaidRecvOtherOrdersCph>
-          <materialAspects>[Insert discussion of the material aspects of the relationship with this venue pursuant to rule 606(a)(1)(iv).]</materialAspects>
-        </rVenue>
-        <rVenue>
-          <name>NYSE MKT, LLC</name>
-          <mic>AMEX</mic>
-          <orderPct>8.10</orderPct>
-          <marketPct>0.00</marketPct>
-          <marketableLimitPct>3.60</marketableLimitPct>
-          <nonMarketableLimitPct>4.40</nonMarketableLimitPct>
-          <otherPct>8.10</otherPct>
-          <netPmtPaidRecvMarketOrdersUsd>1000</netPmtPaidRecvMarketOrdersUsd>
-          <netPmtPaidRecvMarketOrdersCph>0.0021</netPmtPaidRecvMarketOrdersCph>
-          <netPmtPaidRecvMarketableLimitOrdersUsd>1000</netPmtPaidRecvMarketableLimitOrdersUsd>
-          <netPmtPaidRecvMarketableLimitOrdersCph>0.0021</netPmtPaidRecvMarketableLimitOrdersCph>
-          <netPmtPaidRecvNonMarketableLimitOrdersUsd>1000</netPmtPaidRecvNonMarketableLimitOrdersUsd>
-          <netPmtPaidRecvNonMarketableLimitOrdersCph>0.0021</netPmtPaidRecvNonMarketableLimitOrdersCph>
-          <netPmtPaidRecvOtherOrdersUsd>1000</netPmtPaidRecvOtherOrdersUsd>
-          <netPmtPaidRecvOtherOrdersCph>0.0021</netPmtPaidRecvOtherOrdersCph>
-          <materialAspects>[Insert discussion of the material aspects of the relationship with this venue pursuant to rule 606(a)(1)(iv).]</materialAspects>
-        </rVenue>
-        <rVenue>
-          <name>Nasdaq OMX PHLX,Inc</name>
-          <mic>PHLX</mic>
-          <orderPct>5.40</orderPct>
-          <marketPct>0.00</marketPct>
-          <marketableLimitPct>3.60</marketableLimitPct>
-          <nonMarketableLimitPct>1.30</nonMarketableLimitPct>
-          <otherPct>5.40</otherPct>
-          <netPmtPaidRecvMarketOrdersUsd>1000</netPmtPaidRecvMarketOrdersUsd>
-          <netPmtPaidRecvMarketOrdersCph>0.0021</netPmtPaidRecvMarketOrdersCph>
-          <netPmtPaidRecvMarketableLimitOrdersUsd>1000</netPmtPaidRecvMarketableLimitOrdersUsd>
-          <netPmtPaidRecvMarketableLimitOrdersCph>0.0021</netPmtPaidRecvMarketableLimitOrdersCph>
-          <netPmtPaidRecvNonMarketableLimitOrdersUsd>1000</netPmtPaidRecvNonMarketableLimitOrdersUsd>
-          <netPmtPaidRecvNonMarketableLimitOrdersCph>0.0021</netPmtPaidRecvNonMarketableLimitOrdersCph>
-          <netPmtPaidRecvOtherOrdersUsd>1000</netPmtPaidRecvOtherOrdersUsd>
-          <netPmtPaidRecvOtherOrdersCph>0.0021</netPmtPaidRecvOtherOrdersCph>
-          <materialAspects>[Insert discussion of the material aspects of the relationship with this venue pursuant to rule 606(a)(1)(iv).]</materialAspects>
-        </rVenue>
-        <rVenue>
-          <name>C2 Options Exchange</name>
-          <mic>COPT</mic>
-          <orderPct>5.10</orderPct>
-          <marketPct>0.00</marketPct>
-          <marketableLimitPct>2.10</marketableLimitPct>
-          <nonMarketableLimitPct>2.00</nonMarketableLimitPct>
-          <otherPct>5.20</otherPct>
-          <netPmtPaidRecvMarketOrdersUsd>1000</netPmtPaidRecvMarketOrdersUsd>
-          <netPmtPaidRecvMarketOrdersCph>0.0021</netPmtPaidRecvMarketOrdersCph>
-          <netPmtPaidRecvMarketableLimitOrdersUsd>1000</netPmtPaidRecvMarketableLimitOrdersUsd>
-          <netPmtPaidRecvMarketableLimitOrdersCph>0.0021</netPmtPaidRecvMarketableLimitOrdersCph>
-          <netPmtPaidRecvNonMarketableLimitOrdersUsd>1000</netPmtPaidRecvNonMarketableLimitOrdersUsd>
-          <netPmtPaidRecvNonMarketableLimitOrdersCph>0.0021</netPmtPaidRecvNonMarketableLimitOrdersCph>
-          <netPmtPaidRecvOtherOrdersUsd>1000</netPmtPaidRecvOtherOrdersUsd>
-          <netPmtPaidRecvOtherOrdersCph>0.0021</netPmtPaidRecvOtherOrdersCph>
-          <materialAspects>[Insert discussion of the material aspects of the relationship with this venue pursuant to rule 606(a)(1)(iv).]</materialAspects>
-        </rVenue>
-        <rVenue>
-          <name>Boston Options Exchange Group</name>
-          <mic>BOXX</mic>
-          <orderPct>3.90</orderPct>
-          <marketPct>0.00</marketPct>
-          <marketableLimitPct>2.00</marketableLimitPct>
-          <nonMarketableLimitPct>1.10</nonMarketableLimitPct>
-          <otherPct>3.90</otherPct>
-          <netPmtPaidRecvMarketOrdersUsd>1000</netPmtPaidRecvMarketOrdersUsd>
-          <netPmtPaidRecvMarketOrdersCph>0.0021</netPmtPaidRecvMarketOrdersCph>
-          <netPmtPaidRecvMarketableLimitOrdersUsd>1000</netPmtPaidRecvMarketableLimitOrdersUsd>
-          <netPmtPaidRecvMarketableLimitOrdersCph>0.0021</netPmtPaidRecvMarketableLimitOrdersCph>
-          <netPmtPaidRecvNonMarketableLimitOrdersUsd>1000</netPmtPaidRecvNonMarketableLimitOrdersUsd>
-          <netPmtPaidRecvNonMarketableLimitOrdersCph>0.0021</netPmtPaidRecvNonMarketableLimitOrdersCph>
-          <netPmtPaidRecvOtherOrdersUsd>1000</netPmtPaidRecvOtherOrdersUsd>
-          <netPmtPaidRecvOtherOrdersCph>0.0021</netPmtPaidRecvOtherOrdersCph>
-          <materialAspects>[Insert discussion of the material aspects of the relationship with this venue pursuant to rule 606(a)(1)(iv).]</materialAspects>
-        </rVenue>
-      </rVenues>
-    </rOptions>
-  </rMonthly>
-  <rMonthly>
-    <year>2020</year>
-    <mon>2</mon>
-    <rSP500>
-      <ndoPct>13.60</ndoPct>
-      <ndoMarketPct>0.00</ndoMarketPct>
-      <ndoMarketableLimitPct>1.10</ndoMarketableLimitPct>
-      <ndoNonmarketableLimitPct>1.00</ndoNonmarketableLimitPct>
-      <ndoOtherPct>97.90</ndoOtherPct>
-      <rVenues>
-        <rVenue>
-          <name>New York Stock Exchange LLC.</name>
-          <mic>NYSE</mic>
-          <orderPct>39.80</orderPct>
-          <marketPct>36.70</marketPct>
-          <marketableLimitPct>10.00</marketableLimitPct>
-          <nonMarketableLimitPct>39.00</nonMarketableLimitPct>
-          <otherPct>29.50</otherPct>
-          <netPmtPaidRecvMarketOrdersUsd>1000</netPmtPaidRecvMarketOrdersUsd>
-          <netPmtPaidRecvMarketOrdersCph>0.0021</netPmtPaidRecvMarketOrdersCph>
-          <netPmtPaidRecvMarketableLimitOrdersUsd>1000</netPmtPaidRecvMarketableLimitOrdersUsd>
-          <netPmtPaidRecvMarketableLimitOrdersCph>0.0021</netPmtPaidRecvMarketableLimitOrdersCph>
-          <netPmtPaidRecvNonMarketableLimitOrdersUsd>1000</netPmtPaidRecvNonMarketableLimitOrdersUsd>
-          <netPmtPaidRecvNonMarketableLimitOrdersCph>0.0021</netPmtPaidRecvNonMarketableLimitOrdersCph>
-          <netPmtPaidRecvOtherOrdersUsd>1000</netPmtPaidRecvOtherOrdersUsd>
-          <netPmtPaidRecvOtherOrdersCph>0.0021</netPmtPaidRecvOtherOrdersCph>
-          <materialAspects>[Insert discussion of the material aspects of the relationship with this venue pursuant to rule 606(a)(1)(iv).]</materialAspects>
-        </rVenue>
-        <rVenue>
-          <name>NYSE Arca, Inc.</name>
-          <mic>ARCA</mic>
-          <orderPct>11.70</orderPct>
-          <marketPct>1.10</marketPct>
-          <marketableLimitPct>10.00</marketableLimitPct>
-          <nonMarketableLimitPct>2.40</nonMarketableLimitPct>
-          <otherPct>11.70</otherPct>
-          <netPmtPaidRecvMarketOrdersUsd>1000</netPmtPaidRecvMarketOrdersUsd>
-          <netPmtPaidRecvMarketOrdersCph>0.0021</netPmtPaidRecvMarketOrdersCph>
-          <netPmtPaidRecvMarketableLimitOrdersUsd>1000</netPmtPaidRecvMarketableLimitOrdersUsd>
-          <netPmtPaidRecvMarketableLimitOrdersCph>0.0021</netPmtPaidRecvMarketableLimitOrdersCph>
-          <netPmtPaidRecvNonMarketableLimitOrdersUsd>1000</netPmtPaidRecvNonMarketableLimitOrdersUsd>
-          <netPmtPaidRecvNonMarketableLimitOrdersCph>0.0021</netPmtPaidRecvNonMarketableLimitOrdersCph>
-          <netPmtPaidRecvOtherOrdersUsd>1000</netPmtPaidRecvOtherOrdersUsd>
-          <netPmtPaidRecvOtherOrdersCph>0.0021</netPmtPaidRecvOtherOrdersCph>
-          <materialAspects>[Insert discussion of the material aspects of the relationship with this venue pursuant to rule 606(a)(1)(iv).]</materialAspects>
-        </rVenue>
-        <rVenue>
-          <name>BATS Exchange, Inc.</name>
-          <mic>BATS</mic>
-          <orderPct>13.20</orderPct>
-          <marketPct>6.80</marketPct>
-          <marketableLimitPct>3.00</marketableLimitPct>
-          <nonMarketableLimitPct>4.40</nonMarketableLimitPct>
-          <otherPct>13.30</otherPct>
-          <netPmtPaidRecvMarketOrdersUsd>1000</netPmtPaidRecvMarketOrdersUsd>
-          <netPmtPaidRecvMarketOrdersCph>0.0021</netPmtPaidRecvMarketOrdersCph>
-          <netPmtPaidRecvMarketableLimitOrdersUsd>1000</netPmtPaidRecvMarketableLimitOrdersUsd>
-          <netPmtPaidRecvMarketableLimitOrdersCph>0.0021</netPmtPaidRecvMarketableLimitOrdersCph>
-          <netPmtPaidRecvNonMarketableLimitOrdersUsd>1000</netPmtPaidRecvNonMarketableLimitOrdersUsd>
-          <netPmtPaidRecvNonMarketableLimitOrdersCph>0.0021</netPmtPaidRecvNonMarketableLimitOrdersCph>
-          <netPmtPaidRecvOtherOrdersUsd>1000</netPmtPaidRecvOtherOrdersUsd>
-          <netPmtPaidRecvOtherOrdersCph>0.0021</netPmtPaidRecvOtherOrdersCph>
-          <materialAspects>[Insert discussion of the material aspects of the relationship with this venue pursuant to rule 606(a)(1)(iv).]</materialAspects>
-        </rVenue>
-        <rVenue>
-          <name>EDGX Exchange, Inc.</name>
-          <mic>EDGX</mic>
-          <orderPct>11.70</orderPct>
-          <marketPct>1.10</marketPct>
-          <marketableLimitPct>3.00</marketableLimitPct>
-          <nonMarketableLimitPct>9.40</nonMarketableLimitPct>
-          <otherPct>11.70</otherPct>
-          <netPmtPaidRecvMarketOrdersUsd>1000</netPmtPaidRecvMarketOrdersUsd>
-          <netPmtPaidRecvMarketOrdersCph>0.0021</netPmtPaidRecvMarketOrdersCph>
-          <netPmtPaidRecvMarketableLimitOrdersUsd>1000</netPmtPaidRecvMarketableLimitOrdersUsd>
-          <netPmtPaidRecvMarketableLimitOrdersCph>0.0021</netPmtPaidRecvMarketableLimitOrdersCph>
-          <netPmtPaidRecvNonMarketableLimitOrdersUsd>1000</netPmtPaidRecvNonMarketableLimitOrdersUsd>
-          <netPmtPaidRecvNonMarketableLimitOrdersCph>0.0021</netPmtPaidRecvNonMarketableLimitOrdersCph>
-          <netPmtPaidRecvOtherOrdersUsd>1000</netPmtPaidRecvOtherOrdersUsd>
-          <netPmtPaidRecvOtherOrdersCph>0.0021</netPmtPaidRecvOtherOrdersCph>
-          <materialAspects>[Insert discussion of the material aspects of the relationship with this venue pursuant to rule 606(a)(1)(iv).]</materialAspects>
-        </rVenue>
-        <rVenue>
-          <name>The Nasdaq Stock Market LLC.</name>
-          <mic>XNAS</mic>
-          <orderPct>6.80</orderPct>
-          <marketPct>2.30</marketPct>
-          <marketableLimitPct>3.00</marketableLimitPct>
-          <nonMarketableLimitPct>21.70</nonMarketableLimitPct>
-          <otherPct>6.50</otherPct>
-          <netPmtPaidRecvMarketOrdersUsd>1000</netPmtPaidRecvMarketOrdersUsd>
-          <netPmtPaidRecvMarketOrdersCph>0.0021</netPmtPaidRecvMarketOrdersCph>
-          <netPmtPaidRecvMarketableLimitOrdersUsd>1000</netPmtPaidRecvMarketableLimitOrdersUsd>
-          <netPmtPaidRecvMarketableLimitOrdersCph>0.0021</netPmtPaidRecvMarketableLimitOrdersCph>
-          <netPmtPaidRecvNonMarketableLimitOrdersUsd>1000</netPmtPaidRecvNonMarketableLimitOrdersUsd>
-          <netPmtPaidRecvNonMarketableLimitOrdersCph>0.0021</netPmtPaidRecvNonMarketableLimitOrdersCph>
-          <netPmtPaidRecvOtherOrdersUsd>1000</netPmtPaidRecvOtherOrdersUsd>
-          <netPmtPaidRecvOtherOrdersCph>0.0021</netPmtPaidRecvOtherOrdersCph>
-          <materialAspects>[Insert discussion of the material aspects of the relationship with this venue pursuant to rule 606(a)(1)(iv).]</materialAspects>
-        </rVenue>
-        <rVenue>
-          <name>B. Roker Exec and Clrng</name>
-          <mic>180T</mic>
-          <orderPct>6.10</orderPct>
-          <marketPct>9.50</marketPct>
-          <marketableLimitPct>0.40</marketableLimitPct>
-          <nonMarketableLimitPct>0.10</nonMarketableLimitPct>
-          <otherPct>6.20</otherPct>
-          <netPmtPaidRecvMarketOrdersUsd>1000</netPmtPaidRecvMarketOrdersUsd>
-          <netPmtPaidRecvMarketOrdersCph>0.0021</netPmtPaidRecvMarketOrdersCph>
-          <netPmtPaidRecvMarketableLimitOrdersUsd>1000</netPmtPaidRecvMarketableLimitOrdersUsd>
-          <netPmtPaidRecvMarketableLimitOrdersCph>0.0021</netPmtPaidRecvMarketableLimitOrdersCph>
-          <netPmtPaidRecvNonMarketableLimitOrdersUsd>1000</netPmtPaidRecvNonMarketableLimitOrdersUsd>
-          <netPmtPaidRecvNonMarketableLimitOrdersCph>0.0021</netPmtPaidRecvNonMarketableLimitOrdersCph>
-          <netPmtPaidRecvOtherOrdersUsd>1000</netPmtPaidRecvOtherOrdersUsd>
-          <netPmtPaidRecvOtherOrdersCph>0.0021</netPmtPaidRecvOtherOrdersCph>
-          <materialAspects>[Insert discussion of the material aspects of the relationship with this venue pursuant to rule 606(a)(1)(iv).]</materialAspects>
-        </rVenue>
-        <rVenue>
-          <name>EDGA Exchange,Inc.</name>
-          <mic>EDGA</mic>
-          <orderPct>3.90</orderPct>
-          <marketPct>3.40</marketPct>
-          <marketableLimitPct>3.00</marketableLimitPct>
-          <nonMarketableLimitPct>0.10</nonMarketableLimitPct>
-          <otherPct>3.90</otherPct>
-          <netPmtPaidRecvMarketOrdersUsd>1000</netPmtPaidRecvMarketOrdersUsd>
-          <netPmtPaidRecvMarketOrdersCph>0.0021</netPmtPaidRecvMarketOrdersCph>
-          <netPmtPaidRecvMarketableLimitOrdersUsd>1000</netPmtPaidRecvMarketableLimitOrdersUsd>
-          <netPmtPaidRecvMarketableLimitOrdersCph>0.0021</netPmtPaidRecvMarketableLimitOrdersCph>
-          <netPmtPaidRecvNonMarketableLimitOrdersUsd>1000</netPmtPaidRecvNonMarketableLimitOrdersUsd>
-          <netPmtPaidRecvNonMarketableLimitOrdersCph>0.0021</netPmtPaidRecvNonMarketableLimitOrdersCph>
-          <netPmtPaidRecvOtherOrdersUsd>1000</netPmtPaidRecvOtherOrdersUsd>
-          <netPmtPaidRecvOtherOrdersCph>0.0021</netPmtPaidRecvOtherOrdersCph>
-          <materialAspects>[Insert discussion of the material aspects of the relationship with this venue pursuant to rule 606(a)(1)(iv).]</materialAspects>
-        </rVenue>
-        <rVenue>
-          <name>BATS Exchange, Inc.</name>
-          <mic>BATY</mic>
-          <orderPct>3.30</orderPct>
-          <marketPct>0.00</marketPct>
-          <marketableLimitPct>1.70</marketableLimitPct>
-          <nonMarketableLimitPct>1.00</nonMarketableLimitPct>
-          <otherPct>3.40</otherPct>
-          <netPmtPaidRecvMarketOrdersUsd>1000</netPmtPaidRecvMarketOrdersUsd>
-          <netPmtPaidRecvMarketOrdersCph>0.0021</netPmtPaidRecvMarketOrdersCph>
-          <netPmtPaidRecvMarketableLimitOrdersUsd>1000</netPmtPaidRecvMarketableLimitOrdersUsd>
-          <netPmtPaidRecvMarketableLimitOrdersCph>0.0021</netPmtPaidRecvMarketableLimitOrdersCph>
-          <netPmtPaidRecvNonMarketableLimitOrdersUsd>1000</netPmtPaidRecvNonMarketableLimitOrdersUsd>
-          <netPmtPaidRecvNonMarketableLimitOrdersCph>0.0021</netPmtPaidRecvNonMarketableLimitOrdersCph>
-          <netPmtPaidRecvOtherOrdersUsd>1000</netPmtPaidRecvOtherOrdersUsd>
-          <netPmtPaidRecvOtherOrdersCph>0.0021</netPmtPaidRecvOtherOrdersCph>
-          <materialAspects>[Insert discussion of the material aspects of the relationship with this venue pursuant to rule 606(a)(1)(iv).]</materialAspects>
-        </rVenue>
-        <rVenue>
-          <name>NASDAQ OMX BX.</name>
-          <mic>BOSE</mic>
-          <orderPct>2.10</orderPct>
-          <marketPct>0.00</marketPct>
-          <marketableLimitPct>1.60</marketableLimitPct>
-          <nonMarketableLimitPct>1.00</nonMarketableLimitPct>
-          <otherPct>2.10</otherPct>
-          <netPmtPaidRecvMarketOrdersUsd>1000</netPmtPaidRecvMarketOrdersUsd>
-          <netPmtPaidRecvMarketOrdersCph>0.0021</netPmtPaidRecvMarketOrdersCph>
-          <netPmtPaidRecvMarketableLimitOrdersUsd>1000</netPmtPaidRecvMarketableLimitOrdersUsd>
-          <netPmtPaidRecvMarketableLimitOrdersCph>0.0021</netPmtPaidRecvMarketableLimitOrdersCph>
-          <netPmtPaidRecvNonMarketableLimitOrdersUsd>1000</netPmtPaidRecvNonMarketableLimitOrdersUsd>
-          <netPmtPaidRecvNonMarketableLimitOrdersCph>0.0021</netPmtPaidRecvNonMarketableLimitOrdersCph>
-          <netPmtPaidRecvOtherOrdersUsd>1000</netPmtPaidRecvOtherOrdersUsd>
-          <netPmtPaidRecvOtherOrdersCph>0.0021</netPmtPaidRecvOtherOrdersCph>
-          <materialAspects>[Insert discussion of the material aspects of the relationship with this venue pursuant to rule 606(a)(1)(iv).]</materialAspects>
-        </rVenue>
-      </rVenues>
-    </rSP500>
-    <rOtherStocks>
-      <ndoPct>13.60</ndoPct>
-      <ndoMarketPct>0.00</ndoMarketPct>
-      <ndoMarketableLimitPct>1.10</ndoMarketableLimitPct>
-      <ndoNonmarketableLimitPct>1.00</ndoNonmarketableLimitPct>
-      <ndoOtherPct>97.90</ndoOtherPct>
-      <rVenues>
-        <rVenue>
-          <name>New York Stock Exchange LLC.</name>
-          <mic>NYSE</mic>
-          <orderPct>39.80</orderPct>
-          <marketPct>36.70</marketPct>
-          <marketableLimitPct>10.00</marketableLimitPct>
-          <nonMarketableLimitPct>39.00</nonMarketableLimitPct>
-          <otherPct>29.50</otherPct>
-          <netPmtPaidRecvMarketOrdersUsd>1000</netPmtPaidRecvMarketOrdersUsd>
-          <netPmtPaidRecvMarketOrdersCph>0.0021</netPmtPaidRecvMarketOrdersCph>
-          <netPmtPaidRecvMarketableLimitOrdersUsd>1000</netPmtPaidRecvMarketableLimitOrdersUsd>
-          <netPmtPaidRecvMarketableLimitOrdersCph>0.0021</netPmtPaidRecvMarketableLimitOrdersCph>
-          <netPmtPaidRecvNonMarketableLimitOrdersUsd>1000</netPmtPaidRecvNonMarketableLimitOrdersUsd>
-          <netPmtPaidRecvNonMarketableLimitOrdersCph>0.0021</netPmtPaidRecvNonMarketableLimitOrdersCph>
-          <netPmtPaidRecvOtherOrdersUsd>1000</netPmtPaidRecvOtherOrdersUsd>
-          <netPmtPaidRecvOtherOrdersCph>0.0021</netPmtPaidRecvOtherOrdersCph>
-          <materialAspects>[Insert discussion of the material aspects of the relationship with this venue pursuant to rule 606(a)(1)(iv).]</materialAspects>
-        </rVenue>
-        <rVenue>
-          <name>NYSE Arca, Inc.</name>
-          <mic>ARCA</mic>
-          <orderPct>11.70</orderPct>
-          <marketPct>1.10</marketPct>
-          <marketableLimitPct>10.00</marketableLimitPct>
-          <nonMarketableLimitPct>2.40</nonMarketableLimitPct>
-          <otherPct>11.70</otherPct>
-          <netPmtPaidRecvMarketOrdersUsd>1000</netPmtPaidRecvMarketOrdersUsd>
-          <netPmtPaidRecvMarketOrdersCph>0.0021</netPmtPaidRecvMarketOrdersCph>
-          <netPmtPaidRecvMarketableLimitOrdersUsd>1000</netPmtPaidRecvMarketableLimitOrdersUsd>
-          <netPmtPaidRecvMarketableLimitOrdersCph>0.0021</netPmtPaidRecvMarketableLimitOrdersCph>
-          <netPmtPaidRecvNonMarketableLimitOrdersUsd>1000</netPmtPaidRecvNonMarketableLimitOrdersUsd>
-          <netPmtPaidRecvNonMarketableLimitOrdersCph>0.0021</netPmtPaidRecvNonMarketableLimitOrdersCph>
-          <netPmtPaidRecvOtherOrdersUsd>1000</netPmtPaidRecvOtherOrdersUsd>
-          <netPmtPaidRecvOtherOrdersCph>0.0021</netPmtPaidRecvOtherOrdersCph>
-          <materialAspects>[Insert discussion of the material aspects of the relationship with this venue pursuant to rule 606(a)(1)(iv).]</materialAspects>
-        </rVenue>
-        <rVenue>
-          <name>BATS Exchange, Inc.</name>
-          <mic>BATS</mic>
-          <orderPct>13.20</orderPct>
-          <marketPct>6.80</marketPct>
-          <marketableLimitPct>3.00</marketableLimitPct>
-          <nonMarketableLimitPct>4.40</nonMarketableLimitPct>
-          <otherPct>13.30</otherPct>
-          <netPmtPaidRecvMarketOrdersUsd>1000</netPmtPaidRecvMarketOrdersUsd>
-          <netPmtPaidRecvMarketOrdersCph>0.0021</netPmtPaidRecvMarketOrdersCph>
-          <netPmtPaidRecvMarketableLimitOrdersUsd>1000</netPmtPaidRecvMarketableLimitOrdersUsd>
-          <netPmtPaidRecvMarketableLimitOrdersCph>0.0021</netPmtPaidRecvMarketableLimitOrdersCph>
-          <netPmtPaidRecvNonMarketableLimitOrdersUsd>1000</netPmtPaidRecvNonMarketableLimitOrdersUsd>
-          <netPmtPaidRecvNonMarketableLimitOrdersCph>0.0021</netPmtPaidRecvNonMarketableLimitOrdersCph>
-          <netPmtPaidRecvOtherOrdersUsd>1000</netPmtPaidRecvOtherOrdersUsd>
-          <netPmtPaidRecvOtherOrdersCph>0.0021</netPmtPaidRecvOtherOrdersCph>
-          <materialAspects>[Insert discussion of the material aspects of the relationship with this venue pursuant to rule 606(a)(1)(iv).]</materialAspects>
-        </rVenue>
-        <rVenue>
-          <name>EDGX Exchange, Inc.</name>
-          <mic>EDGX</mic>
-          <orderPct>11.70</orderPct>
-          <marketPct>1.10</marketPct>
-          <marketableLimitPct>3.00</marketableLimitPct>
-          <nonMarketableLimitPct>9.40</nonMarketableLimitPct>
-          <otherPct>11.70</otherPct>
-          <netPmtPaidRecvMarketOrdersUsd>1000</netPmtPaidRecvMarketOrdersUsd>
-          <netPmtPaidRecvMarketOrdersCph>0.0021</netPmtPaidRecvMarketOrdersCph>
-          <netPmtPaidRecvMarketableLimitOrdersUsd>1000</netPmtPaidRecvMarketableLimitOrdersUsd>
-          <netPmtPaidRecvMarketableLimitOrdersCph>0.0021</netPmtPaidRecvMarketableLimitOrdersCph>
-          <netPmtPaidRecvNonMarketableLimitOrdersUsd>1000</netPmtPaidRecvNonMarketableLimitOrdersUsd>
-          <netPmtPaidRecvNonMarketableLimitOrdersCph>0.0021</netPmtPaidRecvNonMarketableLimitOrdersCph>
-          <netPmtPaidRecvOtherOrdersUsd>1000</netPmtPaidRecvOtherOrdersUsd>
-          <netPmtPaidRecvOtherOrdersCph>0.0021</netPmtPaidRecvOtherOrdersCph>
-          <materialAspects>[Insert discussion of the material aspects of the relationship with this venue pursuant to rule 606(a)(1)(iv).]</materialAspects>
-        </rVenue>
-        <rVenue>
-          <name>The Nasdaq Stock Market LLC.</name>
-          <mic>XNAS</mic>
-          <orderPct>6.80</orderPct>
-          <marketPct>2.30</marketPct>
-          <marketableLimitPct>3.00</marketableLimitPct>
-          <nonMarketableLimitPct>21.70</nonMarketableLimitPct>
-          <otherPct>6.50</otherPct>
-          <netPmtPaidRecvMarketOrdersUsd>1000</netPmtPaidRecvMarketOrdersUsd>
-          <netPmtPaidRecvMarketOrdersCph>0.0021</netPmtPaidRecvMarketOrdersCph>
-          <netPmtPaidRecvMarketableLimitOrdersUsd>1000</netPmtPaidRecvMarketableLimitOrdersUsd>
-          <netPmtPaidRecvMarketableLimitOrdersCph>0.0021</netPmtPaidRecvMarketableLimitOrdersCph>
-          <netPmtPaidRecvNonMarketableLimitOrdersUsd>1000</netPmtPaidRecvNonMarketableLimitOrdersUsd>
-          <netPmtPaidRecvNonMarketableLimitOrdersCph>0.0021</netPmtPaidRecvNonMarketableLimitOrdersCph>
-          <netPmtPaidRecvOtherOrdersUsd>1000</netPmtPaidRecvOtherOrdersUsd>
-          <netPmtPaidRecvOtherOrdersCph>0.0021</netPmtPaidRecvOtherOrdersCph>
-          <materialAspects>[Insert discussion of the material aspects of the relationship with this venue pursuant to rule 606(a)(1)(iv).]</materialAspects>
-        </rVenue>
-        <rVenue>
-          <name>B. Roker Exec and Clrng</name>
-          <mic>180T</mic>
-          <orderPct>6.10</orderPct>
-          <marketPct>9.50</marketPct>
-          <marketableLimitPct>0.40</marketableLimitPct>
-          <nonMarketableLimitPct>0.10</nonMarketableLimitPct>
-          <otherPct>6.20</otherPct>
-          <netPmtPaidRecvMarketOrdersUsd>1000</netPmtPaidRecvMarketOrdersUsd>
-          <netPmtPaidRecvMarketOrdersCph>0.0021</netPmtPaidRecvMarketOrdersCph>
-          <netPmtPaidRecvMarketableLimitOrdersUsd>1000</netPmtPaidRecvMarketableLimitOrdersUsd>
-          <netPmtPaidRecvMarketableLimitOrdersCph>0.0021</netPmtPaidRecvMarketableLimitOrdersCph>
-          <netPmtPaidRecvNonMarketableLimitOrdersUsd>1000</netPmtPaidRecvNonMarketableLimitOrdersUsd>
-          <netPmtPaidRecvNonMarketableLimitOrdersCph>0.0021</netPmtPaidRecvNonMarketableLimitOrdersCph>
-          <netPmtPaidRecvOtherOrdersUsd>1000</netPmtPaidRecvOtherOrdersUsd>
-          <netPmtPaidRecvOtherOrdersCph>0.0021</netPmtPaidRecvOtherOrdersCph>
-          <materialAspects>[Insert discussion of the material aspects of the relationship with this venue pursuant to rule 606(a)(1)(iv).]</materialAspects>
-        </rVenue>
-        <rVenue>
-          <name>EDGA Exchange,Inc.</name>
-          <mic>EDGA</mic>
-          <orderPct>3.90</orderPct>
-          <marketPct>3.40</marketPct>
-          <marketableLimitPct>3.00</marketableLimitPct>
-          <nonMarketableLimitPct>0.10</nonMarketableLimitPct>
-          <otherPct>3.90</otherPct>
-          <netPmtPaidRecvMarketOrdersUsd>1000</netPmtPaidRecvMarketOrdersUsd>
-          <netPmtPaidRecvMarketOrdersCph>0.0021</netPmtPaidRecvMarketOrdersCph>
-          <netPmtPaidRecvMarketableLimitOrdersUsd>1000</netPmtPaidRecvMarketableLimitOrdersUsd>
-          <netPmtPaidRecvMarketableLimitOrdersCph>0.0021</netPmtPaidRecvMarketableLimitOrdersCph>
-          <netPmtPaidRecvNonMarketableLimitOrdersUsd>1000</netPmtPaidRecvNonMarketableLimitOrdersUsd>
-          <netPmtPaidRecvNonMarketableLimitOrdersCph>0.0021</netPmtPaidRecvNonMarketableLimitOrdersCph>
-          <netPmtPaidRecvOtherOrdersUsd>1000</netPmtPaidRecvOtherOrdersUsd>
-          <netPmtPaidRecvOtherOrdersCph>0.0021</netPmtPaidRecvOtherOrdersCph>
-          <materialAspects>[Insert discussion of the material aspects of the relationship with this venue pursuant to rule 606(a)(1)(iv).]</materialAspects>
-        </rVenue>
-        <rVenue>
-          <name>BATS Exchange Y, Inc.</name>
-          <mic>BATY</mic>
-          <orderPct>3.30</orderPct>
-          <marketPct>0.00</marketPct>
-          <marketableLimitPct>1.70</marketableLimitPct>
-          <nonMarketableLimitPct>1.00</nonMarketableLimitPct>
-          <otherPct>3.40</otherPct>
-          <netPmtPaidRecvMarketOrdersUsd>1000</netPmtPaidRecvMarketOrdersUsd>
-          <netPmtPaidRecvMarketOrdersCph>0.0021</netPmtPaidRecvMarketOrdersCph>
-          <netPmtPaidRecvMarketableLimitOrdersUsd>1000</netPmtPaidRecvMarketableLimitOrdersUsd>
-          <netPmtPaidRecvMarketableLimitOrdersCph>0.0021</netPmtPaidRecvMarketableLimitOrdersCph>
-          <netPmtPaidRecvNonMarketableLimitOrdersUsd>1000</netPmtPaidRecvNonMarketableLimitOrdersUsd>
-          <netPmtPaidRecvNonMarketableLimitOrdersCph>0.0021</netPmtPaidRecvNonMarketableLimitOrdersCph>
-          <netPmtPaidRecvOtherOrdersUsd>1000</netPmtPaidRecvOtherOrdersUsd>
-          <netPmtPaidRecvOtherOrdersCph>0.0021</netPmtPaidRecvOtherOrdersCph>
-          <materialAspects>[Insert discussion of the material aspects of the relationship with this venue pursuant to rule 606(a)(1)(iv).]</materialAspects>
-        </rVenue>
-        <rVenue>
-          <name>NASDAQ OMX BX.</name>
-          <mic>BOSE</mic>
-          <orderPct>2.10</orderPct>
-          <marketPct>0.00</marketPct>
-          <marketableLimitPct>1.60</marketableLimitPct>
-          <nonMarketableLimitPct>1.00</nonMarketableLimitPct>
-          <otherPct>2.10</otherPct>
-          <netPmtPaidRecvMarketOrdersUsd>1000</netPmtPaidRecvMarketOrdersUsd>
-          <netPmtPaidRecvMarketOrdersCph>0.0021</netPmtPaidRecvMarketOrdersCph>
-          <netPmtPaidRecvMarketableLimitOrdersUsd>1000</netPmtPaidRecvMarketableLimitOrdersUsd>
-          <netPmtPaidRecvMarketableLimitOrdersCph>0.0021</netPmtPaidRecvMarketableLimitOrdersCph>
-          <netPmtPaidRecvNonMarketableLimitOrdersUsd>1000</netPmtPaidRecvNonMarketableLimitOrdersUsd>
-          <netPmtPaidRecvNonMarketableLimitOrdersCph>0.0021</netPmtPaidRecvNonMarketableLimitOrdersCph>
-          <netPmtPaidRecvOtherOrdersUsd>1000</netPmtPaidRecvOtherOrdersUsd>
-          <netPmtPaidRecvOtherOrdersCph>0.0021</netPmtPaidRecvOtherOrdersCph>
-          <materialAspects>[Insert discussion of the material aspects of the relationship with this venue pursuant to rule 606(a)(1)(iv).]</materialAspects>
-        </rVenue>
-      </rVenues>
-    </rOtherStocks>
-    <rOptions>
-      <ndoPct>53.90</ndoPct>
-      <ndoMarketPct>0.00</ndoMarketPct>
-      <ndoMarketableLimitPct>0.50</ndoMarketableLimitPct>
-      <ndoNonmarketableLimitPct>0.60</ndoNonmarketableLimitPct>
-      <ndoOtherPct>98.90</ndoOtherPct>
-      <rVenues>
-        <rVenue>
-          <name>BATS Options Exchange.</name>
-          <mic>BATO</mic>
-          <orderPct>21.80</orderPct>
-          <marketPct>0.00</marketPct>
-          <marketableLimitPct>10.00</marketableLimitPct>
-          <nonMarketableLimitPct>7.30</nonMarketableLimitPct>
-          <otherPct>21.90</otherPct>
-          <netPmtPaidRecvMarketOrdersUsd>1000</netPmtPaidRecvMarketOrdersUsd>
-          <netPmtPaidRecvMarketOrdersCph>0.0021</netPmtPaidRecvMarketOrdersCph>
-          <netPmtPaidRecvMarketableLimitOrdersUsd>1000</netPmtPaidRecvMarketableLimitOrdersUsd>
-          <netPmtPaidRecvMarketableLimitOrdersCph>0.0021</netPmtPaidRecvMarketableLimitOrdersCph>
-          <netPmtPaidRecvNonMarketableLimitOrdersUsd>1000</netPmtPaidRecvNonMarketableLimitOrdersUsd>
-          <netPmtPaidRecvNonMarketableLimitOrdersCph>0.0021</netPmtPaidRecvNonMarketableLimitOrdersCph>
-          <netPmtPaidRecvOtherOrdersUsd>1000</netPmtPaidRecvOtherOrdersUsd>
-          <netPmtPaidRecvOtherOrdersCph>0.0021</netPmtPaidRecvOtherOrdersCph>
-          <materialAspects>[Insert discussion of the material aspects of the relationship with this venue pursuant to rule 606(a)(1)(iv).]</materialAspects>
-        </rVenue>
-        <rVenue>
-          <name>NYSE Arca, Inc.</name>
-          <mic>PCXX</mic>
-          <orderPct>13.60</orderPct>
-          <marketPct>0.00</marketPct>
-          <marketableLimitPct>10.30</marketableLimitPct>
-          <nonMarketableLimitPct>2.00</nonMarketableLimitPct>
-          <otherPct>13.70</otherPct>
-          <netPmtPaidRecvMarketOrdersUsd>1000</netPmtPaidRecvMarketOrdersUsd>
-          <netPmtPaidRecvMarketOrdersCph>0.0021</netPmtPaidRecvMarketOrdersCph>
-          <netPmtPaidRecvMarketableLimitOrdersUsd>1000</netPmtPaidRecvMarketableLimitOrdersUsd>
-          <netPmtPaidRecvMarketableLimitOrdersCph>0.0021</netPmtPaidRecvMarketableLimitOrdersCph>
-          <netPmtPaidRecvNonMarketableLimitOrdersUsd>1000</netPmtPaidRecvNonMarketableLimitOrdersUsd>
-          <netPmtPaidRecvNonMarketableLimitOrdersCph>0.0021</netPmtPaidRecvNonMarketableLimitOrdersCph>
-          <netPmtPaidRecvOtherOrdersUsd>1000</netPmtPaidRecvOtherOrdersUsd>
-          <netPmtPaidRecvOtherOrdersCph>0.0021</netPmtPaidRecvOtherOrdersCph>
-          <materialAspects>[Insert discussion of the material aspects of the relationship with this venue pursuant to rule 606(a)(1)(iv).]</materialAspects>
-        </rVenue>
-        <rVenue>
-          <name>International Securities Exch</name>
-          <mic>ISEE</mic>
-          <orderPct>13.20</orderPct>
-          <marketPct>0.00</marketPct>
-          <marketableLimitPct>7.20</marketableLimitPct>
-          <nonMarketableLimitPct>2.00</nonMarketableLimitPct>
-          <otherPct>13.70</otherPct>
-          <netPmtPaidRecvMarketOrdersUsd>1000</netPmtPaidRecvMarketOrdersUsd>
-          <netPmtPaidRecvMarketOrdersCph>0.0021</netPmtPaidRecvMarketOrdersCph>
-          <netPmtPaidRecvMarketableLimitOrdersUsd>1000</netPmtPaidRecvMarketableLimitOrdersUsd>
-          <netPmtPaidRecvMarketableLimitOrdersCph>0.0021</netPmtPaidRecvMarketableLimitOrdersCph>
-          <netPmtPaidRecvNonMarketableLimitOrdersUsd>1000</netPmtPaidRecvNonMarketableLimitOrdersUsd>
-          <netPmtPaidRecvNonMarketableLimitOrdersCph>0.0021</netPmtPaidRecvNonMarketableLimitOrdersCph>
-          <netPmtPaidRecvOtherOrdersUsd>1000</netPmtPaidRecvOtherOrdersUsd>
-          <netPmtPaidRecvOtherOrdersCph>0.0021</netPmtPaidRecvOtherOrdersCph>
-          <materialAspects>[Insert discussion of the material aspects of the relationship with this venue pursuant to rule 606(a)(1)(iv).]</materialAspects>
-        </rVenue>
-        <rVenue>
-          <name>Nasdaq Options Market LLC.</name>
-          <mic>NOMM</mic>
-          <orderPct>10.00</orderPct>
-          <marketPct>0.00</marketPct>
-          <marketableLimitPct>7.00</marketableLimitPct>
-          <nonMarketableLimitPct>8.90</nonMarketableLimitPct>
-          <otherPct>9.90</otherPct>
-          <netPmtPaidRecvMarketOrdersUsd>1000</netPmtPaidRecvMarketOrdersUsd>
-          <netPmtPaidRecvMarketOrdersCph>0.0021</netPmtPaidRecvMarketOrdersCph>
-          <netPmtPaidRecvMarketableLimitOrdersUsd>1000</netPmtPaidRecvMarketableLimitOrdersUsd>
-          <netPmtPaidRecvMarketableLimitOrdersCph>0.0021</netPmtPaidRecvMarketableLimitOrdersCph>
-          <netPmtPaidRecvNonMarketableLimitOrdersUsd>1000</netPmtPaidRecvNonMarketableLimitOrdersUsd>
-          <netPmtPaidRecvNonMarketableLimitOrdersCph>0.0021</netPmtPaidRecvNonMarketableLimitOrdersCph>
-          <netPmtPaidRecvOtherOrdersUsd>1000</netPmtPaidRecvOtherOrdersUsd>
-          <netPmtPaidRecvOtherOrdersCph>0.0021</netPmtPaidRecvOtherOrdersCph>
-          <materialAspects>[Insert discussion of the material aspects of the relationship with this venue pursuant to rule 606(a)(1)(iv).]</materialAspects>
-        </rVenue>
-        <rVenue>
-          <name>Chicago Board Options Exchange</name>
-          <mic>CBOE</mic>
-          <orderPct>14.70</orderPct>
-          <marketPct>0.00</marketPct>
-          <marketableLimitPct>7.00</marketableLimitPct>
-          <nonMarketableLimitPct>4.40</nonMarketableLimitPct>
-          <otherPct>14.70</otherPct>
-          <netPmtPaidRecvMarketOrdersUsd>1000</netPmtPaidRecvMarketOrdersUsd>
-          <netPmtPaidRecvMarketOrdersCph>0.0021</netPmtPaidRecvMarketOrdersCph>
-          <netPmtPaidRecvMarketableLimitOrdersUsd>1000</netPmtPaidRecvMarketableLimitOrdersUsd>
-          <netPmtPaidRecvMarketableLimitOrdersCph>0.0021</netPmtPaidRecvMarketableLimitOrdersCph>
-          <netPmtPaidRecvNonMarketableLimitOrdersUsd>1000</netPmtPaidRecvNonMarketableLimitOrdersUsd>
-          <netPmtPaidRecvNonMarketableLimitOrdersCph>0.0021</netPmtPaidRecvNonMarketableLimitOrdersCph>
-          <netPmtPaidRecvOtherOrdersUsd>1000</netPmtPaidRecvOtherOrdersUsd>
-          <netPmtPaidRecvOtherOrdersCph>0.0021</netPmtPaidRecvOtherOrdersCph>
-          <materialAspects>[Insert discussion of the material aspects of the relationship with this venue pursuant to rule 606(a)(1)(iv).]</materialAspects>
-        </rVenue>
-        <rVenue>
-          <name>NYSE MKT, LLC</name>
-          <mic>AMEX</mic>
-          <orderPct>8.10</orderPct>
-          <marketPct>0.00</marketPct>
-          <marketableLimitPct>3.60</marketableLimitPct>
-          <nonMarketableLimitPct>4.40</nonMarketableLimitPct>
-          <otherPct>8.10</otherPct>
-          <netPmtPaidRecvMarketOrdersUsd>1000</netPmtPaidRecvMarketOrdersUsd>
-          <netPmtPaidRecvMarketOrdersCph>0.0021</netPmtPaidRecvMarketOrdersCph>
-          <netPmtPaidRecvMarketableLimitOrdersUsd>1000</netPmtPaidRecvMarketableLimitOrdersUsd>
-          <netPmtPaidRecvMarketableLimitOrdersCph>0.0021</netPmtPaidRecvMarketableLimitOrdersCph>
-          <netPmtPaidRecvNonMarketableLimitOrdersUsd>1000</netPmtPaidRecvNonMarketableLimitOrdersUsd>
-          <netPmtPaidRecvNonMarketableLimitOrdersCph>0.0021</netPmtPaidRecvNonMarketableLimitOrdersCph>
-          <netPmtPaidRecvOtherOrdersUsd>1000</netPmtPaidRecvOtherOrdersUsd>
-          <netPmtPaidRecvOtherOrdersCph>0.0021</netPmtPaidRecvOtherOrdersCph>
-          <materialAspects>[Insert discussion of the material aspects of the relationship with this venue pursuant to rule 606(a)(1)(iv).]</materialAspects>
-        </rVenue>
-        <rVenue>
-          <name>Nasdaq OMX PHLX,Inc</name>
-          <mic>PHLX</mic>
-          <orderPct>5.40</orderPct>
-          <marketPct>0.00</marketPct>
-          <marketableLimitPct>3.60</marketableLimitPct>
-          <nonMarketableLimitPct>1.30</nonMarketableLimitPct>
-          <otherPct>5.40</otherPct>
-          <netPmtPaidRecvMarketOrdersUsd>1000</netPmtPaidRecvMarketOrdersUsd>
-          <netPmtPaidRecvMarketOrdersCph>0.0021</netPmtPaidRecvMarketOrdersCph>
-          <netPmtPaidRecvMarketableLimitOrdersUsd>1000</netPmtPaidRecvMarketableLimitOrdersUsd>
-          <netPmtPaidRecvMarketableLimitOrdersCph>0.0021</netPmtPaidRecvMarketableLimitOrdersCph>
-          <netPmtPaidRecvNonMarketableLimitOrdersUsd>1000</netPmtPaidRecvNonMarketableLimitOrdersUsd>
-          <netPmtPaidRecvNonMarketableLimitOrdersCph>0.0021</netPmtPaidRecvNonMarketableLimitOrdersCph>
-          <netPmtPaidRecvOtherOrdersUsd>1000</netPmtPaidRecvOtherOrdersUsd>
-          <netPmtPaidRecvOtherOrdersCph>0.0021</netPmtPaidRecvOtherOrdersCph>
-          <materialAspects>[Insert discussion of the material aspects of the relationship with this venue pursuant to rule 606(a)(1)(iv).]</materialAspects>
-        </rVenue>
-        <rVenue>
-          <name>C2 Options Exchange</name>
-          <mic>COPT</mic>
-          <orderPct>5.10</orderPct>
-          <marketPct>0.00</marketPct>
-          <marketableLimitPct>2.10</marketableLimitPct>
-          <nonMarketableLimitPct>2.00</nonMarketableLimitPct>
-          <otherPct>5.20</otherPct>
-          <netPmtPaidRecvMarketOrdersUsd>1000</netPmtPaidRecvMarketOrdersUsd>
-          <netPmtPaidRecvMarketOrdersCph>0.0021</netPmtPaidRecvMarketOrdersCph>
-          <netPmtPaidRecvMarketableLimitOrdersUsd>1000</netPmtPaidRecvMarketableLimitOrdersUsd>
-          <netPmtPaidRecvMarketableLimitOrdersCph>0.0021</netPmtPaidRecvMarketableLimitOrdersCph>
-          <netPmtPaidRecvNonMarketableLimitOrdersUsd>1000</netPmtPaidRecvNonMarketableLimitOrdersUsd>
-          <netPmtPaidRecvNonMarketableLimitOrdersCph>0.0021</netPmtPaidRecvNonMarketableLimitOrdersCph>
-          <netPmtPaidRecvOtherOrdersUsd>1000</netPmtPaidRecvOtherOrdersUsd>
-          <netPmtPaidRecvOtherOrdersCph>0.0021</netPmtPaidRecvOtherOrdersCph>
-          <materialAspects>[Insert discussion of the material aspects of the relationship with this venue pursuant to rule 606(a)(1)(iv).]</materialAspects>
-        </rVenue>
-        <rVenue>
-          <name>Boston Options Exchange Group</name>
-          <mic>BOXX</mic>
-          <orderPct>3.90</orderPct>
-          <marketPct>0.00</marketPct>
-          <marketableLimitPct>2.00</marketableLimitPct>
-          <nonMarketableLimitPct>1.10</nonMarketableLimitPct>
-          <otherPct>3.90</otherPct>
-          <netPmtPaidRecvMarketOrdersUsd>1000</netPmtPaidRecvMarketOrdersUsd>
-          <netPmtPaidRecvMarketOrdersCph>0.0021</netPmtPaidRecvMarketOrdersCph>
-          <netPmtPaidRecvMarketableLimitOrdersUsd>1000</netPmtPaidRecvMarketableLimitOrdersUsd>
-          <netPmtPaidRecvMarketableLimitOrdersCph>0.0021</netPmtPaidRecvMarketableLimitOrdersCph>
-          <netPmtPaidRecvNonMarketableLimitOrdersUsd>1000</netPmtPaidRecvNonMarketableLimitOrdersUsd>
-          <netPmtPaidRecvNonMarketableLimitOrdersCph>0.0021</netPmtPaidRecvNonMarketableLimitOrdersCph>
-          <netPmtPaidRecvOtherOrdersUsd>1000</netPmtPaidRecvOtherOrdersUsd>
-          <netPmtPaidRecvOtherOrdersCph>0.0021</netPmtPaidRecvOtherOrdersCph>
-          <materialAspects>[Insert discussion of the material aspects of the relationship with this venue pursuant to rule 606(a)(1)(iv).]</materialAspects>
-        </rVenue>
-      </rVenues>
-    </rOptions>
-  </rMonthly>
-  <rMonthly>
-    <year>2020</year>
-    <mon>3</mon>
-    <rSP500>
-      <ndoPct>13.60</ndoPct>
-      <ndoMarketPct>0.00</ndoMarketPct>
-      <ndoMarketableLimitPct>1.10</ndoMarketableLimitPct>
-      <ndoNonmarketableLimitPct>1.00</ndoNonmarketableLimitPct>
-      <ndoOtherPct>97.90</ndoOtherPct>
-      <rVenues>
-        <rVenue>
-          <name>New York Stock Exchange LLC.</name>
-          <mic>NYSE</mic>
-          <orderPct>39.80</orderPct>
-          <marketPct>36.70</marketPct>
-          <marketableLimitPct>10.00</marketableLimitPct>
-          <nonMarketableLimitPct>39.00</nonMarketableLimitPct>
-          <otherPct>29.50</otherPct>
-          <netPmtPaidRecvMarketOrdersUsd>1000</netPmtPaidRecvMarketOrdersUsd>
-          <netPmtPaidRecvMarketOrdersCph>0.0021</netPmtPaidRecvMarketOrdersCph>
-          <netPmtPaidRecvMarketableLimitOrdersUsd>1000</netPmtPaidRecvMarketableLimitOrdersUsd>
-          <netPmtPaidRecvMarketableLimitOrdersCph>0.0021</netPmtPaidRecvMarketableLimitOrdersCph>
-          <netPmtPaidRecvNonMarketableLimitOrdersUsd>1000</netPmtPaidRecvNonMarketableLimitOrdersUsd>
-          <netPmtPaidRecvNonMarketableLimitOrdersCph>0.0021</netPmtPaidRecvNonMarketableLimitOrdersCph>
-          <netPmtPaidRecvOtherOrdersUsd>1000</netPmtPaidRecvOtherOrdersUsd>
-          <netPmtPaidRecvOtherOrdersCph>0.0021</netPmtPaidRecvOtherOrdersCph>
-          <materialAspects>[Insert discussion of the material aspects of the relationship with this venue pursuant to rule 606(a)(1)(iv).]</materialAspects>
-        </rVenue>
-        <rVenue>
-          <name>NYSE Arca, Inc.</name>
-          <mic>ARCA</mic>
-          <orderPct>11.70</orderPct>
-          <marketPct>1.10</marketPct>
-          <marketableLimitPct>10.00</marketableLimitPct>
-          <nonMarketableLimitPct>2.40</nonMarketableLimitPct>
-          <otherPct>11.70</otherPct>
-          <netPmtPaidRecvMarketOrdersUsd>1000</netPmtPaidRecvMarketOrdersUsd>
-          <netPmtPaidRecvMarketOrdersCph>0.0021</netPmtPaidRecvMarketOrdersCph>
-          <netPmtPaidRecvMarketableLimitOrdersUsd>1000</netPmtPaidRecvMarketableLimitOrdersUsd>
-          <netPmtPaidRecvMarketableLimitOrdersCph>0.0021</netPmtPaidRecvMarketableLimitOrdersCph>
-          <netPmtPaidRecvNonMarketableLimitOrdersUsd>1000</netPmtPaidRecvNonMarketableLimitOrdersUsd>
-          <netPmtPaidRecvNonMarketableLimitOrdersCph>0.0021</netPmtPaidRecvNonMarketableLimitOrdersCph>
-          <netPmtPaidRecvOtherOrdersUsd>1000</netPmtPaidRecvOtherOrdersUsd>
-          <netPmtPaidRecvOtherOrdersCph>0.0021</netPmtPaidRecvOtherOrdersCph>
-          <materialAspects>[Insert discussion of the material aspects of the relationship with this venue pursuant to rule 606(a)(1)(iv).]</materialAspects>
-        </rVenue>
-        <rVenue>
-          <name>BATS Exchange, Inc.</name>
-          <mic>BATS</mic>
-          <orderPct>13.20</orderPct>
-          <marketPct>6.80</marketPct>
-          <marketableLimitPct>3.00</marketableLimitPct>
-          <nonMarketableLimitPct>4.40</nonMarketableLimitPct>
-          <otherPct>13.30</otherPct>
-          <netPmtPaidRecvMarketOrdersUsd>1000</netPmtPaidRecvMarketOrdersUsd>
-          <netPmtPaidRecvMarketOrdersCph>0.0021</netPmtPaidRecvMarketOrdersCph>
-          <netPmtPaidRecvMarketableLimitOrdersUsd>1000</netPmtPaidRecvMarketableLimitOrdersUsd>
-          <netPmtPaidRecvMarketableLimitOrdersCph>0.0021</netPmtPaidRecvMarketableLimitOrdersCph>
-          <netPmtPaidRecvNonMarketableLimitOrdersUsd>1000</netPmtPaidRecvNonMarketableLimitOrdersUsd>
-          <netPmtPaidRecvNonMarketableLimitOrdersCph>0.0021</netPmtPaidRecvNonMarketableLimitOrdersCph>
-          <netPmtPaidRecvOtherOrdersUsd>1000</netPmtPaidRecvOtherOrdersUsd>
-          <netPmtPaidRecvOtherOrdersCph>0.0021</netPmtPaidRecvOtherOrdersCph>
-          <materialAspects>[Insert discussion of the material aspects of the relationship with this venue pursuant to rule 606(a)(1)(iv).]</materialAspects>
-        </rVenue>
-        <rVenue>
-          <name>EDGX Exchange, Inc.</name>
-          <mic>EDGX</mic>
-          <orderPct>11.70</orderPct>
-          <marketPct>1.10</marketPct>
-          <marketableLimitPct>3.00</marketableLimitPct>
-          <nonMarketableLimitPct>9.40</nonMarketableLimitPct>
-          <otherPct>11.70</otherPct>
-          <netPmtPaidRecvMarketOrdersUsd>1000</netPmtPaidRecvMarketOrdersUsd>
-          <netPmtPaidRecvMarketOrdersCph>0.0021</netPmtPaidRecvMarketOrdersCph>
-          <netPmtPaidRecvMarketableLimitOrdersUsd>1000</netPmtPaidRecvMarketableLimitOrdersUsd>
-          <netPmtPaidRecvMarketableLimitOrdersCph>0.0021</netPmtPaidRecvMarketableLimitOrdersCph>
-          <netPmtPaidRecvNonMarketableLimitOrdersUsd>1000</netPmtPaidRecvNonMarketableLimitOrdersUsd>
-          <netPmtPaidRecvNonMarketableLimitOrdersCph>0.0021</netPmtPaidRecvNonMarketableLimitOrdersCph>
-          <netPmtPaidRecvOtherOrdersUsd>1000</netPmtPaidRecvOtherOrdersUsd>
-          <netPmtPaidRecvOtherOrdersCph>0.0021</netPmtPaidRecvOtherOrdersCph>
-          <materialAspects>[Insert discussion of the material aspects of the relationship with this venue pursuant to rule 606(a)(1)(iv).]</materialAspects>
-        </rVenue>
-        <rVenue>
-          <name>The Nasdaq Stock Market LLC.</name>
-          <mic>XNAS</mic>
-          <orderPct>6.80</orderPct>
-          <marketPct>2.30</marketPct>
-          <marketableLimitPct>3.00</marketableLimitPct>
-          <nonMarketableLimitPct>21.70</nonMarketableLimitPct>
-          <otherPct>6.50</otherPct>
-          <netPmtPaidRecvMarketOrdersUsd>1000</netPmtPaidRecvMarketOrdersUsd>
-          <netPmtPaidRecvMarketOrdersCph>0.0021</netPmtPaidRecvMarketOrdersCph>
-          <netPmtPaidRecvMarketableLimitOrdersUsd>1000</netPmtPaidRecvMarketableLimitOrdersUsd>
-          <netPmtPaidRecvMarketableLimitOrdersCph>0.0021</netPmtPaidRecvMarketableLimitOrdersCph>
-          <netPmtPaidRecvNonMarketableLimitOrdersUsd>1000</netPmtPaidRecvNonMarketableLimitOrdersUsd>
-          <netPmtPaidRecvNonMarketableLimitOrdersCph>0.0021</netPmtPaidRecvNonMarketableLimitOrdersCph>
-          <netPmtPaidRecvOtherOrdersUsd>1000</netPmtPaidRecvOtherOrdersUsd>
-          <netPmtPaidRecvOtherOrdersCph>0.0021</netPmtPaidRecvOtherOrdersCph>
-          <materialAspects>[Insert discussion of the material aspects of the relationship with this venue pursuant to rule 606(a)(1)(iv).]</materialAspects>
-        </rVenue>
-        <rVenue>
-          <name>B. Roker Exec and Clrng</name>
-          <mic>180T</mic>
-          <orderPct>6.10</orderPct>
-          <marketPct>9.50</marketPct>
-          <marketableLimitPct>0.40</marketableLimitPct>
-          <nonMarketableLimitPct>0.10</nonMarketableLimitPct>
-          <otherPct>6.20</otherPct>
-          <netPmtPaidRecvMarketOrdersUsd>1000</netPmtPaidRecvMarketOrdersUsd>
-          <netPmtPaidRecvMarketOrdersCph>0.0021</netPmtPaidRecvMarketOrdersCph>
-          <netPmtPaidRecvMarketableLimitOrdersUsd>1000</netPmtPaidRecvMarketableLimitOrdersUsd>
-          <netPmtPaidRecvMarketableLimitOrdersCph>0.0021</netPmtPaidRecvMarketableLimitOrdersCph>
-          <netPmtPaidRecvNonMarketableLimitOrdersUsd>1000</netPmtPaidRecvNonMarketableLimitOrdersUsd>
-          <netPmtPaidRecvNonMarketableLimitOrdersCph>0.0021</netPmtPaidRecvNonMarketableLimitOrdersCph>
-          <netPmtPaidRecvOtherOrdersUsd>1000</netPmtPaidRecvOtherOrdersUsd>
-          <netPmtPaidRecvOtherOrdersCph>0.0021</netPmtPaidRecvOtherOrdersCph>
-          <materialAspects>[Insert discussion of the material aspects of the relationship with this venue pursuant to rule 606(a)(1)(iv).]</materialAspects>
-        </rVenue>
-        <rVenue>
-          <name>EDGA Exchange,Inc.</name>
-          <mic>EDGA</mic>
-          <orderPct>3.90</orderPct>
-          <marketPct>3.40</marketPct>
-          <marketableLimitPct>3.00</marketableLimitPct>
-          <nonMarketableLimitPct>0.10</nonMarketableLimitPct>
-          <otherPct>3.90</otherPct>
-          <netPmtPaidRecvMarketOrdersUsd>1000</netPmtPaidRecvMarketOrdersUsd>
-          <netPmtPaidRecvMarketOrdersCph>0.0021</netPmtPaidRecvMarketOrdersCph>
-          <netPmtPaidRecvMarketableLimitOrdersUsd>1000</netPmtPaidRecvMarketableLimitOrdersUsd>
-          <netPmtPaidRecvMarketableLimitOrdersCph>0.0021</netPmtPaidRecvMarketableLimitOrdersCph>
-          <netPmtPaidRecvNonMarketableLimitOrdersUsd>1000</netPmtPaidRecvNonMarketableLimitOrdersUsd>
-          <netPmtPaidRecvNonMarketableLimitOrdersCph>0.0021</netPmtPaidRecvNonMarketableLimitOrdersCph>
-          <netPmtPaidRecvOtherOrdersUsd>1000</netPmtPaidRecvOtherOrdersUsd>
-          <netPmtPaidRecvOtherOrdersCph>0.0021</netPmtPaidRecvOtherOrdersCph>
-          <materialAspects>[Insert discussion of the material aspects of the relationship with this venue pursuant to rule 606(a)(1)(iv).]</materialAspects>
-        </rVenue>
-        <rVenue>
-          <name>BATS Exchange Y, Inc.</name>
-          <mic>BATY</mic>
-          <orderPct>3.30</orderPct>
-          <marketPct>0.00</marketPct>
-          <marketableLimitPct>1.70</marketableLimitPct>
-          <nonMarketableLimitPct>1.00</nonMarketableLimitPct>
-          <otherPct>3.40</otherPct>
-          <netPmtPaidRecvMarketOrdersUsd>1000</netPmtPaidRecvMarketOrdersUsd>
-          <netPmtPaidRecvMarketOrdersCph>0.0021</netPmtPaidRecvMarketOrdersCph>
-          <netPmtPaidRecvMarketableLimitOrdersUsd>1000</netPmtPaidRecvMarketableLimitOrdersUsd>
-          <netPmtPaidRecvMarketableLimitOrdersCph>0.0021</netPmtPaidRecvMarketableLimitOrdersCph>
-          <netPmtPaidRecvNonMarketableLimitOrdersUsd>1000</netPmtPaidRecvNonMarketableLimitOrdersUsd>
-          <netPmtPaidRecvNonMarketableLimitOrdersCph>0.0021</netPmtPaidRecvNonMarketableLimitOrdersCph>
-          <netPmtPaidRecvOtherOrdersUsd>1000</netPmtPaidRecvOtherOrdersUsd>
-          <netPmtPaidRecvOtherOrdersCph>0.0021</netPmtPaidRecvOtherOrdersCph>
-          <materialAspects>[Insert discussion of the material aspects of the relationship with this venue pursuant to rule 606(a)(1)(iv).]</materialAspects>
-        </rVenue>
-        <rVenue>
-          <name>NASDAQ OMX BX.</name>
-          <mic>BOSE</mic>
-          <orderPct>2.10</orderPct>
-          <marketPct>0.00</marketPct>
-          <marketableLimitPct>1.60</marketableLimitPct>
-          <nonMarketableLimitPct>1.00</nonMarketableLimitPct>
-          <otherPct>2.10</otherPct>
-          <netPmtPaidRecvMarketOrdersUsd>1000</netPmtPaidRecvMarketOrdersUsd>
-          <netPmtPaidRecvMarketOrdersCph>0.0021</netPmtPaidRecvMarketOrdersCph>
-          <netPmtPaidRecvMarketableLimitOrdersUsd>1000</netPmtPaidRecvMarketableLimitOrdersUsd>
-          <netPmtPaidRecvMarketableLimitOrdersCph>0.0021</netPmtPaidRecvMarketableLimitOrdersCph>
-          <netPmtPaidRecvNonMarketableLimitOrdersUsd>1000</netPmtPaidRecvNonMarketableLimitOrdersUsd>
-          <netPmtPaidRecvNonMarketableLimitOrdersCph>0.0021</netPmtPaidRecvNonMarketableLimitOrdersCph>
-          <netPmtPaidRecvOtherOrdersUsd>1000</netPmtPaidRecvOtherOrdersUsd>
-          <netPmtPaidRecvOtherOrdersCph>0.0021</netPmtPaidRecvOtherOrdersCph>
-          <materialAspects>[Insert discussion of the material aspects of the relationship with this venue pursuant to rule 606(a)(1)(iv).]</materialAspects>
-        </rVenue>
-      </rVenues>
-    </rSP500>
-    <rOtherStocks>
-      <ndoPct>13.60</ndoPct>
-      <ndoMarketPct>0.00</ndoMarketPct>
-      <ndoMarketableLimitPct>1.10</ndoMarketableLimitPct>
-      <ndoNonmarketableLimitPct>1.00</ndoNonmarketableLimitPct>
-      <ndoOtherPct>97.90</ndoOtherPct>
-      <rVenues>
-        <rVenue>
-          <name>New York Stock Exchange LLC.</name>
-          <mic>NYSE</mic>
-          <orderPct>39.80</orderPct>
-          <marketPct>36.70</marketPct>
-          <marketableLimitPct>10.00</marketableLimitPct>
-          <nonMarketableLimitPct>39.00</nonMarketableLimitPct>
-          <otherPct>29.50</otherPct>
-          <netPmtPaidRecvMarketOrdersUsd>1000</netPmtPaidRecvMarketOrdersUsd>
-          <netPmtPaidRecvMarketOrdersCph>0.0021</netPmtPaidRecvMarketOrdersCph>
-          <netPmtPaidRecvMarketableLimitOrdersUsd>1000</netPmtPaidRecvMarketableLimitOrdersUsd>
-          <netPmtPaidRecvMarketableLimitOrdersCph>0.0021</netPmtPaidRecvMarketableLimitOrdersCph>
-          <netPmtPaidRecvNonMarketableLimitOrdersUsd>1000</netPmtPaidRecvNonMarketableLimitOrdersUsd>
-          <netPmtPaidRecvNonMarketableLimitOrdersCph>0.0021</netPmtPaidRecvNonMarketableLimitOrdersCph>
-          <netPmtPaidRecvOtherOrdersUsd>1000</netPmtPaidRecvOtherOrdersUsd>
-          <netPmtPaidRecvOtherOrdersCph>0.0021</netPmtPaidRecvOtherOrdersCph>
-          <materialAspects>[Insert discussion of the material aspects of the relationship with this venue pursuant to rule 606(a)(1)(iv).]</materialAspects>
-        </rVenue>
-        <rVenue>
-          <name>NYSE Arca, Inc.</name>
-          <mic>ARCA</mic>
-          <orderPct>11.70</orderPct>
-          <marketPct>1.10</marketPct>
-          <marketableLimitPct>10.00</marketableLimitPct>
-          <nonMarketableLimitPct>2.40</nonMarketableLimitPct>
-          <otherPct>11.70</otherPct>
-          <netPmtPaidRecvMarketOrdersUsd>1000</netPmtPaidRecvMarketOrdersUsd>
-          <netPmtPaidRecvMarketOrdersCph>0.0021</netPmtPaidRecvMarketOrdersCph>
-          <netPmtPaidRecvMarketableLimitOrdersUsd>1000</netPmtPaidRecvMarketableLimitOrdersUsd>
-          <netPmtPaidRecvMarketableLimitOrdersCph>0.0021</netPmtPaidRecvMarketableLimitOrdersCph>
-          <netPmtPaidRecvNonMarketableLimitOrdersUsd>1000</netPmtPaidRecvNonMarketableLimitOrdersUsd>
-          <netPmtPaidRecvNonMarketableLimitOrdersCph>0.0021</netPmtPaidRecvNonMarketableLimitOrdersCph>
-          <netPmtPaidRecvOtherOrdersUsd>1000</netPmtPaidRecvOtherOrdersUsd>
-          <netPmtPaidRecvOtherOrdersCph>0.0021</netPmtPaidRecvOtherOrdersCph>
-          <materialAspects>[Insert discussion of the material aspects of the relationship with this venue pursuant to rule 606(a)(1)(iv).]</materialAspects>
-        </rVenue>
-        <rVenue>
-          <name>BATS Exchange, Inc.</name>
-          <mic>BATS</mic>
-          <orderPct>13.20</orderPct>
-          <marketPct>6.80</marketPct>
-          <marketableLimitPct>3.00</marketableLimitPct>
-          <nonMarketableLimitPct>4.40</nonMarketableLimitPct>
-          <otherPct>13.30</otherPct>
-          <netPmtPaidRecvMarketOrdersUsd>1000</netPmtPaidRecvMarketOrdersUsd>
-          <netPmtPaidRecvMarketOrdersCph>0.0021</netPmtPaidRecvMarketOrdersCph>
-          <netPmtPaidRecvMarketableLimitOrdersUsd>1000</netPmtPaidRecvMarketableLimitOrdersUsd>
-          <netPmtPaidRecvMarketableLimitOrdersCph>0.0021</netPmtPaidRecvMarketableLimitOrdersCph>
-          <netPmtPaidRecvNonMarketableLimitOrdersUsd>1000</netPmtPaidRecvNonMarketableLimitOrdersUsd>
-          <netPmtPaidRecvNonMarketableLimitOrdersCph>0.0021</netPmtPaidRecvNonMarketableLimitOrdersCph>
-          <netPmtPaidRecvOtherOrdersUsd>1000</netPmtPaidRecvOtherOrdersUsd>
-          <netPmtPaidRecvOtherOrdersCph>0.0021</netPmtPaidRecvOtherOrdersCph>
-          <materialAspects>[Insert discussion of the material aspects of the relationship with this venue pursuant to rule 606(a)(1)(iv).]</materialAspects>
-        </rVenue>
-        <rVenue>
-          <name>EDGX Exchange, Inc.</name>
-          <mic>EDGX</mic>
-          <orderPct>11.70</orderPct>
-          <marketPct>1.10</marketPct>
-          <marketableLimitPct>3.00</marketableLimitPct>
-          <nonMarketableLimitPct>9.40</nonMarketableLimitPct>
-          <otherPct>11.70</otherPct>
-          <netPmtPaidRecvMarketOrdersUsd>1000</netPmtPaidRecvMarketOrdersUsd>
-          <netPmtPaidRecvMarketOrdersCph>0.0021</netPmtPaidRecvMarketOrdersCph>
-          <netPmtPaidRecvMarketableLimitOrdersUsd>1000</netPmtPaidRecvMarketableLimitOrdersUsd>
-          <netPmtPaidRecvMarketableLimitOrdersCph>0.0021</netPmtPaidRecvMarketableLimitOrdersCph>
-          <netPmtPaidRecvNonMarketableLimitOrdersUsd>1000</netPmtPaidRecvNonMarketableLimitOrdersUsd>
-          <netPmtPaidRecvNonMarketableLimitOrdersCph>0.0021</netPmtPaidRecvNonMarketableLimitOrdersCph>
-          <netPmtPaidRecvOtherOrdersUsd>1000</netPmtPaidRecvOtherOrdersUsd>
-          <netPmtPaidRecvOtherOrdersCph>0.0021</netPmtPaidRecvOtherOrdersCph>
-          <materialAspects>[Insert discussion of the material aspects of the relationship with this venue pursuant to rule 606(a)(1)(iv).]</materialAspects>
-        </rVenue>
-        <rVenue>
-          <name>The Nasdaq Stock Market LLC.</name>
-          <mic>XNAS</mic>
-          <orderPct>6.80</orderPct>
-          <marketPct>2.30</marketPct>
-          <marketableLimitPct>3.00</marketableLimitPct>
-          <nonMarketableLimitPct>21.70</nonMarketableLimitPct>
-          <otherPct>6.50</otherPct>
-          <netPmtPaidRecvMarketOrdersUsd>1000</netPmtPaidRecvMarketOrdersUsd>
-          <netPmtPaidRecvMarketOrdersCph>0.0021</netPmtPaidRecvMarketOrdersCph>
-          <netPmtPaidRecvMarketableLimitOrdersUsd>1000</netPmtPaidRecvMarketableLimitOrdersUsd>
-          <netPmtPaidRecvMarketableLimitOrdersCph>0.0021</netPmtPaidRecvMarketableLimitOrdersCph>
-          <netPmtPaidRecvNonMarketableLimitOrdersUsd>1000</netPmtPaidRecvNonMarketableLimitOrdersUsd>
-          <netPmtPaidRecvNonMarketableLimitOrdersCph>0.0021</netPmtPaidRecvNonMarketableLimitOrdersCph>
-          <netPmtPaidRecvOtherOrdersUsd>1000</netPmtPaidRecvOtherOrdersUsd>
-          <netPmtPaidRecvOtherOrdersCph>0.0021</netPmtPaidRecvOtherOrdersCph>
-          <materialAspects>[Insert discussion of the material aspects of the relationship with this venue pursuant to rule 606(a)(1)(iv).]</materialAspects>
-        </rVenue>
-        <rVenue>
-          <name>B. Roker Exec and Clrng</name>
-          <mic>180T</mic>
-          <orderPct>6.10</orderPct>
-          <marketPct>9.50</marketPct>
-          <marketableLimitPct>0.40</marketableLimitPct>
-          <nonMarketableLimitPct>0.10</nonMarketableLimitPct>
-          <otherPct>6.20</otherPct>
-          <netPmtPaidRecvMarketOrdersUsd>1000</netPmtPaidRecvMarketOrdersUsd>
-          <netPmtPaidRecvMarketOrdersCph>0.0021</netPmtPaidRecvMarketOrdersCph>
-          <netPmtPaidRecvMarketableLimitOrdersUsd>1000</netPmtPaidRecvMarketableLimitOrdersUsd>
-          <netPmtPaidRecvMarketableLimitOrdersCph>0.0021</netPmtPaidRecvMarketableLimitOrdersCph>
-          <netPmtPaidRecvNonMarketableLimitOrdersUsd>1000</netPmtPaidRecvNonMarketableLimitOrdersUsd>
-          <netPmtPaidRecvNonMarketableLimitOrdersCph>0.0021</netPmtPaidRecvNonMarketableLimitOrdersCph>
-          <netPmtPaidRecvOtherOrdersUsd>1000</netPmtPaidRecvOtherOrdersUsd>
-          <netPmtPaidRecvOtherOrdersCph>0.0021</netPmtPaidRecvOtherOrdersCph>
-          <materialAspects>[Insert discussion of the material aspects of the relationship with this venue pursuant to rule 606(a)(1)(iv).]</materialAspects>
-        </rVenue>
-        <rVenue>
-          <name>EDGA Exchange,Inc.</name>
-          <mic>EDGA</mic>
-          <orderPct>3.90</orderPct>
-          <marketPct>3.40</marketPct>
-          <marketableLimitPct>3.00</marketableLimitPct>
-          <nonMarketableLimitPct>0.10</nonMarketableLimitPct>
-          <otherPct>3.90</otherPct>
-          <netPmtPaidRecvMarketOrdersUsd>1000</netPmtPaidRecvMarketOrdersUsd>
-          <netPmtPaidRecvMarketOrdersCph>0.0021</netPmtPaidRecvMarketOrdersCph>
-          <netPmtPaidRecvMarketableLimitOrdersUsd>1000</netPmtPaidRecvMarketableLimitOrdersUsd>
-          <netPmtPaidRecvMarketableLimitOrdersCph>0.0021</netPmtPaidRecvMarketableLimitOrdersCph>
-          <netPmtPaidRecvNonMarketableLimitOrdersUsd>1000</netPmtPaidRecvNonMarketableLimitOrdersUsd>
-          <netPmtPaidRecvNonMarketableLimitOrdersCph>0.0021</netPmtPaidRecvNonMarketableLimitOrdersCph>
-          <netPmtPaidRecvOtherOrdersUsd>1000</netPmtPaidRecvOtherOrdersUsd>
-          <netPmtPaidRecvOtherOrdersCph>0.0021</netPmtPaidRecvOtherOrdersCph>
-          <materialAspects>[Insert discussion of the material aspects of the relationship with this venue pursuant to rule 606(a)(1)(iv).]</materialAspects>
-        </rVenue>
-        <rVenue>
-          <name>BATS Exchange Y, Inc.</name>
-          <mic>BATY</mic>
-          <orderPct>3.30</orderPct>
-          <marketPct>0.00</marketPct>
-          <marketableLimitPct>1.70</marketableLimitPct>
-          <nonMarketableLimitPct>1.00</nonMarketableLimitPct>
-          <otherPct>3.40</otherPct>
-          <netPmtPaidRecvMarketOrdersUsd>1000</netPmtPaidRecvMarketOrdersUsd>
-          <netPmtPaidRecvMarketOrdersCph>0.0021</netPmtPaidRecvMarketOrdersCph>
-          <netPmtPaidRecvMarketableLimitOrdersUsd>1000</netPmtPaidRecvMarketableLimitOrdersUsd>
-          <netPmtPaidRecvMarketableLimitOrdersCph>0.0021</netPmtPaidRecvMarketableLimitOrdersCph>
-          <netPmtPaidRecvNonMarketableLimitOrdersUsd>1000</netPmtPaidRecvNonMarketableLimitOrdersUsd>
-          <netPmtPaidRecvNonMarketableLimitOrdersCph>0.0021</netPmtPaidRecvNonMarketableLimitOrdersCph>
-          <netPmtPaidRecvOtherOrdersUsd>1000</netPmtPaidRecvOtherOrdersUsd>
-          <netPmtPaidRecvOtherOrdersCph>0.0021</netPmtPaidRecvOtherOrdersCph>
-          <materialAspects>[Insert discussion of the material aspects of the relationship with this venue pursuant to rule 606(a)(1)(iv).]</materialAspects>
-        </rVenue>
-        <rVenue>
-          <name>NASDAQ OMX BX.</name>
-          <mic>BOSE</mic>
-          <orderPct>2.10</orderPct>
-          <marketPct>0.00</marketPct>
-          <marketableLimitPct>1.60</marketableLimitPct>
-          <nonMarketableLimitPct>1.00</nonMarketableLimitPct>
-          <otherPct>2.10</otherPct>
-          <netPmtPaidRecvMarketOrdersUsd>1000</netPmtPaidRecvMarketOrdersUsd>
-          <netPmtPaidRecvMarketOrdersCph>0.0021</netPmtPaidRecvMarketOrdersCph>
-          <netPmtPaidRecvMarketableLimitOrdersUsd>1000</netPmtPaidRecvMarketableLimitOrdersUsd>
-          <netPmtPaidRecvMarketableLimitOrdersCph>0.0021</netPmtPaidRecvMarketableLimitOrdersCph>
-          <netPmtPaidRecvNonMarketableLimitOrdersUsd>1000</netPmtPaidRecvNonMarketableLimitOrdersUsd>
-          <netPmtPaidRecvNonMarketableLimitOrdersCph>0.0021</netPmtPaidRecvNonMarketableLimitOrdersCph>
-          <netPmtPaidRecvOtherOrdersUsd>1000</netPmtPaidRecvOtherOrdersUsd>
-          <netPmtPaidRecvOtherOrdersCph>0.0021</netPmtPaidRecvOtherOrdersCph>
-          <materialAspects>[Insert discussion of the material aspects of the relationship with this venue pursuant to rule 606(a)(1)(iv).]</materialAspects>
-        </rVenue>
-      </rVenues>
-    </rOtherStocks>
-    <rOptions>
-      <ndoPct>53.90</ndoPct>
-      <ndoMarketPct>0.00</ndoMarketPct>
-      <ndoMarketableLimitPct>0.50</ndoMarketableLimitPct>
-      <ndoNonmarketableLimitPct>0.60</ndoNonmarketableLimitPct>
-      <ndoOtherPct>98.90</ndoOtherPct>
-      <rVenues>
-        <rVenue>
-          <name>BATS Options Exchange.</name>
-          <mic>BATO</mic>
-          <orderPct>21.80</orderPct>
-          <marketPct>0.00</marketPct>
-          <marketableLimitPct>10.00</marketableLimitPct>
-          <nonMarketableLimitPct>7.30</nonMarketableLimitPct>
-          <otherPct>21.90</otherPct>
-          <netPmtPaidRecvMarketOrdersUsd>1000</netPmtPaidRecvMarketOrdersUsd>
-          <netPmtPaidRecvMarketOrdersCph>0.0021</netPmtPaidRecvMarketOrdersCph>
-          <netPmtPaidRecvMarketableLimitOrdersUsd>1000</netPmtPaidRecvMarketableLimitOrdersUsd>
-          <netPmtPaidRecvMarketableLimitOrdersCph>0.0021</netPmtPaidRecvMarketableLimitOrdersCph>
-          <netPmtPaidRecvNonMarketableLimitOrdersUsd>1000</netPmtPaidRecvNonMarketableLimitOrdersUsd>
-          <netPmtPaidRecvNonMarketableLimitOrdersCph>0.0021</netPmtPaidRecvNonMarketableLimitOrdersCph>
-          <netPmtPaidRecvOtherOrdersUsd>1000</netPmtPaidRecvOtherOrdersUsd>
-          <netPmtPaidRecvOtherOrdersCph>0.0021</netPmtPaidRecvOtherOrdersCph>
-          <materialAspects>[Insert discussion of the material aspects of the relationship with this venue pursuant to rule 606(a)(1)(iv).]</materialAspects>
-        </rVenue>
-        <rVenue>
-          <name>NYSE Arca, Inc.</name>
-          <mic>PCXX</mic>
-          <orderPct>13.60</orderPct>
-          <marketPct>0.00</marketPct>
-          <marketableLimitPct>10.30</marketableLimitPct>
-          <nonMarketableLimitPct>2.00</nonMarketableLimitPct>
-          <otherPct>13.70</otherPct>
-          <netPmtPaidRecvMarketOrdersUsd>1000</netPmtPaidRecvMarketOrdersUsd>
-          <netPmtPaidRecvMarketOrdersCph>0.0021</netPmtPaidRecvMarketOrdersCph>
-          <netPmtPaidRecvMarketableLimitOrdersUsd>1000</netPmtPaidRecvMarketableLimitOrdersUsd>
-          <netPmtPaidRecvMarketableLimitOrdersCph>0.0021</netPmtPaidRecvMarketableLimitOrdersCph>
-          <netPmtPaidRecvNonMarketableLimitOrdersUsd>1000</netPmtPaidRecvNonMarketableLimitOrdersUsd>
-          <netPmtPaidRecvNonMarketableLimitOrdersCph>0.0021</netPmtPaidRecvNonMarketableLimitOrdersCph>
-          <netPmtPaidRecvOtherOrdersUsd>1000</netPmtPaidRecvOtherOrdersUsd>
-          <netPmtPaidRecvOtherOrdersCph>0.0021</netPmtPaidRecvOtherOrdersCph>
-          <materialAspects>[Insert discussion of the material aspects of the relationship with this venue pursuant to rule 606(a)(1)(iv).]</materialAspects>
-        </rVenue>
-        <rVenue>
-          <name>International Securities Exch</name>
-          <mic>ISEE</mic>
-          <orderPct>13.20</orderPct>
-          <marketPct>0.00</marketPct>
-          <marketableLimitPct>7.20</marketableLimitPct>
-          <nonMarketableLimitPct>2.00</nonMarketableLimitPct>
-          <otherPct>13.70</otherPct>
-          <netPmtPaidRecvMarketOrdersUsd>1000</netPmtPaidRecvMarketOrdersUsd>
-          <netPmtPaidRecvMarketOrdersCph>0.0021</netPmtPaidRecvMarketOrdersCph>
-          <netPmtPaidRecvMarketableLimitOrdersUsd>1000</netPmtPaidRecvMarketableLimitOrdersUsd>
-          <netPmtPaidRecvMarketableLimitOrdersCph>0.0021</netPmtPaidRecvMarketableLimitOrdersCph>
-          <netPmtPaidRecvNonMarketableLimitOrdersUsd>1000</netPmtPaidRecvNonMarketableLimitOrdersUsd>
-          <netPmtPaidRecvNonMarketableLimitOrdersCph>0.0021</netPmtPaidRecvNonMarketableLimitOrdersCph>
-          <netPmtPaidRecvOtherOrdersUsd>1000</netPmtPaidRecvOtherOrdersUsd>
-          <netPmtPaidRecvOtherOrdersCph>0.0021</netPmtPaidRecvOtherOrdersCph>
-          <materialAspects>[Insert discussion of the material aspects of the relationship with this venue pursuant to rule 606(a)(1)(iv).]</materialAspects>
-        </rVenue>
-        <rVenue>
-          <name>Nasdaq Options Market LLC.</name>
-          <mic>NOMM</mic>
-          <orderPct>10.00</orderPct>
-          <marketPct>0.00</marketPct>
-          <marketableLimitPct>7.00</marketableLimitPct>
-          <nonMarketableLimitPct>8.90</nonMarketableLimitPct>
-          <otherPct>9.90</otherPct>
-          <netPmtPaidRecvMarketOrdersUsd>1000</netPmtPaidRecvMarketOrdersUsd>
-          <netPmtPaidRecvMarketOrdersCph>0.0021</netPmtPaidRecvMarketOrdersCph>
-          <netPmtPaidRecvMarketableLimitOrdersUsd>1000</netPmtPaidRecvMarketableLimitOrdersUsd>
-          <netPmtPaidRecvMarketableLimitOrdersCph>0.0021</netPmtPaidRecvMarketableLimitOrdersCph>
-          <netPmtPaidRecvNonMarketableLimitOrdersUsd>1000</netPmtPaidRecvNonMarketableLimitOrdersUsd>
-          <netPmtPaidRecvNonMarketableLimitOrdersCph>0.0021</netPmtPaidRecvNonMarketableLimitOrdersCph>
-          <netPmtPaidRecvOtherOrdersUsd>1000</netPmtPaidRecvOtherOrdersUsd>
-          <netPmtPaidRecvOtherOrdersCph>0.0021</netPmtPaidRecvOtherOrdersCph>
-          <materialAspects>[Insert discussion of the material aspects of the relationship with this venue pursuant to rule 606(a)(1)(iv).]</materialAspects>
-        </rVenue>
-        <rVenue>
-          <name>Chicago Board Options Exchange</name>
-          <mic>CBOE</mic>
-          <orderPct>14.70</orderPct>
-          <marketPct>0.00</marketPct>
-          <marketableLimitPct>7.00</marketableLimitPct>
-          <nonMarketableLimitPct>4.40</nonMarketableLimitPct>
-          <otherPct>14.70</otherPct>
-          <netPmtPaidRecvMarketOrdersUsd>1000</netPmtPaidRecvMarketOrdersUsd>
-          <netPmtPaidRecvMarketOrdersCph>0.0021</netPmtPaidRecvMarketOrdersCph>
-          <netPmtPaidRecvMarketableLimitOrdersUsd>1000</netPmtPaidRecvMarketableLimitOrdersUsd>
-          <netPmtPaidRecvMarketableLimitOrdersCph>0.0021</netPmtPaidRecvMarketableLimitOrdersCph>
-          <netPmtPaidRecvNonMarketableLimitOrdersUsd>1000</netPmtPaidRecvNonMarketableLimitOrdersUsd>
-          <netPmtPaidRecvNonMarketableLimitOrdersCph>0.0021</netPmtPaidRecvNonMarketableLimitOrdersCph>
-          <netPmtPaidRecvOtherOrdersUsd>1000</netPmtPaidRecvOtherOrdersUsd>
-          <netPmtPaidRecvOtherOrdersCph>0.0021</netPmtPaidRecvOtherOrdersCph>
-          <materialAspects>[Insert discussion of the material aspects of the relationship with this venue pursuant to rule 606(a)(1)(iv).]</materialAspects>
-        </rVenue>
-        <rVenue>
-          <name>NYSE MKT, LLC</name>
-          <mic>AMEX</mic>
-          <orderPct>8.10</orderPct>
-          <marketPct>0.00</marketPct>
-          <marketableLimitPct>3.60</marketableLimitPct>
-          <nonMarketableLimitPct>4.40</nonMarketableLimitPct>
-          <otherPct>8.10</otherPct>
-          <netPmtPaidRecvMarketOrdersUsd>1000</netPmtPaidRecvMarketOrdersUsd>
-          <netPmtPaidRecvMarketOrdersCph>0.0021</netPmtPaidRecvMarketOrdersCph>
-          <netPmtPaidRecvMarketableLimitOrdersUsd>1000</netPmtPaidRecvMarketableLimitOrdersUsd>
-          <netPmtPaidRecvMarketableLimitOrdersCph>0.0021</netPmtPaidRecvMarketableLimitOrdersCph>
-          <netPmtPaidRecvNonMarketableLimitOrdersUsd>1000</netPmtPaidRecvNonMarketableLimitOrdersUsd>
-          <netPmtPaidRecvNonMarketableLimitOrdersCph>0.0021</netPmtPaidRecvNonMarketableLimitOrdersCph>
-          <netPmtPaidRecvOtherOrdersUsd>1000</netPmtPaidRecvOtherOrdersUsd>
-          <netPmtPaidRecvOtherOrdersCph>0.0021</netPmtPaidRecvOtherOrdersCph>
-          <materialAspects>[Insert discussion of the material aspects of the relationship with this venue pursuant to rule 606(a)(1)(iv).]</materialAspects>
-        </rVenue>
-        <rVenue>
-          <name>Nasdaq OMX PHLX,Inc</name>
-          <mic>PHLX</mic>
-          <orderPct>5.40</orderPct>
-          <marketPct>0.00</marketPct>
-          <marketableLimitPct>3.60</marketableLimitPct>
-          <nonMarketableLimitPct>1.30</nonMarketableLimitPct>
-          <otherPct>5.40</otherPct>
-          <netPmtPaidRecvMarketOrdersUsd>1000</netPmtPaidRecvMarketOrdersUsd>
-          <netPmtPaidRecvMarketOrdersCph>0.0021</netPmtPaidRecvMarketOrdersCph>
-          <netPmtPaidRecvMarketableLimitOrdersUsd>1000</netPmtPaidRecvMarketableLimitOrdersUsd>
-          <netPmtPaidRecvMarketableLimitOrdersCph>0.0021</netPmtPaidRecvMarketableLimitOrdersCph>
-          <netPmtPaidRecvNonMarketableLimitOrdersUsd>1000</netPmtPaidRecvNonMarketableLimitOrdersUsd>
-          <netPmtPaidRecvNonMarketableLimitOrdersCph>0.0021</netPmtPaidRecvNonMarketableLimitOrdersCph>
-          <netPmtPaidRecvOtherOrdersUsd>1000</netPmtPaidRecvOtherOrdersUsd>
-          <netPmtPaidRecvOtherOrdersCph>0.0021</netPmtPaidRecvOtherOrdersCph>
-          <materialAspects>[Insert discussion of the material aspects of the relationship with this venue pursuant to rule 606(a)(1)(iv).]</materialAspects>
-        </rVenue>
-        <rVenue>
-          <name>C2 Options Exchange</name>
-          <mic>COPT</mic>
-          <orderPct>5.10</orderPct>
-          <marketPct>0.00</marketPct>
-          <marketableLimitPct>2.10</marketableLimitPct>
-          <nonMarketableLimitPct>2.00</nonMarketableLimitPct>
-          <otherPct>5.20</otherPct>
-          <netPmtPaidRecvMarketOrdersUsd>1000</netPmtPaidRecvMarketOrdersUsd>
-          <netPmtPaidRecvMarketOrdersCph>0.0021</netPmtPaidRecvMarketOrdersCph>
-          <netPmtPaidRecvMarketableLimitOrdersUsd>1000</netPmtPaidRecvMarketableLimitOrdersUsd>
-          <netPmtPaidRecvMarketableLimitOrdersCph>0.0021</netPmtPaidRecvMarketableLimitOrdersCph>
-          <netPmtPaidRecvNonMarketableLimitOrdersUsd>1000</netPmtPaidRecvNonMarketableLimitOrdersUsd>
-          <netPmtPaidRecvNonMarketableLimitOrdersCph>0.0021</netPmtPaidRecvNonMarketableLimitOrdersCph>
-          <netPmtPaidRecvOtherOrdersUsd>1000</netPmtPaidRecvOtherOrdersUsd>
-          <netPmtPaidRecvOtherOrdersCph>0.0021</netPmtPaidRecvOtherOrdersCph>
-          <materialAspects>[Insert discussion of the material aspects of the relationship with this venue pursuant to rule 606(a)(1)(iv).]</materialAspects>
-        </rVenue>
-        <rVenue>
-          <name>Boston Options Exchange Group</name>
-          <mic>BOXX</mic>
-          <orderPct>3.90</orderPct>
-          <marketPct>0.00</marketPct>
-          <marketableLimitPct>2.00</marketableLimitPct>
-          <nonMarketableLimitPct>1.10</nonMarketableLimitPct>
-          <otherPct>3.90</otherPct>
-          <netPmtPaidRecvMarketOrdersUsd>1000</netPmtPaidRecvMarketOrdersUsd>
-          <netPmtPaidRecvMarketOrdersCph>0.0021</netPmtPaidRecvMarketOrdersCph>
-          <netPmtPaidRecvMarketableLimitOrdersUsd>1000</netPmtPaidRecvMarketableLimitOrdersUsd>
-          <netPmtPaidRecvMarketableLimitOrdersCph>0.0021</netPmtPaidRecvMarketableLimitOrdersCph>
-          <netPmtPaidRecvNonMarketableLimitOrdersUsd>1000</netPmtPaidRecvNonMarketableLimitOrdersUsd>
-          <netPmtPaidRecvNonMarketableLimitOrdersCph>0.0021</netPmtPaidRecvNonMarketableLimitOrdersCph>
-          <netPmtPaidRecvOtherOrdersUsd>1000</netPmtPaidRecvOtherOrdersUsd>
-          <netPmtPaidRecvOtherOrdersCph>0.0021</netPmtPaidRecvOtherOrdersCph>
-          <materialAspects>[Insert discussion of the material aspects of the relationship with this venue pursuant to rule 606(a)(1)(iv).]</materialAspects>
-        </rVenue>
-      </rVenues>
-    </rOptions>
-  </rMonthly>
+	<version>1.2</version>
+	<bd>Ziffren, Brittenham, Branca, Fisher, Gill-Lurie, Stifelman, Johnson &amp; Wolf, Inc.</bd>
+	<year>2020</year>
+	<qtr>1</qtr>
+	<timestamp>2020-04-01T22:55:48Z</timestamp>
+	<rMonthly>
+		<year>2020</year>
+		<mon>1</mon>
+		<rSP500>
+			<ndoPct>13.60</ndoPct>
+			<ndoMarketPct>0.00</ndoMarketPct>
+			<ndoMarketableLimitPct>1.10</ndoMarketableLimitPct>
+			<ndoNonmarketableLimitPct>1.00</ndoNonmarketableLimitPct>
+			<ndoOtherPct>97.90</ndoOtherPct>
+			<rVenues>
+				<rVenue>
+					<name>New York ... Stock Exchange, LLC.</name>
+					<mic>XNYS</mic>
+					<orderPct>39.80</orderPct>
+					<marketPct>36.70</marketPct>
+					<marketableLimitPct>10.00</marketableLimitPct>
+					<nonMarketableLimitPct>39.00</nonMarketableLimitPct>
+					<otherPct>29.50</otherPct>
+					<netPmtPaidRecvMarketOrdersUsd>1000</netPmtPaidRecvMarketOrdersUsd>
+					<netPmtPaidRecvMarketOrdersCph>0.0021</netPmtPaidRecvMarketOrdersCph>
+					<netPmtPaidRecvMarketableLimitOrdersUsd>1000</netPmtPaidRecvMarketableLimitOrdersUsd>
+					<netPmtPaidRecvMarketableLimitOrdersCph>0.0021</netPmtPaidRecvMarketableLimitOrdersCph>
+					<netPmtPaidRecvNonMarketableLimitOrdersUsd>1000</netPmtPaidRecvNonMarketableLimitOrdersUsd>
+					<netPmtPaidRecvNonMarketableLimitOrdersCph>0.0021</netPmtPaidRecvNonMarketableLimitOrdersCph>
+					<netPmtPaidRecvOtherOrdersUsd>1000</netPmtPaidRecvOtherOrdersUsd>
+					<netPmtPaidRecvOtherOrdersCph>0.0021</netPmtPaidRecvOtherOrdersCph>
+					<materialAspects>[Insert discussion of the material ... aspects of the relationship with this ... venue pursuant to rule 606(a)(1)(iv).]</materialAspects>
+				</rVenue>
+				<rVenue>
+					<name>NYSE Arca, Inc. - BROKE Consolidator Inc.</name>
+					<mic>ARCA</mic>
+					<mpid>BROKE</mpid>
+					<orderPct>11.70</orderPct>
+					<marketPct>1.10</marketPct>
+					<marketableLimitPct>10.00</marketableLimitPct>
+					<nonMarketableLimitPct>2.40</nonMarketableLimitPct>
+					<otherPct>11.70</otherPct>
+					<netPmtPaidRecvMarketOrdersUsd>1000</netPmtPaidRecvMarketOrdersUsd>
+					<netPmtPaidRecvMarketOrdersCph>0.0021</netPmtPaidRecvMarketOrdersCph>
+					<netPmtPaidRecvMarketableLimitOrdersUsd>1000</netPmtPaidRecvMarketableLimitOrdersUsd>
+					<netPmtPaidRecvMarketableLimitOrdersCph>0.0021</netPmtPaidRecvMarketableLimitOrdersCph>
+					<netPmtPaidRecvNonMarketableLimitOrdersUsd>1000</netPmtPaidRecvNonMarketableLimitOrdersUsd>
+					<netPmtPaidRecvNonMarketableLimitOrdersCph>0.0021</netPmtPaidRecvNonMarketableLimitOrdersCph>
+					<netPmtPaidRecvOtherOrdersUsd>1000</netPmtPaidRecvOtherOrdersUsd>
+					<netPmtPaidRecvOtherOrdersCph>0.0021</netPmtPaidRecvOtherOrdersCph>
+					<materialAspects>[Insert discussion of the material aspects of the relationship with this venue pursuant to rule 606(a)(1)(iv).]</materialAspects>
+				</rVenue>
+				<rVenue>
+					<name>BATS Exchange, Inc.</name>
+					<mic>BATS</mic>
+					<orderPct>13.20</orderPct>
+					<marketPct>6.80</marketPct>
+					<marketableLimitPct>3.00</marketableLimitPct>
+					<nonMarketableLimitPct>4.40</nonMarketableLimitPct>
+					<otherPct>13.30</otherPct>
+					<netPmtPaidRecvMarketOrdersUsd>1000</netPmtPaidRecvMarketOrdersUsd>
+					<netPmtPaidRecvMarketOrdersCph>0.0021</netPmtPaidRecvMarketOrdersCph>
+					<netPmtPaidRecvMarketableLimitOrdersUsd>1000</netPmtPaidRecvMarketableLimitOrdersUsd>
+					<netPmtPaidRecvMarketableLimitOrdersCph>0.0021</netPmtPaidRecvMarketableLimitOrdersCph>
+					<netPmtPaidRecvNonMarketableLimitOrdersUsd>1000</netPmtPaidRecvNonMarketableLimitOrdersUsd>
+					<netPmtPaidRecvNonMarketableLimitOrdersCph>0.0021</netPmtPaidRecvNonMarketableLimitOrdersCph>
+					<netPmtPaidRecvOtherOrdersUsd>1000</netPmtPaidRecvOtherOrdersUsd>
+					<netPmtPaidRecvOtherOrdersCph>0.0021</netPmtPaidRecvOtherOrdersCph>
+					<materialAspects>[Insert discussion of the material aspects of the relationship with this venue pursuant to rule 606(a)(1)(iv).]</materialAspects>
+				</rVenue>
+				<rVenue>
+					<name>EDGX Exchange, Inc.</name>
+					<mic>EDGX</mic>
+					<orderPct>11.70</orderPct>
+					<marketPct>1.10</marketPct>
+					<marketableLimitPct>3.00</marketableLimitPct>
+					<nonMarketableLimitPct>9.40</nonMarketableLimitPct>
+					<otherPct>11.70</otherPct>
+					<netPmtPaidRecvMarketOrdersUsd>1000</netPmtPaidRecvMarketOrdersUsd>
+					<netPmtPaidRecvMarketOrdersCph>0.0021</netPmtPaidRecvMarketOrdersCph>
+					<netPmtPaidRecvMarketableLimitOrdersUsd>1000</netPmtPaidRecvMarketableLimitOrdersUsd>
+					<netPmtPaidRecvMarketableLimitOrdersCph>0.0021</netPmtPaidRecvMarketableLimitOrdersCph>
+					<netPmtPaidRecvNonMarketableLimitOrdersUsd>1000</netPmtPaidRecvNonMarketableLimitOrdersUsd>
+					<netPmtPaidRecvNonMarketableLimitOrdersCph>0.0021</netPmtPaidRecvNonMarketableLimitOrdersCph>
+					<netPmtPaidRecvOtherOrdersUsd>1000</netPmtPaidRecvOtherOrdersUsd>
+					<netPmtPaidRecvOtherOrdersCph>0.0021</netPmtPaidRecvOtherOrdersCph>
+					<materialAspects>[Insert discussion of the material aspects of the relationship with this venue pursuant to rule 606(a)(1)(iv).]</materialAspects>
+				</rVenue>
+				<rVenue>
+					<name>The Nasdaq Stock Market LLC.</name>
+					<mic>XNAS</mic>
+					<orderPct>6.80</orderPct>
+					<marketPct>2.30</marketPct>
+					<marketableLimitPct>3.00</marketableLimitPct>
+					<nonMarketableLimitPct>21.70</nonMarketableLimitPct>
+					<otherPct>6.50</otherPct>
+					<netPmtPaidRecvMarketOrdersUsd>1000</netPmtPaidRecvMarketOrdersUsd>
+					<netPmtPaidRecvMarketOrdersCph>0.0021</netPmtPaidRecvMarketOrdersCph>
+					<netPmtPaidRecvMarketableLimitOrdersUsd>1000</netPmtPaidRecvMarketableLimitOrdersUsd>
+					<netPmtPaidRecvMarketableLimitOrdersCph>0.0021</netPmtPaidRecvMarketableLimitOrdersCph>
+					<netPmtPaidRecvNonMarketableLimitOrdersUsd>1000</netPmtPaidRecvNonMarketableLimitOrdersUsd>
+					<netPmtPaidRecvNonMarketableLimitOrdersCph>0.0021</netPmtPaidRecvNonMarketableLimitOrdersCph>
+					<netPmtPaidRecvOtherOrdersUsd>1000</netPmtPaidRecvOtherOrdersUsd>
+					<netPmtPaidRecvOtherOrdersCph>0.0021</netPmtPaidRecvOtherOrdersCph>
+					<materialAspects>[Insert discussion of the material aspects of the relationship with this venue pursuant to rule 606(a)(1)(iv).]</materialAspects>
+				</rVenue>
+				<rVenue>
+					<name>B. Roker Exec and Clrng</name>
+					<mic>180T</mic>
+					<orderPct>6.10</orderPct>
+					<marketPct>9.50</marketPct>
+					<marketableLimitPct>0.40</marketableLimitPct>
+					<nonMarketableLimitPct>0.10</nonMarketableLimitPct>
+					<otherPct>6.20</otherPct>
+					<netPmtPaidRecvMarketOrdersUsd>1000</netPmtPaidRecvMarketOrdersUsd>
+					<netPmtPaidRecvMarketOrdersCph>0.0021</netPmtPaidRecvMarketOrdersCph>
+					<netPmtPaidRecvMarketableLimitOrdersUsd>1000</netPmtPaidRecvMarketableLimitOrdersUsd>
+					<netPmtPaidRecvMarketableLimitOrdersCph>0.0021</netPmtPaidRecvMarketableLimitOrdersCph>
+					<netPmtPaidRecvNonMarketableLimitOrdersUsd>1000</netPmtPaidRecvNonMarketableLimitOrdersUsd>
+					<netPmtPaidRecvNonMarketableLimitOrdersCph>0.0021</netPmtPaidRecvNonMarketableLimitOrdersCph>
+					<netPmtPaidRecvOtherOrdersUsd>1000</netPmtPaidRecvOtherOrdersUsd>
+					<netPmtPaidRecvOtherOrdersCph>0.0021</netPmtPaidRecvOtherOrdersCph>
+					<materialAspects>[Insert discussion of the material aspects of the relationship with this venue pursuant to rule 606(a)(1)(iv).]</materialAspects>
+				</rVenue>
+				<rVenue>
+					<name>EDGA Exchange,Inc.</name>
+					<mic>EDGA</mic>
+					<orderPct>3.90</orderPct>
+					<marketPct>3.40</marketPct>
+					<marketableLimitPct>3.00</marketableLimitPct>
+					<nonMarketableLimitPct>0.10</nonMarketableLimitPct>
+					<otherPct>3.90</otherPct>
+					<netPmtPaidRecvMarketOrdersUsd>1000</netPmtPaidRecvMarketOrdersUsd>
+					<netPmtPaidRecvMarketOrdersCph>0.0021</netPmtPaidRecvMarketOrdersCph>
+					<netPmtPaidRecvMarketableLimitOrdersUsd>1000</netPmtPaidRecvMarketableLimitOrdersUsd>
+					<netPmtPaidRecvMarketableLimitOrdersCph>0.0021</netPmtPaidRecvMarketableLimitOrdersCph>
+					<netPmtPaidRecvNonMarketableLimitOrdersUsd>1000</netPmtPaidRecvNonMarketableLimitOrdersUsd>
+					<netPmtPaidRecvNonMarketableLimitOrdersCph>0.0021</netPmtPaidRecvNonMarketableLimitOrdersCph>
+					<netPmtPaidRecvOtherOrdersUsd>1000</netPmtPaidRecvOtherOrdersUsd>
+					<netPmtPaidRecvOtherOrdersCph>0.0021</netPmtPaidRecvOtherOrdersCph>
+					<materialAspects>[Insert discussion of the material aspects of the relationship with this venue pursuant to rule 606(a)(1)(iv).]</materialAspects>
+				</rVenue>
+				<rVenue>
+					<name>TUBS Exchange, Inc.</name>
+					<mic>TUBS</mic>
+					<orderPct>3.30</orderPct>
+					<marketPct>0.00</marketPct>
+					<marketableLimitPct>1.70</marketableLimitPct>
+					<nonMarketableLimitPct>1.00</nonMarketableLimitPct>
+					<otherPct>3.40</otherPct>
+					<netPmtPaidRecvMarketOrdersUsd>1000</netPmtPaidRecvMarketOrdersUsd>
+					<netPmtPaidRecvMarketOrdersCph>0.0021</netPmtPaidRecvMarketOrdersCph>
+					<netPmtPaidRecvMarketableLimitOrdersUsd>1000</netPmtPaidRecvMarketableLimitOrdersUsd>
+					<netPmtPaidRecvMarketableLimitOrdersCph>0.0021</netPmtPaidRecvMarketableLimitOrdersCph>
+					<netPmtPaidRecvNonMarketableLimitOrdersUsd>1000</netPmtPaidRecvNonMarketableLimitOrdersUsd>
+					<netPmtPaidRecvNonMarketableLimitOrdersCph>0.0021</netPmtPaidRecvNonMarketableLimitOrdersCph>
+					<netPmtPaidRecvOtherOrdersUsd>1000</netPmtPaidRecvOtherOrdersUsd>
+					<netPmtPaidRecvOtherOrdersCph>0.0021</netPmtPaidRecvOtherOrdersCph>
+					<materialAspects>[Insert discussion of the material aspects of the relationship with this venue pursuant to rule 606(a)(1)(iv).]</materialAspects>
+				</rVenue>
+				<rVenue>
+					<name>NASDAQ OMX BX.</name>
+					<mic>BOSE</mic>
+					<orderPct>2.10</orderPct>
+					<marketPct>0.00</marketPct>
+					<marketableLimitPct>1.60</marketableLimitPct>
+					<nonMarketableLimitPct>1.00</nonMarketableLimitPct>
+					<otherPct>2.10</otherPct>
+					<netPmtPaidRecvMarketOrdersUsd>1000</netPmtPaidRecvMarketOrdersUsd>
+					<netPmtPaidRecvMarketOrdersCph>0.0021</netPmtPaidRecvMarketOrdersCph>
+					<netPmtPaidRecvMarketableLimitOrdersUsd>1000</netPmtPaidRecvMarketableLimitOrdersUsd>
+					<netPmtPaidRecvMarketableLimitOrdersCph>0.0021</netPmtPaidRecvMarketableLimitOrdersCph>
+					<netPmtPaidRecvNonMarketableLimitOrdersUsd>1000</netPmtPaidRecvNonMarketableLimitOrdersUsd>
+					<netPmtPaidRecvNonMarketableLimitOrdersCph>0.0021</netPmtPaidRecvNonMarketableLimitOrdersCph>
+					<netPmtPaidRecvOtherOrdersUsd>1000</netPmtPaidRecvOtherOrdersUsd>
+					<netPmtPaidRecvOtherOrdersCph>0.0021</netPmtPaidRecvOtherOrdersCph>
+					<materialAspects>[Insert discussion of the material aspects of the relationship with this venue pursuant to rule 606(a)(1)(iv).]</materialAspects>
+				</rVenue>
+			</rVenues>
+		</rSP500>
+		<rOtherStocks>
+			<ndoPct>13.60</ndoPct>
+			<ndoMarketPct>0.00</ndoMarketPct>
+			<ndoMarketableLimitPct>1.10</ndoMarketableLimitPct>
+			<ndoNonmarketableLimitPct>1.00</ndoNonmarketableLimitPct>
+			<ndoOtherPct>97.90</ndoOtherPct>
+			<rVenues>
+				<rVenue>
+					<name>New York Stock Exchange LLC.</name>
+					<mic>NYSE</mic>
+					<orderPct>39.80</orderPct>
+					<marketPct>36.70</marketPct>
+					<marketableLimitPct>10.00</marketableLimitPct>
+					<nonMarketableLimitPct>39.00</nonMarketableLimitPct>
+					<otherPct>29.50</otherPct>
+					<netPmtPaidRecvMarketOrdersUsd>1000</netPmtPaidRecvMarketOrdersUsd>
+					<netPmtPaidRecvMarketOrdersCph>0.0021</netPmtPaidRecvMarketOrdersCph>
+					<netPmtPaidRecvMarketableLimitOrdersUsd>1000</netPmtPaidRecvMarketableLimitOrdersUsd>
+					<netPmtPaidRecvMarketableLimitOrdersCph>0.0021</netPmtPaidRecvMarketableLimitOrdersCph>
+					<netPmtPaidRecvNonMarketableLimitOrdersUsd>1000</netPmtPaidRecvNonMarketableLimitOrdersUsd>
+					<netPmtPaidRecvNonMarketableLimitOrdersCph>0.0021</netPmtPaidRecvNonMarketableLimitOrdersCph>
+					<netPmtPaidRecvOtherOrdersUsd>1000</netPmtPaidRecvOtherOrdersUsd>
+					<netPmtPaidRecvOtherOrdersCph>0.0021</netPmtPaidRecvOtherOrdersCph>
+					<materialAspects>[Insert discussion of the material aspects of the relationship with this venue pursuant to rule 606(a)(1)(iv).]</materialAspects>
+				</rVenue>
+				<rVenue>
+					<name>NYSE Arca, Inc.</name>
+					<mic>ARCA</mic>
+					<orderPct>11.70</orderPct>
+					<marketPct>1.10</marketPct>
+					<marketableLimitPct>10.00</marketableLimitPct>
+					<nonMarketableLimitPct>2.40</nonMarketableLimitPct>
+					<otherPct>11.70</otherPct>
+					<netPmtPaidRecvMarketOrdersUsd>1000</netPmtPaidRecvMarketOrdersUsd>
+					<netPmtPaidRecvMarketOrdersCph>0.0021</netPmtPaidRecvMarketOrdersCph>
+					<netPmtPaidRecvMarketableLimitOrdersUsd>1000</netPmtPaidRecvMarketableLimitOrdersUsd>
+					<netPmtPaidRecvMarketableLimitOrdersCph>0.0021</netPmtPaidRecvMarketableLimitOrdersCph>
+					<netPmtPaidRecvNonMarketableLimitOrdersUsd>1000</netPmtPaidRecvNonMarketableLimitOrdersUsd>
+					<netPmtPaidRecvNonMarketableLimitOrdersCph>0.0021</netPmtPaidRecvNonMarketableLimitOrdersCph>
+					<netPmtPaidRecvOtherOrdersUsd>1000</netPmtPaidRecvOtherOrdersUsd>
+					<netPmtPaidRecvOtherOrdersCph>0.0021</netPmtPaidRecvOtherOrdersCph>
+					<materialAspects>[Insert discussion of the material aspects of the relationship with this venue pursuant to rule 606(a)(1)(iv).]</materialAspects>
+				</rVenue>
+				<rVenue>
+					<name>BATS Exchange, Inc.</name>
+					<mic>BATS</mic>
+					<orderPct>13.20</orderPct>
+					<marketPct>6.80</marketPct>
+					<marketableLimitPct>3.00</marketableLimitPct>
+					<nonMarketableLimitPct>4.40</nonMarketableLimitPct>
+					<otherPct>13.30</otherPct>
+					<netPmtPaidRecvMarketOrdersUsd>1000</netPmtPaidRecvMarketOrdersUsd>
+					<netPmtPaidRecvMarketOrdersCph>0.0021</netPmtPaidRecvMarketOrdersCph>
+					<netPmtPaidRecvMarketableLimitOrdersUsd>1000</netPmtPaidRecvMarketableLimitOrdersUsd>
+					<netPmtPaidRecvMarketableLimitOrdersCph>0.0021</netPmtPaidRecvMarketableLimitOrdersCph>
+					<netPmtPaidRecvNonMarketableLimitOrdersUsd>1000</netPmtPaidRecvNonMarketableLimitOrdersUsd>
+					<netPmtPaidRecvNonMarketableLimitOrdersCph>0.0021</netPmtPaidRecvNonMarketableLimitOrdersCph>
+					<netPmtPaidRecvOtherOrdersUsd>1000</netPmtPaidRecvOtherOrdersUsd>
+					<netPmtPaidRecvOtherOrdersCph>0.0021</netPmtPaidRecvOtherOrdersCph>
+					<materialAspects>[Insert discussion of the material aspects of the relationship with this venue pursuant to rule 606(a)(1)(iv).]</materialAspects>
+				</rVenue>
+				<rVenue>
+					<name>EDGX Exchange, Inc.</name>
+					<mic>EDGX</mic>
+					<orderPct>11.70</orderPct>
+					<marketPct>1.10</marketPct>
+					<marketableLimitPct>3.00</marketableLimitPct>
+					<nonMarketableLimitPct>9.40</nonMarketableLimitPct>
+					<otherPct>11.70</otherPct>
+					<netPmtPaidRecvMarketOrdersUsd>1000</netPmtPaidRecvMarketOrdersUsd>
+					<netPmtPaidRecvMarketOrdersCph>0.0021</netPmtPaidRecvMarketOrdersCph>
+					<netPmtPaidRecvMarketableLimitOrdersUsd>1000</netPmtPaidRecvMarketableLimitOrdersUsd>
+					<netPmtPaidRecvMarketableLimitOrdersCph>0.0021</netPmtPaidRecvMarketableLimitOrdersCph>
+					<netPmtPaidRecvNonMarketableLimitOrdersUsd>1000</netPmtPaidRecvNonMarketableLimitOrdersUsd>
+					<netPmtPaidRecvNonMarketableLimitOrdersCph>0.0021</netPmtPaidRecvNonMarketableLimitOrdersCph>
+					<netPmtPaidRecvOtherOrdersUsd>1000</netPmtPaidRecvOtherOrdersUsd>
+					<netPmtPaidRecvOtherOrdersCph>0.0021</netPmtPaidRecvOtherOrdersCph>
+					<materialAspects>[Insert discussion of the material aspects of the relationship with this venue pursuant to rule 606(a)(1)(iv).]</materialAspects>
+				</rVenue>
+				<rVenue>
+					<name>The Nasdaq Stock Market LLC.</name>
+					<mic>XNAS</mic>
+					<orderPct>6.80</orderPct>
+					<marketPct>2.30</marketPct>
+					<marketableLimitPct>3.00</marketableLimitPct>
+					<nonMarketableLimitPct>21.70</nonMarketableLimitPct>
+					<otherPct>6.50</otherPct>
+					<netPmtPaidRecvMarketOrdersUsd>1000</netPmtPaidRecvMarketOrdersUsd>
+					<netPmtPaidRecvMarketOrdersCph>0.0021</netPmtPaidRecvMarketOrdersCph>
+					<netPmtPaidRecvMarketableLimitOrdersUsd>1000</netPmtPaidRecvMarketableLimitOrdersUsd>
+					<netPmtPaidRecvMarketableLimitOrdersCph>0.0021</netPmtPaidRecvMarketableLimitOrdersCph>
+					<netPmtPaidRecvNonMarketableLimitOrdersUsd>1000</netPmtPaidRecvNonMarketableLimitOrdersUsd>
+					<netPmtPaidRecvNonMarketableLimitOrdersCph>0.0021</netPmtPaidRecvNonMarketableLimitOrdersCph>
+					<netPmtPaidRecvOtherOrdersUsd>1000</netPmtPaidRecvOtherOrdersUsd>
+					<netPmtPaidRecvOtherOrdersCph>0.0021</netPmtPaidRecvOtherOrdersCph>
+					<materialAspects>[Insert discussion of the material aspects of the relationship with this venue pursuant to rule 606(a)(1)(iv).]</materialAspects>
+				</rVenue>
+				<rVenue>
+					<name>B. Roker Exec and Clrng</name>
+					<mic>180T</mic>
+					<orderPct>6.10</orderPct>
+					<marketPct>9.50</marketPct>
+					<marketableLimitPct>0.40</marketableLimitPct>
+					<nonMarketableLimitPct>0.10</nonMarketableLimitPct>
+					<otherPct>6.20</otherPct>
+					<netPmtPaidRecvMarketOrdersUsd>1000</netPmtPaidRecvMarketOrdersUsd>
+					<netPmtPaidRecvMarketOrdersCph>0.0021</netPmtPaidRecvMarketOrdersCph>
+					<netPmtPaidRecvMarketableLimitOrdersUsd>1000</netPmtPaidRecvMarketableLimitOrdersUsd>
+					<netPmtPaidRecvMarketableLimitOrdersCph>0.0021</netPmtPaidRecvMarketableLimitOrdersCph>
+					<netPmtPaidRecvNonMarketableLimitOrdersUsd>1000</netPmtPaidRecvNonMarketableLimitOrdersUsd>
+					<netPmtPaidRecvNonMarketableLimitOrdersCph>0.0021</netPmtPaidRecvNonMarketableLimitOrdersCph>
+					<netPmtPaidRecvOtherOrdersUsd>1000</netPmtPaidRecvOtherOrdersUsd>
+					<netPmtPaidRecvOtherOrdersCph>0.0021</netPmtPaidRecvOtherOrdersCph>
+					<materialAspects>[Insert discussion of the material aspects of the relationship with this venue pursuant to rule 606(a)(1)(iv).]</materialAspects>
+				</rVenue>
+				<rVenue>
+					<name>EDGA Exchange,Inc.</name>
+					<mic>EDGA</mic>
+					<orderPct>3.90</orderPct>
+					<marketPct>3.40</marketPct>
+					<marketableLimitPct>3.00</marketableLimitPct>
+					<nonMarketableLimitPct>0.10</nonMarketableLimitPct>
+					<otherPct>3.90</otherPct>
+					<netPmtPaidRecvMarketOrdersUsd>1000</netPmtPaidRecvMarketOrdersUsd>
+					<netPmtPaidRecvMarketOrdersCph>0.0021</netPmtPaidRecvMarketOrdersCph>
+					<netPmtPaidRecvMarketableLimitOrdersUsd>1000</netPmtPaidRecvMarketableLimitOrdersUsd>
+					<netPmtPaidRecvMarketableLimitOrdersCph>0.0021</netPmtPaidRecvMarketableLimitOrdersCph>
+					<netPmtPaidRecvNonMarketableLimitOrdersUsd>1000</netPmtPaidRecvNonMarketableLimitOrdersUsd>
+					<netPmtPaidRecvNonMarketableLimitOrdersCph>0.0021</netPmtPaidRecvNonMarketableLimitOrdersCph>
+					<netPmtPaidRecvOtherOrdersUsd>1000</netPmtPaidRecvOtherOrdersUsd>
+					<netPmtPaidRecvOtherOrdersCph>0.0021</netPmtPaidRecvOtherOrdersCph>
+					<materialAspects>[Insert discussion of the material aspects of the relationship with this venue pursuant to rule 606(a)(1)(iv).]</materialAspects>
+				</rVenue>
+				<rVenue>
+					<name>TUBS Exchange, Inc.</name>
+					<mic>TUBS</mic>
+					<orderPct>3.30</orderPct>
+					<marketPct>0.00</marketPct>
+					<marketableLimitPct>1.70</marketableLimitPct>
+					<nonMarketableLimitPct>1.00</nonMarketableLimitPct>
+					<otherPct>3.40</otherPct>
+					<netPmtPaidRecvMarketOrdersUsd>1000</netPmtPaidRecvMarketOrdersUsd>
+					<netPmtPaidRecvMarketOrdersCph>0.0021</netPmtPaidRecvMarketOrdersCph>
+					<netPmtPaidRecvMarketableLimitOrdersUsd>1000</netPmtPaidRecvMarketableLimitOrdersUsd>
+					<netPmtPaidRecvMarketableLimitOrdersCph>0.0021</netPmtPaidRecvMarketableLimitOrdersCph>
+					<netPmtPaidRecvNonMarketableLimitOrdersUsd>1000</netPmtPaidRecvNonMarketableLimitOrdersUsd>
+					<netPmtPaidRecvNonMarketableLimitOrdersCph>0.0021</netPmtPaidRecvNonMarketableLimitOrdersCph>
+					<netPmtPaidRecvOtherOrdersUsd>1000</netPmtPaidRecvOtherOrdersUsd>
+					<netPmtPaidRecvOtherOrdersCph>0.0021</netPmtPaidRecvOtherOrdersCph>
+					<materialAspects>[Insert discussion of the material aspects of the relationship with this venue pursuant to rule 606(a)(1)(iv).]</materialAspects>
+				</rVenue>
+				<rVenue>
+					<name>NASDAQ OMX BX.</name>
+					<mic>BOSE</mic>
+					<orderPct>2.10</orderPct>
+					<marketPct>0.00</marketPct>
+					<marketableLimitPct>1.60</marketableLimitPct>
+					<nonMarketableLimitPct>1.00</nonMarketableLimitPct>
+					<otherPct>2.10</otherPct>
+					<netPmtPaidRecvMarketOrdersUsd>1000</netPmtPaidRecvMarketOrdersUsd>
+					<netPmtPaidRecvMarketOrdersCph>0.0021</netPmtPaidRecvMarketOrdersCph>
+					<netPmtPaidRecvMarketableLimitOrdersUsd>1000</netPmtPaidRecvMarketableLimitOrdersUsd>
+					<netPmtPaidRecvMarketableLimitOrdersCph>0.0021</netPmtPaidRecvMarketableLimitOrdersCph>
+					<netPmtPaidRecvNonMarketableLimitOrdersUsd>1000</netPmtPaidRecvNonMarketableLimitOrdersUsd>
+					<netPmtPaidRecvNonMarketableLimitOrdersCph>0.0021</netPmtPaidRecvNonMarketableLimitOrdersCph>
+					<netPmtPaidRecvOtherOrdersUsd>1000</netPmtPaidRecvOtherOrdersUsd>
+					<netPmtPaidRecvOtherOrdersCph>0.0021</netPmtPaidRecvOtherOrdersCph>
+					<materialAspects>[Insert discussion of the material aspects of the relationship with this venue pursuant to rule 606(a)(1)(iv).]</materialAspects>
+				</rVenue>
+			</rVenues>
+		</rOtherStocks>
+		<rOptions>
+			<ndoPct>53.90</ndoPct>
+			<ndoMarketPct>0.00</ndoMarketPct>
+			<ndoMarketableLimitPct>0.50</ndoMarketableLimitPct>
+			<ndoNonmarketableLimitPct>0.60</ndoNonmarketableLimitPct>
+			<ndoOtherPct>98.90</ndoOtherPct>
+			<rVenues>
+				<rVenue>
+					<name>BATS Options Exchange.</name>
+					<mic>BATO</mic>
+					<orderPct>21.80</orderPct>
+					<marketPct>0.00</marketPct>
+					<marketableLimitPct>10.00</marketableLimitPct>
+					<nonMarketableLimitPct>7.30</nonMarketableLimitPct>
+					<otherPct>21.90</otherPct>
+					<netPmtPaidRecvMarketOrdersUsd>1000</netPmtPaidRecvMarketOrdersUsd>
+					<netPmtPaidRecvMarketOrdersCph>0.0021</netPmtPaidRecvMarketOrdersCph>
+					<netPmtPaidRecvMarketableLimitOrdersUsd>1000</netPmtPaidRecvMarketableLimitOrdersUsd>
+					<netPmtPaidRecvMarketableLimitOrdersCph>0.0021</netPmtPaidRecvMarketableLimitOrdersCph>
+					<netPmtPaidRecvNonMarketableLimitOrdersUsd>1000</netPmtPaidRecvNonMarketableLimitOrdersUsd>
+					<netPmtPaidRecvNonMarketableLimitOrdersCph>0.0021</netPmtPaidRecvNonMarketableLimitOrdersCph>
+					<netPmtPaidRecvOtherOrdersUsd>1000</netPmtPaidRecvOtherOrdersUsd>
+					<netPmtPaidRecvOtherOrdersCph>0.0021</netPmtPaidRecvOtherOrdersCph>
+					<materialAspects>[Insert discussion of the material aspects of the relationship with this venue pursuant to rule 606(a)(1)(iv).]</materialAspects>
+				</rVenue>
+				<rVenue>
+					<name>NYSE Arca, Inc.</name>
+					<mic>PCXX</mic>
+					<orderPct>13.60</orderPct>
+					<marketPct>0.00</marketPct>
+					<marketableLimitPct>10.30</marketableLimitPct>
+					<nonMarketableLimitPct>2.00</nonMarketableLimitPct>
+					<otherPct>13.70</otherPct>
+					<netPmtPaidRecvMarketOrdersUsd>1000</netPmtPaidRecvMarketOrdersUsd>
+					<netPmtPaidRecvMarketOrdersCph>0.0021</netPmtPaidRecvMarketOrdersCph>
+					<netPmtPaidRecvMarketableLimitOrdersUsd>1000</netPmtPaidRecvMarketableLimitOrdersUsd>
+					<netPmtPaidRecvMarketableLimitOrdersCph>0.0021</netPmtPaidRecvMarketableLimitOrdersCph>
+					<netPmtPaidRecvNonMarketableLimitOrdersUsd>1000</netPmtPaidRecvNonMarketableLimitOrdersUsd>
+					<netPmtPaidRecvNonMarketableLimitOrdersCph>0.0021</netPmtPaidRecvNonMarketableLimitOrdersCph>
+					<netPmtPaidRecvOtherOrdersUsd>1000</netPmtPaidRecvOtherOrdersUsd>
+					<netPmtPaidRecvOtherOrdersCph>0.0021</netPmtPaidRecvOtherOrdersCph>
+					<materialAspects>[Insert discussion of the material aspects of the relationship with this venue pursuant to rule 606(a)(1)(iv).]</materialAspects>
+				</rVenue>
+				<rVenue>
+					<name>International Securities Exch</name>
+					<mic>ISEE</mic>
+					<orderPct>13.20</orderPct>
+					<marketPct>0.00</marketPct>
+					<marketableLimitPct>7.20</marketableLimitPct>
+					<nonMarketableLimitPct>2.00</nonMarketableLimitPct>
+					<otherPct>13.70</otherPct>
+					<netPmtPaidRecvMarketOrdersUsd>1000</netPmtPaidRecvMarketOrdersUsd>
+					<netPmtPaidRecvMarketOrdersCph>0.0021</netPmtPaidRecvMarketOrdersCph>
+					<netPmtPaidRecvMarketableLimitOrdersUsd>1000</netPmtPaidRecvMarketableLimitOrdersUsd>
+					<netPmtPaidRecvMarketableLimitOrdersCph>0.0021</netPmtPaidRecvMarketableLimitOrdersCph>
+					<netPmtPaidRecvNonMarketableLimitOrdersUsd>1000</netPmtPaidRecvNonMarketableLimitOrdersUsd>
+					<netPmtPaidRecvNonMarketableLimitOrdersCph>0.0021</netPmtPaidRecvNonMarketableLimitOrdersCph>
+					<netPmtPaidRecvOtherOrdersUsd>1000</netPmtPaidRecvOtherOrdersUsd>
+					<netPmtPaidRecvOtherOrdersCph>0.0021</netPmtPaidRecvOtherOrdersCph>
+					<materialAspects>[Insert discussion of the material aspects of the relationship with this venue pursuant to rule 606(a)(1)(iv).]</materialAspects>
+				</rVenue>
+				<rVenue>
+					<name>Nasdaq Options Market LLC.</name>
+					<mic>NOMM</mic>
+					<orderPct>10.00</orderPct>
+					<marketPct>0.00</marketPct>
+					<marketableLimitPct>7.00</marketableLimitPct>
+					<nonMarketableLimitPct>8.90</nonMarketableLimitPct>
+					<otherPct>9.90</otherPct>
+					<netPmtPaidRecvMarketOrdersUsd>1000</netPmtPaidRecvMarketOrdersUsd>
+					<netPmtPaidRecvMarketOrdersCph>0.0021</netPmtPaidRecvMarketOrdersCph>
+					<netPmtPaidRecvMarketableLimitOrdersUsd>1000</netPmtPaidRecvMarketableLimitOrdersUsd>
+					<netPmtPaidRecvMarketableLimitOrdersCph>0.0021</netPmtPaidRecvMarketableLimitOrdersCph>
+					<netPmtPaidRecvNonMarketableLimitOrdersUsd>1000</netPmtPaidRecvNonMarketableLimitOrdersUsd>
+					<netPmtPaidRecvNonMarketableLimitOrdersCph>0.0021</netPmtPaidRecvNonMarketableLimitOrdersCph>
+					<netPmtPaidRecvOtherOrdersUsd>1000</netPmtPaidRecvOtherOrdersUsd>
+					<netPmtPaidRecvOtherOrdersCph>0.0021</netPmtPaidRecvOtherOrdersCph>
+					<materialAspects>[Insert discussion of the material aspects of the relationship with this venue pursuant to rule 606(a)(1)(iv).]</materialAspects>
+				</rVenue>
+				<rVenue>
+					<name>Chicago Board Options Exchange</name>
+					<mic>CBOE</mic>
+					<orderPct>14.70</orderPct>
+					<marketPct>0.00</marketPct>
+					<marketableLimitPct>7.00</marketableLimitPct>
+					<nonMarketableLimitPct>4.40</nonMarketableLimitPct>
+					<otherPct>14.70</otherPct>
+					<netPmtPaidRecvMarketOrdersUsd>1000</netPmtPaidRecvMarketOrdersUsd>
+					<netPmtPaidRecvMarketOrdersCph>0.0021</netPmtPaidRecvMarketOrdersCph>
+					<netPmtPaidRecvMarketableLimitOrdersUsd>1000</netPmtPaidRecvMarketableLimitOrdersUsd>
+					<netPmtPaidRecvMarketableLimitOrdersCph>0.0021</netPmtPaidRecvMarketableLimitOrdersCph>
+					<netPmtPaidRecvNonMarketableLimitOrdersUsd>1000</netPmtPaidRecvNonMarketableLimitOrdersUsd>
+					<netPmtPaidRecvNonMarketableLimitOrdersCph>0.0021</netPmtPaidRecvNonMarketableLimitOrdersCph>
+					<netPmtPaidRecvOtherOrdersUsd>1000</netPmtPaidRecvOtherOrdersUsd>
+					<netPmtPaidRecvOtherOrdersCph>0.0021</netPmtPaidRecvOtherOrdersCph>
+					<materialAspects>[Insert discussion of the material aspects of the relationship with this venue pursuant to rule 606(a)(1)(iv).]</materialAspects>
+				</rVenue>
+				<rVenue>
+					<name>NYSE MKT, LLC</name>
+					<mic>AMEX</mic>
+					<orderPct>8.10</orderPct>
+					<marketPct>0.00</marketPct>
+					<marketableLimitPct>3.60</marketableLimitPct>
+					<nonMarketableLimitPct>4.40</nonMarketableLimitPct>
+					<otherPct>8.10</otherPct>
+					<netPmtPaidRecvMarketOrdersUsd>1000</netPmtPaidRecvMarketOrdersUsd>
+					<netPmtPaidRecvMarketOrdersCph>0.0021</netPmtPaidRecvMarketOrdersCph>
+					<netPmtPaidRecvMarketableLimitOrdersUsd>1000</netPmtPaidRecvMarketableLimitOrdersUsd>
+					<netPmtPaidRecvMarketableLimitOrdersCph>0.0021</netPmtPaidRecvMarketableLimitOrdersCph>
+					<netPmtPaidRecvNonMarketableLimitOrdersUsd>1000</netPmtPaidRecvNonMarketableLimitOrdersUsd>
+					<netPmtPaidRecvNonMarketableLimitOrdersCph>0.0021</netPmtPaidRecvNonMarketableLimitOrdersCph>
+					<netPmtPaidRecvOtherOrdersUsd>1000</netPmtPaidRecvOtherOrdersUsd>
+					<netPmtPaidRecvOtherOrdersCph>0.0021</netPmtPaidRecvOtherOrdersCph>
+					<materialAspects>[Insert discussion of the material aspects of the relationship with this venue pursuant to rule 606(a)(1)(iv).]</materialAspects>
+				</rVenue>
+				<rVenue>
+					<name>Nasdaq OMX PHLX,Inc</name>
+					<mic>PHLX</mic>
+					<orderPct>5.40</orderPct>
+					<marketPct>0.00</marketPct>
+					<marketableLimitPct>3.60</marketableLimitPct>
+					<nonMarketableLimitPct>1.30</nonMarketableLimitPct>
+					<otherPct>5.40</otherPct>
+					<netPmtPaidRecvMarketOrdersUsd>1000</netPmtPaidRecvMarketOrdersUsd>
+					<netPmtPaidRecvMarketOrdersCph>0.0021</netPmtPaidRecvMarketOrdersCph>
+					<netPmtPaidRecvMarketableLimitOrdersUsd>1000</netPmtPaidRecvMarketableLimitOrdersUsd>
+					<netPmtPaidRecvMarketableLimitOrdersCph>0.0021</netPmtPaidRecvMarketableLimitOrdersCph>
+					<netPmtPaidRecvNonMarketableLimitOrdersUsd>1000</netPmtPaidRecvNonMarketableLimitOrdersUsd>
+					<netPmtPaidRecvNonMarketableLimitOrdersCph>0.0021</netPmtPaidRecvNonMarketableLimitOrdersCph>
+					<netPmtPaidRecvOtherOrdersUsd>1000</netPmtPaidRecvOtherOrdersUsd>
+					<netPmtPaidRecvOtherOrdersCph>0.0021</netPmtPaidRecvOtherOrdersCph>
+					<materialAspects>[Insert discussion of the material aspects of the relationship with this venue pursuant to rule 606(a)(1)(iv).]</materialAspects>
+				</rVenue>
+				<rVenue>
+					<name>C2 Options Exchange</name>
+					<mic>COPT</mic>
+					<orderPct>5.10</orderPct>
+					<marketPct>0.00</marketPct>
+					<marketableLimitPct>2.10</marketableLimitPct>
+					<nonMarketableLimitPct>2.00</nonMarketableLimitPct>
+					<otherPct>5.20</otherPct>
+					<netPmtPaidRecvMarketOrdersUsd>1000</netPmtPaidRecvMarketOrdersUsd>
+					<netPmtPaidRecvMarketOrdersCph>0.0021</netPmtPaidRecvMarketOrdersCph>
+					<netPmtPaidRecvMarketableLimitOrdersUsd>1000</netPmtPaidRecvMarketableLimitOrdersUsd>
+					<netPmtPaidRecvMarketableLimitOrdersCph>0.0021</netPmtPaidRecvMarketableLimitOrdersCph>
+					<netPmtPaidRecvNonMarketableLimitOrdersUsd>1000</netPmtPaidRecvNonMarketableLimitOrdersUsd>
+					<netPmtPaidRecvNonMarketableLimitOrdersCph>0.0021</netPmtPaidRecvNonMarketableLimitOrdersCph>
+					<netPmtPaidRecvOtherOrdersUsd>1000</netPmtPaidRecvOtherOrdersUsd>
+					<netPmtPaidRecvOtherOrdersCph>0.0021</netPmtPaidRecvOtherOrdersCph>
+					<materialAspects>[Insert discussion of the material aspects of the relationship with this venue pursuant to rule 606(a)(1)(iv).]</materialAspects>
+				</rVenue>
+				<rVenue>
+					<name>Boston Options Exchange Group</name>
+					<mic>BOXX</mic>
+					<orderPct>3.90</orderPct>
+					<marketPct>0.00</marketPct>
+					<marketableLimitPct>2.00</marketableLimitPct>
+					<nonMarketableLimitPct>1.10</nonMarketableLimitPct>
+					<otherPct>3.90</otherPct>
+					<netPmtPaidRecvMarketOrdersUsd>1000</netPmtPaidRecvMarketOrdersUsd>
+					<netPmtPaidRecvMarketOrdersCph>0.0021</netPmtPaidRecvMarketOrdersCph>
+					<netPmtPaidRecvMarketableLimitOrdersUsd>1000</netPmtPaidRecvMarketableLimitOrdersUsd>
+					<netPmtPaidRecvMarketableLimitOrdersCph>0.0021</netPmtPaidRecvMarketableLimitOrdersCph>
+					<netPmtPaidRecvNonMarketableLimitOrdersUsd>1000</netPmtPaidRecvNonMarketableLimitOrdersUsd>
+					<netPmtPaidRecvNonMarketableLimitOrdersCph>0.0021</netPmtPaidRecvNonMarketableLimitOrdersCph>
+					<netPmtPaidRecvOtherOrdersUsd>1000</netPmtPaidRecvOtherOrdersUsd>
+					<netPmtPaidRecvOtherOrdersCph>0.0021</netPmtPaidRecvOtherOrdersCph>
+					<materialAspects>[Insert discussion of the material aspects of the relationship with this venue pursuant to rule 606(a)(1)(iv).]</materialAspects>
+				</rVenue>
+			</rVenues>
+		</rOptions>
+	</rMonthly>
+	<rMonthly>
+		<year>2020</year>
+		<mon>2</mon>
+		<rSP500>
+			<ndoPct>13.60</ndoPct>
+			<ndoMarketPct>0.00</ndoMarketPct>
+			<ndoMarketableLimitPct>1.10</ndoMarketableLimitPct>
+			<ndoNonmarketableLimitPct>1.00</ndoNonmarketableLimitPct>
+			<ndoOtherPct>97.90</ndoOtherPct>
+			<rVenues>
+				<rVenue>
+					<name>New York Stock Exchange LLC.</name>
+					<mic>NYSE</mic>
+					<orderPct>39.80</orderPct>
+					<marketPct>36.70</marketPct>
+					<marketableLimitPct>10.00</marketableLimitPct>
+					<nonMarketableLimitPct>39.00</nonMarketableLimitPct>
+					<otherPct>29.50</otherPct>
+					<netPmtPaidRecvMarketOrdersUsd>1000</netPmtPaidRecvMarketOrdersUsd>
+					<netPmtPaidRecvMarketOrdersCph>0.0021</netPmtPaidRecvMarketOrdersCph>
+					<netPmtPaidRecvMarketableLimitOrdersUsd>1000</netPmtPaidRecvMarketableLimitOrdersUsd>
+					<netPmtPaidRecvMarketableLimitOrdersCph>0.0021</netPmtPaidRecvMarketableLimitOrdersCph>
+					<netPmtPaidRecvNonMarketableLimitOrdersUsd>1000</netPmtPaidRecvNonMarketableLimitOrdersUsd>
+					<netPmtPaidRecvNonMarketableLimitOrdersCph>0.0021</netPmtPaidRecvNonMarketableLimitOrdersCph>
+					<netPmtPaidRecvOtherOrdersUsd>1000</netPmtPaidRecvOtherOrdersUsd>
+					<netPmtPaidRecvOtherOrdersCph>0.0021</netPmtPaidRecvOtherOrdersCph>
+					<materialAspects>[Insert discussion of the material aspects of the relationship with this venue pursuant to rule 606(a)(1)(iv).]</materialAspects>
+				</rVenue>
+				<rVenue>
+					<name>NYSE Arca, Inc.</name>
+					<mic>ARCA</mic>
+					<orderPct>11.70</orderPct>
+					<marketPct>1.10</marketPct>
+					<marketableLimitPct>10.00</marketableLimitPct>
+					<nonMarketableLimitPct>2.40</nonMarketableLimitPct>
+					<otherPct>11.70</otherPct>
+					<netPmtPaidRecvMarketOrdersUsd>1000</netPmtPaidRecvMarketOrdersUsd>
+					<netPmtPaidRecvMarketOrdersCph>0.0021</netPmtPaidRecvMarketOrdersCph>
+					<netPmtPaidRecvMarketableLimitOrdersUsd>1000</netPmtPaidRecvMarketableLimitOrdersUsd>
+					<netPmtPaidRecvMarketableLimitOrdersCph>0.0021</netPmtPaidRecvMarketableLimitOrdersCph>
+					<netPmtPaidRecvNonMarketableLimitOrdersUsd>1000</netPmtPaidRecvNonMarketableLimitOrdersUsd>
+					<netPmtPaidRecvNonMarketableLimitOrdersCph>0.0021</netPmtPaidRecvNonMarketableLimitOrdersCph>
+					<netPmtPaidRecvOtherOrdersUsd>1000</netPmtPaidRecvOtherOrdersUsd>
+					<netPmtPaidRecvOtherOrdersCph>0.0021</netPmtPaidRecvOtherOrdersCph>
+					<materialAspects>[Insert discussion of the material aspects of the relationship with this venue pursuant to rule 606(a)(1)(iv).]</materialAspects>
+				</rVenue>
+				<rVenue>
+					<name>BATS Exchange, Inc.</name>
+					<mic>BATS</mic>
+					<orderPct>13.20</orderPct>
+					<marketPct>6.80</marketPct>
+					<marketableLimitPct>3.00</marketableLimitPct>
+					<nonMarketableLimitPct>4.40</nonMarketableLimitPct>
+					<otherPct>13.30</otherPct>
+					<netPmtPaidRecvMarketOrdersUsd>1000</netPmtPaidRecvMarketOrdersUsd>
+					<netPmtPaidRecvMarketOrdersCph>0.0021</netPmtPaidRecvMarketOrdersCph>
+					<netPmtPaidRecvMarketableLimitOrdersUsd>1000</netPmtPaidRecvMarketableLimitOrdersUsd>
+					<netPmtPaidRecvMarketableLimitOrdersCph>0.0021</netPmtPaidRecvMarketableLimitOrdersCph>
+					<netPmtPaidRecvNonMarketableLimitOrdersUsd>1000</netPmtPaidRecvNonMarketableLimitOrdersUsd>
+					<netPmtPaidRecvNonMarketableLimitOrdersCph>0.0021</netPmtPaidRecvNonMarketableLimitOrdersCph>
+					<netPmtPaidRecvOtherOrdersUsd>1000</netPmtPaidRecvOtherOrdersUsd>
+					<netPmtPaidRecvOtherOrdersCph>0.0021</netPmtPaidRecvOtherOrdersCph>
+					<materialAspects>[Insert discussion of the material aspects of the relationship with this venue pursuant to rule 606(a)(1)(iv).]</materialAspects>
+				</rVenue>
+				<rVenue>
+					<name>EDGX Exchange, Inc.</name>
+					<mic>EDGX</mic>
+					<orderPct>11.70</orderPct>
+					<marketPct>1.10</marketPct>
+					<marketableLimitPct>3.00</marketableLimitPct>
+					<nonMarketableLimitPct>9.40</nonMarketableLimitPct>
+					<otherPct>11.70</otherPct>
+					<netPmtPaidRecvMarketOrdersUsd>1000</netPmtPaidRecvMarketOrdersUsd>
+					<netPmtPaidRecvMarketOrdersCph>0.0021</netPmtPaidRecvMarketOrdersCph>
+					<netPmtPaidRecvMarketableLimitOrdersUsd>1000</netPmtPaidRecvMarketableLimitOrdersUsd>
+					<netPmtPaidRecvMarketableLimitOrdersCph>0.0021</netPmtPaidRecvMarketableLimitOrdersCph>
+					<netPmtPaidRecvNonMarketableLimitOrdersUsd>1000</netPmtPaidRecvNonMarketableLimitOrdersUsd>
+					<netPmtPaidRecvNonMarketableLimitOrdersCph>0.0021</netPmtPaidRecvNonMarketableLimitOrdersCph>
+					<netPmtPaidRecvOtherOrdersUsd>1000</netPmtPaidRecvOtherOrdersUsd>
+					<netPmtPaidRecvOtherOrdersCph>0.0021</netPmtPaidRecvOtherOrdersCph>
+					<materialAspects>[Insert discussion of the material aspects of the relationship with this venue pursuant to rule 606(a)(1)(iv).]</materialAspects>
+				</rVenue>
+				<rVenue>
+					<name>The Nasdaq Stock Market LLC.</name>
+					<mic>XNAS</mic>
+					<orderPct>6.80</orderPct>
+					<marketPct>2.30</marketPct>
+					<marketableLimitPct>3.00</marketableLimitPct>
+					<nonMarketableLimitPct>21.70</nonMarketableLimitPct>
+					<otherPct>6.50</otherPct>
+					<netPmtPaidRecvMarketOrdersUsd>1000</netPmtPaidRecvMarketOrdersUsd>
+					<netPmtPaidRecvMarketOrdersCph>0.0021</netPmtPaidRecvMarketOrdersCph>
+					<netPmtPaidRecvMarketableLimitOrdersUsd>1000</netPmtPaidRecvMarketableLimitOrdersUsd>
+					<netPmtPaidRecvMarketableLimitOrdersCph>0.0021</netPmtPaidRecvMarketableLimitOrdersCph>
+					<netPmtPaidRecvNonMarketableLimitOrdersUsd>1000</netPmtPaidRecvNonMarketableLimitOrdersUsd>
+					<netPmtPaidRecvNonMarketableLimitOrdersCph>0.0021</netPmtPaidRecvNonMarketableLimitOrdersCph>
+					<netPmtPaidRecvOtherOrdersUsd>1000</netPmtPaidRecvOtherOrdersUsd>
+					<netPmtPaidRecvOtherOrdersCph>0.0021</netPmtPaidRecvOtherOrdersCph>
+					<materialAspects>[Insert discussion of the material aspects of the relationship with this venue pursuant to rule 606(a)(1)(iv).]</materialAspects>
+				</rVenue>
+				<rVenue>
+					<name>B. Roker Exec and Clrng</name>
+					<mic>180T</mic>
+					<orderPct>6.10</orderPct>
+					<marketPct>9.50</marketPct>
+					<marketableLimitPct>0.40</marketableLimitPct>
+					<nonMarketableLimitPct>0.10</nonMarketableLimitPct>
+					<otherPct>6.20</otherPct>
+					<netPmtPaidRecvMarketOrdersUsd>1000</netPmtPaidRecvMarketOrdersUsd>
+					<netPmtPaidRecvMarketOrdersCph>0.0021</netPmtPaidRecvMarketOrdersCph>
+					<netPmtPaidRecvMarketableLimitOrdersUsd>1000</netPmtPaidRecvMarketableLimitOrdersUsd>
+					<netPmtPaidRecvMarketableLimitOrdersCph>0.0021</netPmtPaidRecvMarketableLimitOrdersCph>
+					<netPmtPaidRecvNonMarketableLimitOrdersUsd>1000</netPmtPaidRecvNonMarketableLimitOrdersUsd>
+					<netPmtPaidRecvNonMarketableLimitOrdersCph>0.0021</netPmtPaidRecvNonMarketableLimitOrdersCph>
+					<netPmtPaidRecvOtherOrdersUsd>1000</netPmtPaidRecvOtherOrdersUsd>
+					<netPmtPaidRecvOtherOrdersCph>0.0021</netPmtPaidRecvOtherOrdersCph>
+					<materialAspects>[Insert discussion of the material aspects of the relationship with this venue pursuant to rule 606(a)(1)(iv).]</materialAspects>
+				</rVenue>
+				<rVenue>
+					<name>EDGA Exchange,Inc.</name>
+					<mic>EDGA</mic>
+					<orderPct>3.90</orderPct>
+					<marketPct>3.40</marketPct>
+					<marketableLimitPct>3.00</marketableLimitPct>
+					<nonMarketableLimitPct>0.10</nonMarketableLimitPct>
+					<otherPct>3.90</otherPct>
+					<netPmtPaidRecvMarketOrdersUsd>1000</netPmtPaidRecvMarketOrdersUsd>
+					<netPmtPaidRecvMarketOrdersCph>0.0021</netPmtPaidRecvMarketOrdersCph>
+					<netPmtPaidRecvMarketableLimitOrdersUsd>1000</netPmtPaidRecvMarketableLimitOrdersUsd>
+					<netPmtPaidRecvMarketableLimitOrdersCph>0.0021</netPmtPaidRecvMarketableLimitOrdersCph>
+					<netPmtPaidRecvNonMarketableLimitOrdersUsd>1000</netPmtPaidRecvNonMarketableLimitOrdersUsd>
+					<netPmtPaidRecvNonMarketableLimitOrdersCph>0.0021</netPmtPaidRecvNonMarketableLimitOrdersCph>
+					<netPmtPaidRecvOtherOrdersUsd>1000</netPmtPaidRecvOtherOrdersUsd>
+					<netPmtPaidRecvOtherOrdersCph>0.0021</netPmtPaidRecvOtherOrdersCph>
+					<materialAspects>[Insert discussion of the material aspects of the relationship with this venue pursuant to rule 606(a)(1)(iv).]</materialAspects>
+				</rVenue>
+				<rVenue>
+					<name>BATS Exchange, LLC.</name>
+					<mic>BATY</mic>
+					<orderPct>3.30</orderPct>
+					<marketPct>0.00</marketPct>
+					<marketableLimitPct>1.70</marketableLimitPct>
+					<nonMarketableLimitPct>1.00</nonMarketableLimitPct>
+					<otherPct>3.40</otherPct>
+					<netPmtPaidRecvMarketOrdersUsd>1000</netPmtPaidRecvMarketOrdersUsd>
+					<netPmtPaidRecvMarketOrdersCph>0.0021</netPmtPaidRecvMarketOrdersCph>
+					<netPmtPaidRecvMarketableLimitOrdersUsd>1000</netPmtPaidRecvMarketableLimitOrdersUsd>
+					<netPmtPaidRecvMarketableLimitOrdersCph>0.0021</netPmtPaidRecvMarketableLimitOrdersCph>
+					<netPmtPaidRecvNonMarketableLimitOrdersUsd>1000</netPmtPaidRecvNonMarketableLimitOrdersUsd>
+					<netPmtPaidRecvNonMarketableLimitOrdersCph>0.0021</netPmtPaidRecvNonMarketableLimitOrdersCph>
+					<netPmtPaidRecvOtherOrdersUsd>1000</netPmtPaidRecvOtherOrdersUsd>
+					<netPmtPaidRecvOtherOrdersCph>0.0021</netPmtPaidRecvOtherOrdersCph>
+					<materialAspects>[Insert discussion of the material aspects of the relationship with this venue pursuant to rule 606(a)(1)(iv).]</materialAspects>
+				</rVenue>
+				<rVenue>
+					<name>NASDAQ OMX BX.</name>
+					<mic>BOSE</mic>
+					<orderPct>2.10</orderPct>
+					<marketPct>0.00</marketPct>
+					<marketableLimitPct>1.60</marketableLimitPct>
+					<nonMarketableLimitPct>1.00</nonMarketableLimitPct>
+					<otherPct>2.10</otherPct>
+					<netPmtPaidRecvMarketOrdersUsd>1000</netPmtPaidRecvMarketOrdersUsd>
+					<netPmtPaidRecvMarketOrdersCph>0.0021</netPmtPaidRecvMarketOrdersCph>
+					<netPmtPaidRecvMarketableLimitOrdersUsd>1000</netPmtPaidRecvMarketableLimitOrdersUsd>
+					<netPmtPaidRecvMarketableLimitOrdersCph>0.0021</netPmtPaidRecvMarketableLimitOrdersCph>
+					<netPmtPaidRecvNonMarketableLimitOrdersUsd>1000</netPmtPaidRecvNonMarketableLimitOrdersUsd>
+					<netPmtPaidRecvNonMarketableLimitOrdersCph>0.0021</netPmtPaidRecvNonMarketableLimitOrdersCph>
+					<netPmtPaidRecvOtherOrdersUsd>1000</netPmtPaidRecvOtherOrdersUsd>
+					<netPmtPaidRecvOtherOrdersCph>0.0021</netPmtPaidRecvOtherOrdersCph>
+					<materialAspects>[Insert discussion of the material aspects of the relationship with this venue pursuant to rule 606(a)(1)(iv).]</materialAspects>
+				</rVenue>
+			</rVenues>
+		</rSP500>
+		<rOtherStocks>
+			<ndoPct>13.60</ndoPct>
+			<ndoMarketPct>0.00</ndoMarketPct>
+			<ndoMarketableLimitPct>1.10</ndoMarketableLimitPct>
+			<ndoNonmarketableLimitPct>1.00</ndoNonmarketableLimitPct>
+			<ndoOtherPct>97.90</ndoOtherPct>
+			<rVenues>
+				<rVenue>
+					<name>New York Stock Exchange LLC.</name>
+					<mic>NYSE</mic>
+					<orderPct>39.80</orderPct>
+					<marketPct>36.70</marketPct>
+					<marketableLimitPct>10.00</marketableLimitPct>
+					<nonMarketableLimitPct>39.00</nonMarketableLimitPct>
+					<otherPct>29.50</otherPct>
+					<netPmtPaidRecvMarketOrdersUsd>1000</netPmtPaidRecvMarketOrdersUsd>
+					<netPmtPaidRecvMarketOrdersCph>0.0021</netPmtPaidRecvMarketOrdersCph>
+					<netPmtPaidRecvMarketableLimitOrdersUsd>1000</netPmtPaidRecvMarketableLimitOrdersUsd>
+					<netPmtPaidRecvMarketableLimitOrdersCph>0.0021</netPmtPaidRecvMarketableLimitOrdersCph>
+					<netPmtPaidRecvNonMarketableLimitOrdersUsd>1000</netPmtPaidRecvNonMarketableLimitOrdersUsd>
+					<netPmtPaidRecvNonMarketableLimitOrdersCph>0.0021</netPmtPaidRecvNonMarketableLimitOrdersCph>
+					<netPmtPaidRecvOtherOrdersUsd>1000</netPmtPaidRecvOtherOrdersUsd>
+					<netPmtPaidRecvOtherOrdersCph>0.0021</netPmtPaidRecvOtherOrdersCph>
+					<materialAspects>[Insert discussion of the material aspects of the relationship with this venue pursuant to rule 606(a)(1)(iv).]</materialAspects>
+				</rVenue>
+				<rVenue>
+					<name>NYSE Arca, Inc.</name>
+					<mic>ARCA</mic>
+					<orderPct>11.70</orderPct>
+					<marketPct>1.10</marketPct>
+					<marketableLimitPct>10.00</marketableLimitPct>
+					<nonMarketableLimitPct>2.40</nonMarketableLimitPct>
+					<otherPct>11.70</otherPct>
+					<netPmtPaidRecvMarketOrdersUsd>1000</netPmtPaidRecvMarketOrdersUsd>
+					<netPmtPaidRecvMarketOrdersCph>0.0021</netPmtPaidRecvMarketOrdersCph>
+					<netPmtPaidRecvMarketableLimitOrdersUsd>1000</netPmtPaidRecvMarketableLimitOrdersUsd>
+					<netPmtPaidRecvMarketableLimitOrdersCph>0.0021</netPmtPaidRecvMarketableLimitOrdersCph>
+					<netPmtPaidRecvNonMarketableLimitOrdersUsd>1000</netPmtPaidRecvNonMarketableLimitOrdersUsd>
+					<netPmtPaidRecvNonMarketableLimitOrdersCph>0.0021</netPmtPaidRecvNonMarketableLimitOrdersCph>
+					<netPmtPaidRecvOtherOrdersUsd>1000</netPmtPaidRecvOtherOrdersUsd>
+					<netPmtPaidRecvOtherOrdersCph>0.0021</netPmtPaidRecvOtherOrdersCph>
+					<materialAspects>[Insert discussion of the material aspects of the relationship with this venue pursuant to rule 606(a)(1)(iv).]</materialAspects>
+				</rVenue>
+				<rVenue>
+					<name>BATS Exchange, Inc.</name>
+					<mic>BATS</mic>
+					<orderPct>13.20</orderPct>
+					<marketPct>6.80</marketPct>
+					<marketableLimitPct>3.00</marketableLimitPct>
+					<nonMarketableLimitPct>4.40</nonMarketableLimitPct>
+					<otherPct>13.30</otherPct>
+					<netPmtPaidRecvMarketOrdersUsd>1000</netPmtPaidRecvMarketOrdersUsd>
+					<netPmtPaidRecvMarketOrdersCph>0.0021</netPmtPaidRecvMarketOrdersCph>
+					<netPmtPaidRecvMarketableLimitOrdersUsd>1000</netPmtPaidRecvMarketableLimitOrdersUsd>
+					<netPmtPaidRecvMarketableLimitOrdersCph>0.0021</netPmtPaidRecvMarketableLimitOrdersCph>
+					<netPmtPaidRecvNonMarketableLimitOrdersUsd>1000</netPmtPaidRecvNonMarketableLimitOrdersUsd>
+					<netPmtPaidRecvNonMarketableLimitOrdersCph>0.0021</netPmtPaidRecvNonMarketableLimitOrdersCph>
+					<netPmtPaidRecvOtherOrdersUsd>1000</netPmtPaidRecvOtherOrdersUsd>
+					<netPmtPaidRecvOtherOrdersCph>0.0021</netPmtPaidRecvOtherOrdersCph>
+					<materialAspects>[Insert discussion of the material aspects of the relationship with this venue pursuant to rule 606(a)(1)(iv).]</materialAspects>
+				</rVenue>
+				<rVenue>
+					<name>EDGX Exchange, Inc.</name>
+					<mic>EDGX</mic>
+					<orderPct>11.70</orderPct>
+					<marketPct>1.10</marketPct>
+					<marketableLimitPct>3.00</marketableLimitPct>
+					<nonMarketableLimitPct>9.40</nonMarketableLimitPct>
+					<otherPct>11.70</otherPct>
+					<netPmtPaidRecvMarketOrdersUsd>1000</netPmtPaidRecvMarketOrdersUsd>
+					<netPmtPaidRecvMarketOrdersCph>0.0021</netPmtPaidRecvMarketOrdersCph>
+					<netPmtPaidRecvMarketableLimitOrdersUsd>1000</netPmtPaidRecvMarketableLimitOrdersUsd>
+					<netPmtPaidRecvMarketableLimitOrdersCph>0.0021</netPmtPaidRecvMarketableLimitOrdersCph>
+					<netPmtPaidRecvNonMarketableLimitOrdersUsd>1000</netPmtPaidRecvNonMarketableLimitOrdersUsd>
+					<netPmtPaidRecvNonMarketableLimitOrdersCph>0.0021</netPmtPaidRecvNonMarketableLimitOrdersCph>
+					<netPmtPaidRecvOtherOrdersUsd>1000</netPmtPaidRecvOtherOrdersUsd>
+					<netPmtPaidRecvOtherOrdersCph>0.0021</netPmtPaidRecvOtherOrdersCph>
+					<materialAspects>[Insert discussion of the material aspects of the relationship with this venue pursuant to rule 606(a)(1)(iv).]</materialAspects>
+				</rVenue>
+				<rVenue>
+					<name>The Nasdaq Stock Market LLC.</name>
+					<mic>XNAS</mic>
+					<orderPct>6.80</orderPct>
+					<marketPct>2.30</marketPct>
+					<marketableLimitPct>3.00</marketableLimitPct>
+					<nonMarketableLimitPct>21.70</nonMarketableLimitPct>
+					<otherPct>6.50</otherPct>
+					<netPmtPaidRecvMarketOrdersUsd>1000</netPmtPaidRecvMarketOrdersUsd>
+					<netPmtPaidRecvMarketOrdersCph>0.0021</netPmtPaidRecvMarketOrdersCph>
+					<netPmtPaidRecvMarketableLimitOrdersUsd>1000</netPmtPaidRecvMarketableLimitOrdersUsd>
+					<netPmtPaidRecvMarketableLimitOrdersCph>0.0021</netPmtPaidRecvMarketableLimitOrdersCph>
+					<netPmtPaidRecvNonMarketableLimitOrdersUsd>1000</netPmtPaidRecvNonMarketableLimitOrdersUsd>
+					<netPmtPaidRecvNonMarketableLimitOrdersCph>0.0021</netPmtPaidRecvNonMarketableLimitOrdersCph>
+					<netPmtPaidRecvOtherOrdersUsd>1000</netPmtPaidRecvOtherOrdersUsd>
+					<netPmtPaidRecvOtherOrdersCph>0.0021</netPmtPaidRecvOtherOrdersCph>
+					<materialAspects>[Insert discussion of the material aspects of the relationship with this venue pursuant to rule 606(a)(1)(iv).]</materialAspects>
+				</rVenue>
+				<rVenue>
+					<name>B. Roker Exec and Clrng</name>
+					<mic>180T</mic>
+					<orderPct>6.10</orderPct>
+					<marketPct>9.50</marketPct>
+					<marketableLimitPct>0.40</marketableLimitPct>
+					<nonMarketableLimitPct>0.10</nonMarketableLimitPct>
+					<otherPct>6.20</otherPct>
+					<netPmtPaidRecvMarketOrdersUsd>1000</netPmtPaidRecvMarketOrdersUsd>
+					<netPmtPaidRecvMarketOrdersCph>0.0021</netPmtPaidRecvMarketOrdersCph>
+					<netPmtPaidRecvMarketableLimitOrdersUsd>1000</netPmtPaidRecvMarketableLimitOrdersUsd>
+					<netPmtPaidRecvMarketableLimitOrdersCph>0.0021</netPmtPaidRecvMarketableLimitOrdersCph>
+					<netPmtPaidRecvNonMarketableLimitOrdersUsd>1000</netPmtPaidRecvNonMarketableLimitOrdersUsd>
+					<netPmtPaidRecvNonMarketableLimitOrdersCph>0.0021</netPmtPaidRecvNonMarketableLimitOrdersCph>
+					<netPmtPaidRecvOtherOrdersUsd>1000</netPmtPaidRecvOtherOrdersUsd>
+					<netPmtPaidRecvOtherOrdersCph>0.0021</netPmtPaidRecvOtherOrdersCph>
+					<materialAspects>[Insert discussion of the material aspects of the relationship with this venue pursuant to rule 606(a)(1)(iv).]</materialAspects>
+				</rVenue>
+				<rVenue>
+					<name>EDGA Exchange,Inc.</name>
+					<mic>EDGA</mic>
+					<orderPct>3.90</orderPct>
+					<marketPct>3.40</marketPct>
+					<marketableLimitPct>3.00</marketableLimitPct>
+					<nonMarketableLimitPct>0.10</nonMarketableLimitPct>
+					<otherPct>3.90</otherPct>
+					<netPmtPaidRecvMarketOrdersUsd>1000</netPmtPaidRecvMarketOrdersUsd>
+					<netPmtPaidRecvMarketOrdersCph>0.0021</netPmtPaidRecvMarketOrdersCph>
+					<netPmtPaidRecvMarketableLimitOrdersUsd>1000</netPmtPaidRecvMarketableLimitOrdersUsd>
+					<netPmtPaidRecvMarketableLimitOrdersCph>0.0021</netPmtPaidRecvMarketableLimitOrdersCph>
+					<netPmtPaidRecvNonMarketableLimitOrdersUsd>1000</netPmtPaidRecvNonMarketableLimitOrdersUsd>
+					<netPmtPaidRecvNonMarketableLimitOrdersCph>0.0021</netPmtPaidRecvNonMarketableLimitOrdersCph>
+					<netPmtPaidRecvOtherOrdersUsd>1000</netPmtPaidRecvOtherOrdersUsd>
+					<netPmtPaidRecvOtherOrdersCph>0.0021</netPmtPaidRecvOtherOrdersCph>
+					<materialAspects>[Insert discussion of the material aspects of the relationship with this venue pursuant to rule 606(a)(1)(iv).]</materialAspects>
+				</rVenue>
+				<rVenue>
+					<name>BATS Exchange Y, Inc.</name>
+					<mic>BATY</mic>
+					<orderPct>3.30</orderPct>
+					<marketPct>0.00</marketPct>
+					<marketableLimitPct>1.70</marketableLimitPct>
+					<nonMarketableLimitPct>1.00</nonMarketableLimitPct>
+					<otherPct>3.40</otherPct>
+					<netPmtPaidRecvMarketOrdersUsd>1000</netPmtPaidRecvMarketOrdersUsd>
+					<netPmtPaidRecvMarketOrdersCph>0.0021</netPmtPaidRecvMarketOrdersCph>
+					<netPmtPaidRecvMarketableLimitOrdersUsd>1000</netPmtPaidRecvMarketableLimitOrdersUsd>
+					<netPmtPaidRecvMarketableLimitOrdersCph>0.0021</netPmtPaidRecvMarketableLimitOrdersCph>
+					<netPmtPaidRecvNonMarketableLimitOrdersUsd>1000</netPmtPaidRecvNonMarketableLimitOrdersUsd>
+					<netPmtPaidRecvNonMarketableLimitOrdersCph>0.0021</netPmtPaidRecvNonMarketableLimitOrdersCph>
+					<netPmtPaidRecvOtherOrdersUsd>1000</netPmtPaidRecvOtherOrdersUsd>
+					<netPmtPaidRecvOtherOrdersCph>0.0021</netPmtPaidRecvOtherOrdersCph>
+					<materialAspects>[Insert discussion of the material aspects of the relationship with this venue pursuant to rule 606(a)(1)(iv).]</materialAspects>
+				</rVenue>
+				<rVenue>
+					<name>NASDAQ OMX BX.</name>
+					<mic>BOSE</mic>
+					<orderPct>2.10</orderPct>
+					<marketPct>0.00</marketPct>
+					<marketableLimitPct>1.60</marketableLimitPct>
+					<nonMarketableLimitPct>1.00</nonMarketableLimitPct>
+					<otherPct>2.10</otherPct>
+					<netPmtPaidRecvMarketOrdersUsd>1000</netPmtPaidRecvMarketOrdersUsd>
+					<netPmtPaidRecvMarketOrdersCph>0.0021</netPmtPaidRecvMarketOrdersCph>
+					<netPmtPaidRecvMarketableLimitOrdersUsd>1000</netPmtPaidRecvMarketableLimitOrdersUsd>
+					<netPmtPaidRecvMarketableLimitOrdersCph>0.0021</netPmtPaidRecvMarketableLimitOrdersCph>
+					<netPmtPaidRecvNonMarketableLimitOrdersUsd>1000</netPmtPaidRecvNonMarketableLimitOrdersUsd>
+					<netPmtPaidRecvNonMarketableLimitOrdersCph>0.0021</netPmtPaidRecvNonMarketableLimitOrdersCph>
+					<netPmtPaidRecvOtherOrdersUsd>1000</netPmtPaidRecvOtherOrdersUsd>
+					<netPmtPaidRecvOtherOrdersCph>0.0021</netPmtPaidRecvOtherOrdersCph>
+					<materialAspects>[Insert discussion of the material aspects of the relationship with this venue pursuant to rule 606(a)(1)(iv).]</materialAspects>
+				</rVenue>
+			</rVenues>
+		</rOtherStocks>
+		<rOptions>
+			<ndoPct>53.90</ndoPct>
+			<ndoMarketPct>0.00</ndoMarketPct>
+			<ndoMarketableLimitPct>0.50</ndoMarketableLimitPct>
+			<ndoNonmarketableLimitPct>0.60</ndoNonmarketableLimitPct>
+			<ndoOtherPct>98.90</ndoOtherPct>
+			<rVenues>
+				<rVenue>
+					<name>BATS Options Exchange.</name>
+					<mic>BATO</mic>
+					<orderPct>21.80</orderPct>
+					<marketPct>0.00</marketPct>
+					<marketableLimitPct>10.00</marketableLimitPct>
+					<nonMarketableLimitPct>7.30</nonMarketableLimitPct>
+					<otherPct>21.90</otherPct>
+					<netPmtPaidRecvMarketOrdersUsd>1000</netPmtPaidRecvMarketOrdersUsd>
+					<netPmtPaidRecvMarketOrdersCph>0.0021</netPmtPaidRecvMarketOrdersCph>
+					<netPmtPaidRecvMarketableLimitOrdersUsd>1000</netPmtPaidRecvMarketableLimitOrdersUsd>
+					<netPmtPaidRecvMarketableLimitOrdersCph>0.0021</netPmtPaidRecvMarketableLimitOrdersCph>
+					<netPmtPaidRecvNonMarketableLimitOrdersUsd>1000</netPmtPaidRecvNonMarketableLimitOrdersUsd>
+					<netPmtPaidRecvNonMarketableLimitOrdersCph>0.0021</netPmtPaidRecvNonMarketableLimitOrdersCph>
+					<netPmtPaidRecvOtherOrdersUsd>1000</netPmtPaidRecvOtherOrdersUsd>
+					<netPmtPaidRecvOtherOrdersCph>0.0021</netPmtPaidRecvOtherOrdersCph>
+					<materialAspects>[Insert discussion of the material aspects of the relationship with this venue pursuant to rule 606(a)(1)(iv).]</materialAspects>
+				</rVenue>
+				<rVenue>
+					<name>NYSE Arca, Inc.</name>
+					<mic>PCXX</mic>
+					<orderPct>13.60</orderPct>
+					<marketPct>0.00</marketPct>
+					<marketableLimitPct>10.30</marketableLimitPct>
+					<nonMarketableLimitPct>2.00</nonMarketableLimitPct>
+					<otherPct>13.70</otherPct>
+					<netPmtPaidRecvMarketOrdersUsd>1000</netPmtPaidRecvMarketOrdersUsd>
+					<netPmtPaidRecvMarketOrdersCph>0.0021</netPmtPaidRecvMarketOrdersCph>
+					<netPmtPaidRecvMarketableLimitOrdersUsd>1000</netPmtPaidRecvMarketableLimitOrdersUsd>
+					<netPmtPaidRecvMarketableLimitOrdersCph>0.0021</netPmtPaidRecvMarketableLimitOrdersCph>
+					<netPmtPaidRecvNonMarketableLimitOrdersUsd>1000</netPmtPaidRecvNonMarketableLimitOrdersUsd>
+					<netPmtPaidRecvNonMarketableLimitOrdersCph>0.0021</netPmtPaidRecvNonMarketableLimitOrdersCph>
+					<netPmtPaidRecvOtherOrdersUsd>1000</netPmtPaidRecvOtherOrdersUsd>
+					<netPmtPaidRecvOtherOrdersCph>0.0021</netPmtPaidRecvOtherOrdersCph>
+					<materialAspects>[Insert discussion of the material aspects of the relationship with this venue pursuant to rule 606(a)(1)(iv).]</materialAspects>
+				</rVenue>
+				<rVenue>
+					<name>International Securities Exch</name>
+					<mic>ISEE</mic>
+					<orderPct>13.20</orderPct>
+					<marketPct>0.00</marketPct>
+					<marketableLimitPct>7.20</marketableLimitPct>
+					<nonMarketableLimitPct>2.00</nonMarketableLimitPct>
+					<otherPct>13.70</otherPct>
+					<netPmtPaidRecvMarketOrdersUsd>1000</netPmtPaidRecvMarketOrdersUsd>
+					<netPmtPaidRecvMarketOrdersCph>0.0021</netPmtPaidRecvMarketOrdersCph>
+					<netPmtPaidRecvMarketableLimitOrdersUsd>1000</netPmtPaidRecvMarketableLimitOrdersUsd>
+					<netPmtPaidRecvMarketableLimitOrdersCph>0.0021</netPmtPaidRecvMarketableLimitOrdersCph>
+					<netPmtPaidRecvNonMarketableLimitOrdersUsd>1000</netPmtPaidRecvNonMarketableLimitOrdersUsd>
+					<netPmtPaidRecvNonMarketableLimitOrdersCph>0.0021</netPmtPaidRecvNonMarketableLimitOrdersCph>
+					<netPmtPaidRecvOtherOrdersUsd>1000</netPmtPaidRecvOtherOrdersUsd>
+					<netPmtPaidRecvOtherOrdersCph>0.0021</netPmtPaidRecvOtherOrdersCph>
+					<materialAspects>[Insert discussion of the material aspects of the relationship with this venue pursuant to rule 606(a)(1)(iv).]</materialAspects>
+				</rVenue>
+				<rVenue>
+					<name>Nasdaq Options Market LLC.</name>
+					<mic>NOMM</mic>
+					<orderPct>10.00</orderPct>
+					<marketPct>0.00</marketPct>
+					<marketableLimitPct>7.00</marketableLimitPct>
+					<nonMarketableLimitPct>8.90</nonMarketableLimitPct>
+					<otherPct>9.90</otherPct>
+					<netPmtPaidRecvMarketOrdersUsd>1000</netPmtPaidRecvMarketOrdersUsd>
+					<netPmtPaidRecvMarketOrdersCph>0.0021</netPmtPaidRecvMarketOrdersCph>
+					<netPmtPaidRecvMarketableLimitOrdersUsd>1000</netPmtPaidRecvMarketableLimitOrdersUsd>
+					<netPmtPaidRecvMarketableLimitOrdersCph>0.0021</netPmtPaidRecvMarketableLimitOrdersCph>
+					<netPmtPaidRecvNonMarketableLimitOrdersUsd>1000</netPmtPaidRecvNonMarketableLimitOrdersUsd>
+					<netPmtPaidRecvNonMarketableLimitOrdersCph>0.0021</netPmtPaidRecvNonMarketableLimitOrdersCph>
+					<netPmtPaidRecvOtherOrdersUsd>1000</netPmtPaidRecvOtherOrdersUsd>
+					<netPmtPaidRecvOtherOrdersCph>0.0021</netPmtPaidRecvOtherOrdersCph>
+					<materialAspects>[Insert discussion of the material aspects of the relationship with this venue pursuant to rule 606(a)(1)(iv).]</materialAspects>
+				</rVenue>
+				<rVenue>
+					<name>Chicago Board Options Exchange</name>
+					<mic>CBOE</mic>
+					<orderPct>14.70</orderPct>
+					<marketPct>0.00</marketPct>
+					<marketableLimitPct>7.00</marketableLimitPct>
+					<nonMarketableLimitPct>4.40</nonMarketableLimitPct>
+					<otherPct>14.70</otherPct>
+					<netPmtPaidRecvMarketOrdersUsd>1000</netPmtPaidRecvMarketOrdersUsd>
+					<netPmtPaidRecvMarketOrdersCph>0.0021</netPmtPaidRecvMarketOrdersCph>
+					<netPmtPaidRecvMarketableLimitOrdersUsd>1000</netPmtPaidRecvMarketableLimitOrdersUsd>
+					<netPmtPaidRecvMarketableLimitOrdersCph>0.0021</netPmtPaidRecvMarketableLimitOrdersCph>
+					<netPmtPaidRecvNonMarketableLimitOrdersUsd>1000</netPmtPaidRecvNonMarketableLimitOrdersUsd>
+					<netPmtPaidRecvNonMarketableLimitOrdersCph>0.0021</netPmtPaidRecvNonMarketableLimitOrdersCph>
+					<netPmtPaidRecvOtherOrdersUsd>1000</netPmtPaidRecvOtherOrdersUsd>
+					<netPmtPaidRecvOtherOrdersCph>0.0021</netPmtPaidRecvOtherOrdersCph>
+					<materialAspects>[Insert discussion of the material aspects of the relationship with this venue pursuant to rule 606(a)(1)(iv).]</materialAspects>
+				</rVenue>
+				<rVenue>
+					<name>NYSE MKT, LLC</name>
+					<mic>AMEX</mic>
+					<orderPct>8.10</orderPct>
+					<marketPct>0.00</marketPct>
+					<marketableLimitPct>3.60</marketableLimitPct>
+					<nonMarketableLimitPct>4.40</nonMarketableLimitPct>
+					<otherPct>8.10</otherPct>
+					<netPmtPaidRecvMarketOrdersUsd>1000</netPmtPaidRecvMarketOrdersUsd>
+					<netPmtPaidRecvMarketOrdersCph>0.0021</netPmtPaidRecvMarketOrdersCph>
+					<netPmtPaidRecvMarketableLimitOrdersUsd>1000</netPmtPaidRecvMarketableLimitOrdersUsd>
+					<netPmtPaidRecvMarketableLimitOrdersCph>0.0021</netPmtPaidRecvMarketableLimitOrdersCph>
+					<netPmtPaidRecvNonMarketableLimitOrdersUsd>1000</netPmtPaidRecvNonMarketableLimitOrdersUsd>
+					<netPmtPaidRecvNonMarketableLimitOrdersCph>0.0021</netPmtPaidRecvNonMarketableLimitOrdersCph>
+					<netPmtPaidRecvOtherOrdersUsd>1000</netPmtPaidRecvOtherOrdersUsd>
+					<netPmtPaidRecvOtherOrdersCph>0.0021</netPmtPaidRecvOtherOrdersCph>
+					<materialAspects>[Insert discussion of the material aspects of the relationship with this venue pursuant to rule 606(a)(1)(iv).]</materialAspects>
+				</rVenue>
+				<rVenue>
+					<name>Nasdaq OMX PHLX,Inc</name>
+					<mic>PHLX</mic>
+					<orderPct>5.40</orderPct>
+					<marketPct>0.00</marketPct>
+					<marketableLimitPct>3.60</marketableLimitPct>
+					<nonMarketableLimitPct>1.30</nonMarketableLimitPct>
+					<otherPct>5.40</otherPct>
+					<netPmtPaidRecvMarketOrdersUsd>1000</netPmtPaidRecvMarketOrdersUsd>
+					<netPmtPaidRecvMarketOrdersCph>0.0021</netPmtPaidRecvMarketOrdersCph>
+					<netPmtPaidRecvMarketableLimitOrdersUsd>1000</netPmtPaidRecvMarketableLimitOrdersUsd>
+					<netPmtPaidRecvMarketableLimitOrdersCph>0.0021</netPmtPaidRecvMarketableLimitOrdersCph>
+					<netPmtPaidRecvNonMarketableLimitOrdersUsd>1000</netPmtPaidRecvNonMarketableLimitOrdersUsd>
+					<netPmtPaidRecvNonMarketableLimitOrdersCph>0.0021</netPmtPaidRecvNonMarketableLimitOrdersCph>
+					<netPmtPaidRecvOtherOrdersUsd>1000</netPmtPaidRecvOtherOrdersUsd>
+					<netPmtPaidRecvOtherOrdersCph>0.0021</netPmtPaidRecvOtherOrdersCph>
+					<materialAspects>[Insert discussion of the material aspects of the relationship with this venue pursuant to rule 606(a)(1)(iv).]</materialAspects>
+				</rVenue>
+				<rVenue>
+					<name>C2 Options Exchange</name>
+					<mic>COPT</mic>
+					<orderPct>5.10</orderPct>
+					<marketPct>0.00</marketPct>
+					<marketableLimitPct>2.10</marketableLimitPct>
+					<nonMarketableLimitPct>2.00</nonMarketableLimitPct>
+					<otherPct>5.20</otherPct>
+					<netPmtPaidRecvMarketOrdersUsd>1000</netPmtPaidRecvMarketOrdersUsd>
+					<netPmtPaidRecvMarketOrdersCph>0.0021</netPmtPaidRecvMarketOrdersCph>
+					<netPmtPaidRecvMarketableLimitOrdersUsd>1000</netPmtPaidRecvMarketableLimitOrdersUsd>
+					<netPmtPaidRecvMarketableLimitOrdersCph>0.0021</netPmtPaidRecvMarketableLimitOrdersCph>
+					<netPmtPaidRecvNonMarketableLimitOrdersUsd>1000</netPmtPaidRecvNonMarketableLimitOrdersUsd>
+					<netPmtPaidRecvNonMarketableLimitOrdersCph>0.0021</netPmtPaidRecvNonMarketableLimitOrdersCph>
+					<netPmtPaidRecvOtherOrdersUsd>1000</netPmtPaidRecvOtherOrdersUsd>
+					<netPmtPaidRecvOtherOrdersCph>0.0021</netPmtPaidRecvOtherOrdersCph>
+					<materialAspects>[Insert discussion of the material aspects of the relationship with this venue pursuant to rule 606(a)(1)(iv).]</materialAspects>
+				</rVenue>
+				<rVenue>
+					<name>Boston Options Exchange Group</name>
+					<mic>BOXX</mic>
+					<orderPct>3.90</orderPct>
+					<marketPct>0.00</marketPct>
+					<marketableLimitPct>2.00</marketableLimitPct>
+					<nonMarketableLimitPct>1.10</nonMarketableLimitPct>
+					<otherPct>3.90</otherPct>
+					<netPmtPaidRecvMarketOrdersUsd>1000</netPmtPaidRecvMarketOrdersUsd>
+					<netPmtPaidRecvMarketOrdersCph>0.0021</netPmtPaidRecvMarketOrdersCph>
+					<netPmtPaidRecvMarketableLimitOrdersUsd>1000</netPmtPaidRecvMarketableLimitOrdersUsd>
+					<netPmtPaidRecvMarketableLimitOrdersCph>0.0021</netPmtPaidRecvMarketableLimitOrdersCph>
+					<netPmtPaidRecvNonMarketableLimitOrdersUsd>1000</netPmtPaidRecvNonMarketableLimitOrdersUsd>
+					<netPmtPaidRecvNonMarketableLimitOrdersCph>0.0021</netPmtPaidRecvNonMarketableLimitOrdersCph>
+					<netPmtPaidRecvOtherOrdersUsd>1000</netPmtPaidRecvOtherOrdersUsd>
+					<netPmtPaidRecvOtherOrdersCph>0.0021</netPmtPaidRecvOtherOrdersCph>
+					<materialAspects>[Insert discussion of the material aspects of the relationship with this venue pursuant to rule 606(a)(1)(iv).]</materialAspects>
+				</rVenue>
+			</rVenues>
+		</rOptions>
+	</rMonthly>
+	<rMonthly>
+		<year>2020</year>
+		<mon>3</mon>
+		<rSP500>
+			<ndoPct>13.60</ndoPct>
+			<ndoMarketPct>0.00</ndoMarketPct>
+			<ndoMarketableLimitPct>1.10</ndoMarketableLimitPct>
+			<ndoNonmarketableLimitPct>1.00</ndoNonmarketableLimitPct>
+			<ndoOtherPct>97.90</ndoOtherPct>
+			<rVenues>
+				<rVenue>
+					<name>New York Stock Exchange LLC.</name>
+					<mic>NYSE</mic>
+					<orderPct>39.80</orderPct>
+					<marketPct>36.70</marketPct>
+					<marketableLimitPct>10.00</marketableLimitPct>
+					<nonMarketableLimitPct>39.00</nonMarketableLimitPct>
+					<otherPct>29.50</otherPct>
+					<netPmtPaidRecvMarketOrdersUsd>1000</netPmtPaidRecvMarketOrdersUsd>
+					<netPmtPaidRecvMarketOrdersCph>0.0021</netPmtPaidRecvMarketOrdersCph>
+					<netPmtPaidRecvMarketableLimitOrdersUsd>1000</netPmtPaidRecvMarketableLimitOrdersUsd>
+					<netPmtPaidRecvMarketableLimitOrdersCph>0.0021</netPmtPaidRecvMarketableLimitOrdersCph>
+					<netPmtPaidRecvNonMarketableLimitOrdersUsd>1000</netPmtPaidRecvNonMarketableLimitOrdersUsd>
+					<netPmtPaidRecvNonMarketableLimitOrdersCph>0.0021</netPmtPaidRecvNonMarketableLimitOrdersCph>
+					<netPmtPaidRecvOtherOrdersUsd>1000</netPmtPaidRecvOtherOrdersUsd>
+					<netPmtPaidRecvOtherOrdersCph>0.0021</netPmtPaidRecvOtherOrdersCph>
+					<materialAspects>[Insert discussion of the material aspects of the relationship with this venue pursuant to rule 606(a)(1)(iv).]</materialAspects>
+				</rVenue>
+				<rVenue>
+					<name>NYSE Arca, Inc.</name>
+					<mic>ARCA</mic>
+					<orderPct>11.70</orderPct>
+					<marketPct>1.10</marketPct>
+					<marketableLimitPct>10.00</marketableLimitPct>
+					<nonMarketableLimitPct>2.40</nonMarketableLimitPct>
+					<otherPct>11.70</otherPct>
+					<netPmtPaidRecvMarketOrdersUsd>1000</netPmtPaidRecvMarketOrdersUsd>
+					<netPmtPaidRecvMarketOrdersCph>0.0021</netPmtPaidRecvMarketOrdersCph>
+					<netPmtPaidRecvMarketableLimitOrdersUsd>1000</netPmtPaidRecvMarketableLimitOrdersUsd>
+					<netPmtPaidRecvMarketableLimitOrdersCph>0.0021</netPmtPaidRecvMarketableLimitOrdersCph>
+					<netPmtPaidRecvNonMarketableLimitOrdersUsd>1000</netPmtPaidRecvNonMarketableLimitOrdersUsd>
+					<netPmtPaidRecvNonMarketableLimitOrdersCph>0.0021</netPmtPaidRecvNonMarketableLimitOrdersCph>
+					<netPmtPaidRecvOtherOrdersUsd>1000</netPmtPaidRecvOtherOrdersUsd>
+					<netPmtPaidRecvOtherOrdersCph>0.0021</netPmtPaidRecvOtherOrdersCph>
+					<materialAspects>[Insert discussion of the material aspects of the relationship with this venue pursuant to rule 606(a)(1)(iv).]</materialAspects>
+				</rVenue>
+				<rVenue>
+					<name>BATS Exchange, Inc.</name>
+					<mic>BATS</mic>
+					<orderPct>13.20</orderPct>
+					<marketPct>6.80</marketPct>
+					<marketableLimitPct>3.00</marketableLimitPct>
+					<nonMarketableLimitPct>4.40</nonMarketableLimitPct>
+					<otherPct>13.30</otherPct>
+					<netPmtPaidRecvMarketOrdersUsd>1000</netPmtPaidRecvMarketOrdersUsd>
+					<netPmtPaidRecvMarketOrdersCph>0.0021</netPmtPaidRecvMarketOrdersCph>
+					<netPmtPaidRecvMarketableLimitOrdersUsd>1000</netPmtPaidRecvMarketableLimitOrdersUsd>
+					<netPmtPaidRecvMarketableLimitOrdersCph>0.0021</netPmtPaidRecvMarketableLimitOrdersCph>
+					<netPmtPaidRecvNonMarketableLimitOrdersUsd>1000</netPmtPaidRecvNonMarketableLimitOrdersUsd>
+					<netPmtPaidRecvNonMarketableLimitOrdersCph>0.0021</netPmtPaidRecvNonMarketableLimitOrdersCph>
+					<netPmtPaidRecvOtherOrdersUsd>1000</netPmtPaidRecvOtherOrdersUsd>
+					<netPmtPaidRecvOtherOrdersCph>0.0021</netPmtPaidRecvOtherOrdersCph>
+					<materialAspects>[Insert discussion of the material aspects of the relationship with this venue pursuant to rule 606(a)(1)(iv).]</materialAspects>
+				</rVenue>
+				<rVenue>
+					<name>EDGX Exchange, Inc.</name>
+					<mic>EDGX</mic>
+					<orderPct>11.70</orderPct>
+					<marketPct>1.10</marketPct>
+					<marketableLimitPct>3.00</marketableLimitPct>
+					<nonMarketableLimitPct>9.40</nonMarketableLimitPct>
+					<otherPct>11.70</otherPct>
+					<netPmtPaidRecvMarketOrdersUsd>1000</netPmtPaidRecvMarketOrdersUsd>
+					<netPmtPaidRecvMarketOrdersCph>0.0021</netPmtPaidRecvMarketOrdersCph>
+					<netPmtPaidRecvMarketableLimitOrdersUsd>1000</netPmtPaidRecvMarketableLimitOrdersUsd>
+					<netPmtPaidRecvMarketableLimitOrdersCph>0.0021</netPmtPaidRecvMarketableLimitOrdersCph>
+					<netPmtPaidRecvNonMarketableLimitOrdersUsd>1000</netPmtPaidRecvNonMarketableLimitOrdersUsd>
+					<netPmtPaidRecvNonMarketableLimitOrdersCph>0.0021</netPmtPaidRecvNonMarketableLimitOrdersCph>
+					<netPmtPaidRecvOtherOrdersUsd>1000</netPmtPaidRecvOtherOrdersUsd>
+					<netPmtPaidRecvOtherOrdersCph>0.0021</netPmtPaidRecvOtherOrdersCph>
+					<materialAspects>[Insert discussion of the material aspects of the relationship with this venue pursuant to rule 606(a)(1)(iv).]</materialAspects>
+				</rVenue>
+				<rVenue>
+					<name>The Nasdaq Stock Market LLC.</name>
+					<mic>XNAS</mic>
+					<orderPct>6.80</orderPct>
+					<marketPct>2.30</marketPct>
+					<marketableLimitPct>3.00</marketableLimitPct>
+					<nonMarketableLimitPct>21.70</nonMarketableLimitPct>
+					<otherPct>6.50</otherPct>
+					<netPmtPaidRecvMarketOrdersUsd>1000</netPmtPaidRecvMarketOrdersUsd>
+					<netPmtPaidRecvMarketOrdersCph>0.0021</netPmtPaidRecvMarketOrdersCph>
+					<netPmtPaidRecvMarketableLimitOrdersUsd>1000</netPmtPaidRecvMarketableLimitOrdersUsd>
+					<netPmtPaidRecvMarketableLimitOrdersCph>0.0021</netPmtPaidRecvMarketableLimitOrdersCph>
+					<netPmtPaidRecvNonMarketableLimitOrdersUsd>1000</netPmtPaidRecvNonMarketableLimitOrdersUsd>
+					<netPmtPaidRecvNonMarketableLimitOrdersCph>0.0021</netPmtPaidRecvNonMarketableLimitOrdersCph>
+					<netPmtPaidRecvOtherOrdersUsd>1000</netPmtPaidRecvOtherOrdersUsd>
+					<netPmtPaidRecvOtherOrdersCph>0.0021</netPmtPaidRecvOtherOrdersCph>
+					<materialAspects>[Insert discussion of the material aspects of the relationship with this venue pursuant to rule 606(a)(1)(iv).]</materialAspects>
+				</rVenue>
+				<rVenue>
+					<name>B. Roker Exec and Clrng</name>
+					<mic>180T</mic>
+					<orderPct>6.10</orderPct>
+					<marketPct>9.50</marketPct>
+					<marketableLimitPct>0.40</marketableLimitPct>
+					<nonMarketableLimitPct>0.10</nonMarketableLimitPct>
+					<otherPct>6.20</otherPct>
+					<netPmtPaidRecvMarketOrdersUsd>1000</netPmtPaidRecvMarketOrdersUsd>
+					<netPmtPaidRecvMarketOrdersCph>0.0021</netPmtPaidRecvMarketOrdersCph>
+					<netPmtPaidRecvMarketableLimitOrdersUsd>1000</netPmtPaidRecvMarketableLimitOrdersUsd>
+					<netPmtPaidRecvMarketableLimitOrdersCph>0.0021</netPmtPaidRecvMarketableLimitOrdersCph>
+					<netPmtPaidRecvNonMarketableLimitOrdersUsd>1000</netPmtPaidRecvNonMarketableLimitOrdersUsd>
+					<netPmtPaidRecvNonMarketableLimitOrdersCph>0.0021</netPmtPaidRecvNonMarketableLimitOrdersCph>
+					<netPmtPaidRecvOtherOrdersUsd>1000</netPmtPaidRecvOtherOrdersUsd>
+					<netPmtPaidRecvOtherOrdersCph>0.0021</netPmtPaidRecvOtherOrdersCph>
+					<materialAspects>[Insert discussion of the material aspects of the relationship with this venue pursuant to rule 606(a)(1)(iv).]</materialAspects>
+				</rVenue>
+				<rVenue>
+					<name>EDGA Exchange,Inc.</name>
+					<mic>EDGA</mic>
+					<orderPct>3.90</orderPct>
+					<marketPct>3.40</marketPct>
+					<marketableLimitPct>3.00</marketableLimitPct>
+					<nonMarketableLimitPct>0.10</nonMarketableLimitPct>
+					<otherPct>3.90</otherPct>
+					<netPmtPaidRecvMarketOrdersUsd>1000</netPmtPaidRecvMarketOrdersUsd>
+					<netPmtPaidRecvMarketOrdersCph>0.0021</netPmtPaidRecvMarketOrdersCph>
+					<netPmtPaidRecvMarketableLimitOrdersUsd>1000</netPmtPaidRecvMarketableLimitOrdersUsd>
+					<netPmtPaidRecvMarketableLimitOrdersCph>0.0021</netPmtPaidRecvMarketableLimitOrdersCph>
+					<netPmtPaidRecvNonMarketableLimitOrdersUsd>1000</netPmtPaidRecvNonMarketableLimitOrdersUsd>
+					<netPmtPaidRecvNonMarketableLimitOrdersCph>0.0021</netPmtPaidRecvNonMarketableLimitOrdersCph>
+					<netPmtPaidRecvOtherOrdersUsd>1000</netPmtPaidRecvOtherOrdersUsd>
+					<netPmtPaidRecvOtherOrdersCph>0.0021</netPmtPaidRecvOtherOrdersCph>
+					<materialAspects>[Insert discussion of the material aspects of the relationship with this venue pursuant to rule 606(a)(1)(iv).]</materialAspects>
+				</rVenue>
+				<rVenue>
+					<name>BATS Exchange Y, Inc.</name>
+					<mic>BATY</mic>
+					<orderPct>3.30</orderPct>
+					<marketPct>0.00</marketPct>
+					<marketableLimitPct>1.70</marketableLimitPct>
+					<nonMarketableLimitPct>1.00</nonMarketableLimitPct>
+					<otherPct>3.40</otherPct>
+					<netPmtPaidRecvMarketOrdersUsd>1000</netPmtPaidRecvMarketOrdersUsd>
+					<netPmtPaidRecvMarketOrdersCph>0.0021</netPmtPaidRecvMarketOrdersCph>
+					<netPmtPaidRecvMarketableLimitOrdersUsd>1000</netPmtPaidRecvMarketableLimitOrdersUsd>
+					<netPmtPaidRecvMarketableLimitOrdersCph>0.0021</netPmtPaidRecvMarketableLimitOrdersCph>
+					<netPmtPaidRecvNonMarketableLimitOrdersUsd>1000</netPmtPaidRecvNonMarketableLimitOrdersUsd>
+					<netPmtPaidRecvNonMarketableLimitOrdersCph>0.0021</netPmtPaidRecvNonMarketableLimitOrdersCph>
+					<netPmtPaidRecvOtherOrdersUsd>1000</netPmtPaidRecvOtherOrdersUsd>
+					<netPmtPaidRecvOtherOrdersCph>0.0021</netPmtPaidRecvOtherOrdersCph>
+					<materialAspects>[Insert discussion of the material aspects of the relationship with this venue pursuant to rule 606(a)(1)(iv).]</materialAspects>
+				</rVenue>
+				<rVenue>
+					<name>NASDAQ OMX BX.</name>
+					<mic>BOSE</mic>
+					<orderPct>2.10</orderPct>
+					<marketPct>0.00</marketPct>
+					<marketableLimitPct>1.60</marketableLimitPct>
+					<nonMarketableLimitPct>1.00</nonMarketableLimitPct>
+					<otherPct>2.10</otherPct>
+					<netPmtPaidRecvMarketOrdersUsd>1000</netPmtPaidRecvMarketOrdersUsd>
+					<netPmtPaidRecvMarketOrdersCph>0.0021</netPmtPaidRecvMarketOrdersCph>
+					<netPmtPaidRecvMarketableLimitOrdersUsd>1000</netPmtPaidRecvMarketableLimitOrdersUsd>
+					<netPmtPaidRecvMarketableLimitOrdersCph>0.0021</netPmtPaidRecvMarketableLimitOrdersCph>
+					<netPmtPaidRecvNonMarketableLimitOrdersUsd>1000</netPmtPaidRecvNonMarketableLimitOrdersUsd>
+					<netPmtPaidRecvNonMarketableLimitOrdersCph>0.0021</netPmtPaidRecvNonMarketableLimitOrdersCph>
+					<netPmtPaidRecvOtherOrdersUsd>1000</netPmtPaidRecvOtherOrdersUsd>
+					<netPmtPaidRecvOtherOrdersCph>0.0021</netPmtPaidRecvOtherOrdersCph>
+					<materialAspects>[Insert discussion of the material aspects of the relationship with this venue pursuant to rule 606(a)(1)(iv).]</materialAspects>
+				</rVenue>
+			</rVenues>
+		</rSP500>
+		<rOtherStocks>
+			<ndoPct>13.60</ndoPct>
+			<ndoMarketPct>0.00</ndoMarketPct>
+			<ndoMarketableLimitPct>1.10</ndoMarketableLimitPct>
+			<ndoNonmarketableLimitPct>1.00</ndoNonmarketableLimitPct>
+			<ndoOtherPct>97.90</ndoOtherPct>
+			<rVenues>
+				<rVenue>
+					<name>New York Stock Exchange LLC.</name>
+					<mic>NYSE</mic>
+					<orderPct>39.80</orderPct>
+					<marketPct>36.70</marketPct>
+					<marketableLimitPct>10.00</marketableLimitPct>
+					<nonMarketableLimitPct>39.00</nonMarketableLimitPct>
+					<otherPct>29.50</otherPct>
+					<netPmtPaidRecvMarketOrdersUsd>1000</netPmtPaidRecvMarketOrdersUsd>
+					<netPmtPaidRecvMarketOrdersCph>0.0021</netPmtPaidRecvMarketOrdersCph>
+					<netPmtPaidRecvMarketableLimitOrdersUsd>1000</netPmtPaidRecvMarketableLimitOrdersUsd>
+					<netPmtPaidRecvMarketableLimitOrdersCph>0.0021</netPmtPaidRecvMarketableLimitOrdersCph>
+					<netPmtPaidRecvNonMarketableLimitOrdersUsd>1000</netPmtPaidRecvNonMarketableLimitOrdersUsd>
+					<netPmtPaidRecvNonMarketableLimitOrdersCph>0.0021</netPmtPaidRecvNonMarketableLimitOrdersCph>
+					<netPmtPaidRecvOtherOrdersUsd>1000</netPmtPaidRecvOtherOrdersUsd>
+					<netPmtPaidRecvOtherOrdersCph>0.0021</netPmtPaidRecvOtherOrdersCph>
+					<materialAspects>[Insert discussion of the material aspects of the relationship with this venue pursuant to rule 606(a)(1)(iv).]</materialAspects>
+				</rVenue>
+				<rVenue>
+					<name>NYSE Arca, Inc.</name>
+					<mic>ARCA</mic>
+					<orderPct>11.70</orderPct>
+					<marketPct>1.10</marketPct>
+					<marketableLimitPct>10.00</marketableLimitPct>
+					<nonMarketableLimitPct>2.40</nonMarketableLimitPct>
+					<otherPct>11.70</otherPct>
+					<netPmtPaidRecvMarketOrdersUsd>1000</netPmtPaidRecvMarketOrdersUsd>
+					<netPmtPaidRecvMarketOrdersCph>0.0021</netPmtPaidRecvMarketOrdersCph>
+					<netPmtPaidRecvMarketableLimitOrdersUsd>1000</netPmtPaidRecvMarketableLimitOrdersUsd>
+					<netPmtPaidRecvMarketableLimitOrdersCph>0.0021</netPmtPaidRecvMarketableLimitOrdersCph>
+					<netPmtPaidRecvNonMarketableLimitOrdersUsd>1000</netPmtPaidRecvNonMarketableLimitOrdersUsd>
+					<netPmtPaidRecvNonMarketableLimitOrdersCph>0.0021</netPmtPaidRecvNonMarketableLimitOrdersCph>
+					<netPmtPaidRecvOtherOrdersUsd>1000</netPmtPaidRecvOtherOrdersUsd>
+					<netPmtPaidRecvOtherOrdersCph>0.0021</netPmtPaidRecvOtherOrdersCph>
+					<materialAspects>[Insert discussion of the material aspects of the relationship with this venue pursuant to rule 606(a)(1)(iv).]</materialAspects>
+				</rVenue>
+				<rVenue>
+					<name>BATS Exchange, Inc.</name>
+					<mic>BATS</mic>
+					<orderPct>13.20</orderPct>
+					<marketPct>6.80</marketPct>
+					<marketableLimitPct>3.00</marketableLimitPct>
+					<nonMarketableLimitPct>4.40</nonMarketableLimitPct>
+					<otherPct>13.30</otherPct>
+					<netPmtPaidRecvMarketOrdersUsd>1000</netPmtPaidRecvMarketOrdersUsd>
+					<netPmtPaidRecvMarketOrdersCph>0.0021</netPmtPaidRecvMarketOrdersCph>
+					<netPmtPaidRecvMarketableLimitOrdersUsd>1000</netPmtPaidRecvMarketableLimitOrdersUsd>
+					<netPmtPaidRecvMarketableLimitOrdersCph>0.0021</netPmtPaidRecvMarketableLimitOrdersCph>
+					<netPmtPaidRecvNonMarketableLimitOrdersUsd>1000</netPmtPaidRecvNonMarketableLimitOrdersUsd>
+					<netPmtPaidRecvNonMarketableLimitOrdersCph>0.0021</netPmtPaidRecvNonMarketableLimitOrdersCph>
+					<netPmtPaidRecvOtherOrdersUsd>1000</netPmtPaidRecvOtherOrdersUsd>
+					<netPmtPaidRecvOtherOrdersCph>0.0021</netPmtPaidRecvOtherOrdersCph>
+					<materialAspects>[Insert discussion of the material aspects of the relationship with this venue pursuant to rule 606(a)(1)(iv).]</materialAspects>
+				</rVenue>
+				<rVenue>
+					<name>EDGX Exchange, Inc.</name>
+					<mic>EDGX</mic>
+					<orderPct>11.70</orderPct>
+					<marketPct>1.10</marketPct>
+					<marketableLimitPct>3.00</marketableLimitPct>
+					<nonMarketableLimitPct>9.40</nonMarketableLimitPct>
+					<otherPct>11.70</otherPct>
+					<netPmtPaidRecvMarketOrdersUsd>1000</netPmtPaidRecvMarketOrdersUsd>
+					<netPmtPaidRecvMarketOrdersCph>0.0021</netPmtPaidRecvMarketOrdersCph>
+					<netPmtPaidRecvMarketableLimitOrdersUsd>1000</netPmtPaidRecvMarketableLimitOrdersUsd>
+					<netPmtPaidRecvMarketableLimitOrdersCph>0.0021</netPmtPaidRecvMarketableLimitOrdersCph>
+					<netPmtPaidRecvNonMarketableLimitOrdersUsd>1000</netPmtPaidRecvNonMarketableLimitOrdersUsd>
+					<netPmtPaidRecvNonMarketableLimitOrdersCph>0.0021</netPmtPaidRecvNonMarketableLimitOrdersCph>
+					<netPmtPaidRecvOtherOrdersUsd>1000</netPmtPaidRecvOtherOrdersUsd>
+					<netPmtPaidRecvOtherOrdersCph>0.0021</netPmtPaidRecvOtherOrdersCph>
+					<materialAspects>[Insert discussion of the material aspects of the relationship with this venue pursuant to rule 606(a)(1)(iv).]</materialAspects>
+				</rVenue>
+				<rVenue>
+					<name>The Nasdaq Stock Market LLC.</name>
+					<mic>XNAS</mic>
+					<orderPct>6.80</orderPct>
+					<marketPct>2.30</marketPct>
+					<marketableLimitPct>3.00</marketableLimitPct>
+					<nonMarketableLimitPct>21.70</nonMarketableLimitPct>
+					<otherPct>6.50</otherPct>
+					<netPmtPaidRecvMarketOrdersUsd>1000</netPmtPaidRecvMarketOrdersUsd>
+					<netPmtPaidRecvMarketOrdersCph>0.0021</netPmtPaidRecvMarketOrdersCph>
+					<netPmtPaidRecvMarketableLimitOrdersUsd>1000</netPmtPaidRecvMarketableLimitOrdersUsd>
+					<netPmtPaidRecvMarketableLimitOrdersCph>0.0021</netPmtPaidRecvMarketableLimitOrdersCph>
+					<netPmtPaidRecvNonMarketableLimitOrdersUsd>1000</netPmtPaidRecvNonMarketableLimitOrdersUsd>
+					<netPmtPaidRecvNonMarketableLimitOrdersCph>0.0021</netPmtPaidRecvNonMarketableLimitOrdersCph>
+					<netPmtPaidRecvOtherOrdersUsd>1000</netPmtPaidRecvOtherOrdersUsd>
+					<netPmtPaidRecvOtherOrdersCph>0.0021</netPmtPaidRecvOtherOrdersCph>
+					<materialAspects>[Insert discussion of the material aspects of the relationship with this venue pursuant to rule 606(a)(1)(iv).]</materialAspects>
+				</rVenue>
+				<rVenue>
+					<name>B. Roker Exec and Clrng</name>
+					<mic>180T</mic>
+					<orderPct>6.10</orderPct>
+					<marketPct>9.50</marketPct>
+					<marketableLimitPct>0.40</marketableLimitPct>
+					<nonMarketableLimitPct>0.10</nonMarketableLimitPct>
+					<otherPct>6.20</otherPct>
+					<netPmtPaidRecvMarketOrdersUsd>1000</netPmtPaidRecvMarketOrdersUsd>
+					<netPmtPaidRecvMarketOrdersCph>0.0021</netPmtPaidRecvMarketOrdersCph>
+					<netPmtPaidRecvMarketableLimitOrdersUsd>1000</netPmtPaidRecvMarketableLimitOrdersUsd>
+					<netPmtPaidRecvMarketableLimitOrdersCph>0.0021</netPmtPaidRecvMarketableLimitOrdersCph>
+					<netPmtPaidRecvNonMarketableLimitOrdersUsd>1000</netPmtPaidRecvNonMarketableLimitOrdersUsd>
+					<netPmtPaidRecvNonMarketableLimitOrdersCph>0.0021</netPmtPaidRecvNonMarketableLimitOrdersCph>
+					<netPmtPaidRecvOtherOrdersUsd>1000</netPmtPaidRecvOtherOrdersUsd>
+					<netPmtPaidRecvOtherOrdersCph>0.0021</netPmtPaidRecvOtherOrdersCph>
+					<materialAspects>[Insert discussion of the material aspects of the relationship with this venue pursuant to rule 606(a)(1)(iv).]</materialAspects>
+				</rVenue>
+				<rVenue>
+					<name>EDGA Exchange,Inc.</name>
+					<mic>EDGA</mic>
+					<orderPct>3.90</orderPct>
+					<marketPct>3.40</marketPct>
+					<marketableLimitPct>3.00</marketableLimitPct>
+					<nonMarketableLimitPct>0.10</nonMarketableLimitPct>
+					<otherPct>3.90</otherPct>
+					<netPmtPaidRecvMarketOrdersUsd>1000</netPmtPaidRecvMarketOrdersUsd>
+					<netPmtPaidRecvMarketOrdersCph>0.0021</netPmtPaidRecvMarketOrdersCph>
+					<netPmtPaidRecvMarketableLimitOrdersUsd>1000</netPmtPaidRecvMarketableLimitOrdersUsd>
+					<netPmtPaidRecvMarketableLimitOrdersCph>0.0021</netPmtPaidRecvMarketableLimitOrdersCph>
+					<netPmtPaidRecvNonMarketableLimitOrdersUsd>1000</netPmtPaidRecvNonMarketableLimitOrdersUsd>
+					<netPmtPaidRecvNonMarketableLimitOrdersCph>0.0021</netPmtPaidRecvNonMarketableLimitOrdersCph>
+					<netPmtPaidRecvOtherOrdersUsd>1000</netPmtPaidRecvOtherOrdersUsd>
+					<netPmtPaidRecvOtherOrdersCph>0.0021</netPmtPaidRecvOtherOrdersCph>
+					<materialAspects>[Insert discussion of the material aspects of the relationship with this venue pursuant to rule 606(a)(1)(iv).]</materialAspects>
+				</rVenue>
+				<rVenue>
+					<name>BATS Exchange Y, Inc.</name>
+					<mic>BATY</mic>
+					<orderPct>3.30</orderPct>
+					<marketPct>0.00</marketPct>
+					<marketableLimitPct>1.70</marketableLimitPct>
+					<nonMarketableLimitPct>1.00</nonMarketableLimitPct>
+					<otherPct>3.40</otherPct>
+					<netPmtPaidRecvMarketOrdersUsd>1000</netPmtPaidRecvMarketOrdersUsd>
+					<netPmtPaidRecvMarketOrdersCph>0.0021</netPmtPaidRecvMarketOrdersCph>
+					<netPmtPaidRecvMarketableLimitOrdersUsd>1000</netPmtPaidRecvMarketableLimitOrdersUsd>
+					<netPmtPaidRecvMarketableLimitOrdersCph>0.0021</netPmtPaidRecvMarketableLimitOrdersCph>
+					<netPmtPaidRecvNonMarketableLimitOrdersUsd>1000</netPmtPaidRecvNonMarketableLimitOrdersUsd>
+					<netPmtPaidRecvNonMarketableLimitOrdersCph>0.0021</netPmtPaidRecvNonMarketableLimitOrdersCph>
+					<netPmtPaidRecvOtherOrdersUsd>1000</netPmtPaidRecvOtherOrdersUsd>
+					<netPmtPaidRecvOtherOrdersCph>0.0021</netPmtPaidRecvOtherOrdersCph>
+					<materialAspects>[Insert discussion of the material aspects of the relationship with this venue pursuant to rule 606(a)(1)(iv).]</materialAspects>
+				</rVenue>
+				<rVenue>
+					<name>NASDAQ OMX BX.</name>
+					<mic>BOSE</mic>
+					<orderPct>2.10</orderPct>
+					<marketPct>0.00</marketPct>
+					<marketableLimitPct>1.60</marketableLimitPct>
+					<nonMarketableLimitPct>1.00</nonMarketableLimitPct>
+					<otherPct>2.10</otherPct>
+					<netPmtPaidRecvMarketOrdersUsd>1000</netPmtPaidRecvMarketOrdersUsd>
+					<netPmtPaidRecvMarketOrdersCph>0.0021</netPmtPaidRecvMarketOrdersCph>
+					<netPmtPaidRecvMarketableLimitOrdersUsd>1000</netPmtPaidRecvMarketableLimitOrdersUsd>
+					<netPmtPaidRecvMarketableLimitOrdersCph>0.0021</netPmtPaidRecvMarketableLimitOrdersCph>
+					<netPmtPaidRecvNonMarketableLimitOrdersUsd>1000</netPmtPaidRecvNonMarketableLimitOrdersUsd>
+					<netPmtPaidRecvNonMarketableLimitOrdersCph>0.0021</netPmtPaidRecvNonMarketableLimitOrdersCph>
+					<netPmtPaidRecvOtherOrdersUsd>1000</netPmtPaidRecvOtherOrdersUsd>
+					<netPmtPaidRecvOtherOrdersCph>0.0021</netPmtPaidRecvOtherOrdersCph>
+					<materialAspects>[Insert discussion of the material aspects of the relationship with this venue pursuant to rule 606(a)(1)(iv).]</materialAspects>
+				</rVenue>
+			</rVenues>
+		</rOtherStocks>
+		<rOptions>
+			<ndoPct>53.90</ndoPct>
+			<ndoMarketPct>0.00</ndoMarketPct>
+			<ndoMarketableLimitPct>0.50</ndoMarketableLimitPct>
+			<ndoNonmarketableLimitPct>0.60</ndoNonmarketableLimitPct>
+			<ndoOtherPct>98.90</ndoOtherPct>
+			<rVenues>
+				<rVenue>
+					<name>BATS Options Exchange.</name>
+					<mic>BATO</mic>
+					<orderPct>21.80</orderPct>
+					<marketPct>0.00</marketPct>
+					<marketableLimitPct>10.00</marketableLimitPct>
+					<nonMarketableLimitPct>7.30</nonMarketableLimitPct>
+					<otherPct>21.90</otherPct>
+					<netPmtPaidRecvMarketOrdersUsd>1000</netPmtPaidRecvMarketOrdersUsd>
+					<netPmtPaidRecvMarketOrdersCph>0.0021</netPmtPaidRecvMarketOrdersCph>
+					<netPmtPaidRecvMarketableLimitOrdersUsd>1000</netPmtPaidRecvMarketableLimitOrdersUsd>
+					<netPmtPaidRecvMarketableLimitOrdersCph>0.0021</netPmtPaidRecvMarketableLimitOrdersCph>
+					<netPmtPaidRecvNonMarketableLimitOrdersUsd>1000</netPmtPaidRecvNonMarketableLimitOrdersUsd>
+					<netPmtPaidRecvNonMarketableLimitOrdersCph>0.0021</netPmtPaidRecvNonMarketableLimitOrdersCph>
+					<netPmtPaidRecvOtherOrdersUsd>1000</netPmtPaidRecvOtherOrdersUsd>
+					<netPmtPaidRecvOtherOrdersCph>0.0021</netPmtPaidRecvOtherOrdersCph>
+					<materialAspects>[Insert discussion of the material aspects of the relationship with this venue pursuant to rule 606(a)(1)(iv).]</materialAspects>
+				</rVenue>
+				<rVenue>
+					<name>NYSE Arca, Inc.</name>
+					<mic>PCXX</mic>
+					<orderPct>13.60</orderPct>
+					<marketPct>0.00</marketPct>
+					<marketableLimitPct>10.30</marketableLimitPct>
+					<nonMarketableLimitPct>2.00</nonMarketableLimitPct>
+					<otherPct>13.70</otherPct>
+					<netPmtPaidRecvMarketOrdersUsd>1000</netPmtPaidRecvMarketOrdersUsd>
+					<netPmtPaidRecvMarketOrdersCph>0.0021</netPmtPaidRecvMarketOrdersCph>
+					<netPmtPaidRecvMarketableLimitOrdersUsd>1000</netPmtPaidRecvMarketableLimitOrdersUsd>
+					<netPmtPaidRecvMarketableLimitOrdersCph>0.0021</netPmtPaidRecvMarketableLimitOrdersCph>
+					<netPmtPaidRecvNonMarketableLimitOrdersUsd>1000</netPmtPaidRecvNonMarketableLimitOrdersUsd>
+					<netPmtPaidRecvNonMarketableLimitOrdersCph>0.0021</netPmtPaidRecvNonMarketableLimitOrdersCph>
+					<netPmtPaidRecvOtherOrdersUsd>1000</netPmtPaidRecvOtherOrdersUsd>
+					<netPmtPaidRecvOtherOrdersCph>0.0021</netPmtPaidRecvOtherOrdersCph>
+					<materialAspects>[Insert discussion of the material aspects of the relationship with this venue pursuant to rule 606(a)(1)(iv).]</materialAspects>
+				</rVenue>
+				<rVenue>
+					<name>International Securities Exch</name>
+					<mic>ISEE</mic>
+					<orderPct>13.20</orderPct>
+					<marketPct>0.00</marketPct>
+					<marketableLimitPct>7.20</marketableLimitPct>
+					<nonMarketableLimitPct>2.00</nonMarketableLimitPct>
+					<otherPct>13.70</otherPct>
+					<netPmtPaidRecvMarketOrdersUsd>1000</netPmtPaidRecvMarketOrdersUsd>
+					<netPmtPaidRecvMarketOrdersCph>0.0021</netPmtPaidRecvMarketOrdersCph>
+					<netPmtPaidRecvMarketableLimitOrdersUsd>1000</netPmtPaidRecvMarketableLimitOrdersUsd>
+					<netPmtPaidRecvMarketableLimitOrdersCph>0.0021</netPmtPaidRecvMarketableLimitOrdersCph>
+					<netPmtPaidRecvNonMarketableLimitOrdersUsd>1000</netPmtPaidRecvNonMarketableLimitOrdersUsd>
+					<netPmtPaidRecvNonMarketableLimitOrdersCph>0.0021</netPmtPaidRecvNonMarketableLimitOrdersCph>
+					<netPmtPaidRecvOtherOrdersUsd>1000</netPmtPaidRecvOtherOrdersUsd>
+					<netPmtPaidRecvOtherOrdersCph>0.0021</netPmtPaidRecvOtherOrdersCph>
+					<materialAspects>[Insert discussion of the material aspects of the relationship with this venue pursuant to rule 606(a)(1)(iv).]</materialAspects>
+				</rVenue>
+				<rVenue>
+					<name>Nasdaq Options Market LLC.</name>
+					<mic>NOMM</mic>
+					<orderPct>10.00</orderPct>
+					<marketPct>0.00</marketPct>
+					<marketableLimitPct>7.00</marketableLimitPct>
+					<nonMarketableLimitPct>8.90</nonMarketableLimitPct>
+					<otherPct>9.90</otherPct>
+					<netPmtPaidRecvMarketOrdersUsd>1000</netPmtPaidRecvMarketOrdersUsd>
+					<netPmtPaidRecvMarketOrdersCph>0.0021</netPmtPaidRecvMarketOrdersCph>
+					<netPmtPaidRecvMarketableLimitOrdersUsd>1000</netPmtPaidRecvMarketableLimitOrdersUsd>
+					<netPmtPaidRecvMarketableLimitOrdersCph>0.0021</netPmtPaidRecvMarketableLimitOrdersCph>
+					<netPmtPaidRecvNonMarketableLimitOrdersUsd>1000</netPmtPaidRecvNonMarketableLimitOrdersUsd>
+					<netPmtPaidRecvNonMarketableLimitOrdersCph>0.0021</netPmtPaidRecvNonMarketableLimitOrdersCph>
+					<netPmtPaidRecvOtherOrdersUsd>1000</netPmtPaidRecvOtherOrdersUsd>
+					<netPmtPaidRecvOtherOrdersCph>0.0021</netPmtPaidRecvOtherOrdersCph>
+					<materialAspects>[Insert discussion of the material aspects of the relationship with this venue pursuant to rule 606(a)(1)(iv).]</materialAspects>
+				</rVenue>
+				<rVenue>
+					<name>Chicago Board Options Exchange</name>
+					<mic>CBOE</mic>
+					<orderPct>14.70</orderPct>
+					<marketPct>0.00</marketPct>
+					<marketableLimitPct>7.00</marketableLimitPct>
+					<nonMarketableLimitPct>4.40</nonMarketableLimitPct>
+					<otherPct>14.70</otherPct>
+					<netPmtPaidRecvMarketOrdersUsd>1000</netPmtPaidRecvMarketOrdersUsd>
+					<netPmtPaidRecvMarketOrdersCph>0.0021</netPmtPaidRecvMarketOrdersCph>
+					<netPmtPaidRecvMarketableLimitOrdersUsd>1000</netPmtPaidRecvMarketableLimitOrdersUsd>
+					<netPmtPaidRecvMarketableLimitOrdersCph>0.0021</netPmtPaidRecvMarketableLimitOrdersCph>
+					<netPmtPaidRecvNonMarketableLimitOrdersUsd>1000</netPmtPaidRecvNonMarketableLimitOrdersUsd>
+					<netPmtPaidRecvNonMarketableLimitOrdersCph>0.0021</netPmtPaidRecvNonMarketableLimitOrdersCph>
+					<netPmtPaidRecvOtherOrdersUsd>1000</netPmtPaidRecvOtherOrdersUsd>
+					<netPmtPaidRecvOtherOrdersCph>0.0021</netPmtPaidRecvOtherOrdersCph>
+					<materialAspects>[Insert discussion of the material aspects of the relationship with this venue pursuant to rule 606(a)(1)(iv).]</materialAspects>
+				</rVenue>
+				<rVenue>
+					<name>NYSE MKT, LLC</name>
+					<mic>AMEX</mic>
+					<orderPct>8.10</orderPct>
+					<marketPct>0.00</marketPct>
+					<marketableLimitPct>3.60</marketableLimitPct>
+					<nonMarketableLimitPct>4.40</nonMarketableLimitPct>
+					<otherPct>8.10</otherPct>
+					<netPmtPaidRecvMarketOrdersUsd>1000</netPmtPaidRecvMarketOrdersUsd>
+					<netPmtPaidRecvMarketOrdersCph>0.0021</netPmtPaidRecvMarketOrdersCph>
+					<netPmtPaidRecvMarketableLimitOrdersUsd>1000</netPmtPaidRecvMarketableLimitOrdersUsd>
+					<netPmtPaidRecvMarketableLimitOrdersCph>0.0021</netPmtPaidRecvMarketableLimitOrdersCph>
+					<netPmtPaidRecvNonMarketableLimitOrdersUsd>1000</netPmtPaidRecvNonMarketableLimitOrdersUsd>
+					<netPmtPaidRecvNonMarketableLimitOrdersCph>0.0021</netPmtPaidRecvNonMarketableLimitOrdersCph>
+					<netPmtPaidRecvOtherOrdersUsd>1000</netPmtPaidRecvOtherOrdersUsd>
+					<netPmtPaidRecvOtherOrdersCph>0.0021</netPmtPaidRecvOtherOrdersCph>
+					<materialAspects>[Insert discussion of the material aspects of the relationship with this venue pursuant to rule 606(a)(1)(iv).]</materialAspects>
+				</rVenue>
+				<rVenue>
+					<name>Nasdaq OMX PHLX,Inc</name>
+					<mic>PHLX</mic>
+					<orderPct>5.40</orderPct>
+					<marketPct>0.00</marketPct>
+					<marketableLimitPct>3.60</marketableLimitPct>
+					<nonMarketableLimitPct>1.30</nonMarketableLimitPct>
+					<otherPct>5.40</otherPct>
+					<netPmtPaidRecvMarketOrdersUsd>1000</netPmtPaidRecvMarketOrdersUsd>
+					<netPmtPaidRecvMarketOrdersCph>0.0021</netPmtPaidRecvMarketOrdersCph>
+					<netPmtPaidRecvMarketableLimitOrdersUsd>1000</netPmtPaidRecvMarketableLimitOrdersUsd>
+					<netPmtPaidRecvMarketableLimitOrdersCph>0.0021</netPmtPaidRecvMarketableLimitOrdersCph>
+					<netPmtPaidRecvNonMarketableLimitOrdersUsd>1000</netPmtPaidRecvNonMarketableLimitOrdersUsd>
+					<netPmtPaidRecvNonMarketableLimitOrdersCph>0.0021</netPmtPaidRecvNonMarketableLimitOrdersCph>
+					<netPmtPaidRecvOtherOrdersUsd>1000</netPmtPaidRecvOtherOrdersUsd>
+					<netPmtPaidRecvOtherOrdersCph>0.0021</netPmtPaidRecvOtherOrdersCph>
+					<materialAspects>[Insert discussion of the material aspects of the relationship with this venue pursuant to rule 606(a)(1)(iv).]</materialAspects>
+				</rVenue>
+				<rVenue>
+					<name>C2 Options Exchange</name>
+					<mic>COPT</mic>
+					<orderPct>5.10</orderPct>
+					<marketPct>0.00</marketPct>
+					<marketableLimitPct>2.10</marketableLimitPct>
+					<nonMarketableLimitPct>2.00</nonMarketableLimitPct>
+					<otherPct>5.20</otherPct>
+					<netPmtPaidRecvMarketOrdersUsd>1000</netPmtPaidRecvMarketOrdersUsd>
+					<netPmtPaidRecvMarketOrdersCph>0.0021</netPmtPaidRecvMarketOrdersCph>
+					<netPmtPaidRecvMarketableLimitOrdersUsd>1000</netPmtPaidRecvMarketableLimitOrdersUsd>
+					<netPmtPaidRecvMarketableLimitOrdersCph>0.0021</netPmtPaidRecvMarketableLimitOrdersCph>
+					<netPmtPaidRecvNonMarketableLimitOrdersUsd>1000</netPmtPaidRecvNonMarketableLimitOrdersUsd>
+					<netPmtPaidRecvNonMarketableLimitOrdersCph>0.0021</netPmtPaidRecvNonMarketableLimitOrdersCph>
+					<netPmtPaidRecvOtherOrdersUsd>1000</netPmtPaidRecvOtherOrdersUsd>
+					<netPmtPaidRecvOtherOrdersCph>0.0021</netPmtPaidRecvOtherOrdersCph>
+					<materialAspects>[Insert discussion of the material aspects of the relationship with this venue pursuant to rule 606(a)(1)(iv).]</materialAspects>
+				</rVenue>
+				<rVenue>
+					<name>Boston Options Exchange Group</name>
+					<mic>BOXX</mic>
+					<orderPct>3.90</orderPct>
+					<marketPct>0.00</marketPct>
+					<marketableLimitPct>2.00</marketableLimitPct>
+					<nonMarketableLimitPct>1.10</nonMarketableLimitPct>
+					<otherPct>3.90</otherPct>
+					<netPmtPaidRecvMarketOrdersUsd>1000</netPmtPaidRecvMarketOrdersUsd>
+					<netPmtPaidRecvMarketOrdersCph>0.0021</netPmtPaidRecvMarketOrdersCph>
+					<netPmtPaidRecvMarketableLimitOrdersUsd>1000</netPmtPaidRecvMarketableLimitOrdersUsd>
+					<netPmtPaidRecvMarketableLimitOrdersCph>0.0021</netPmtPaidRecvMarketableLimitOrdersCph>
+					<netPmtPaidRecvNonMarketableLimitOrdersUsd>1000</netPmtPaidRecvNonMarketableLimitOrdersUsd>
+					<netPmtPaidRecvNonMarketableLimitOrdersCph>0.0021</netPmtPaidRecvNonMarketableLimitOrdersCph>
+					<netPmtPaidRecvOtherOrdersUsd>1000</netPmtPaidRecvOtherOrdersUsd>
+					<netPmtPaidRecvOtherOrdersCph>0.0021</netPmtPaidRecvOtherOrdersCph>
+					<materialAspects>[Insert discussion of the material aspects of the relationship with this venue pursuant to rule 606(a)(1)(iv).]</materialAspects>
+				</rVenue>
+			</rVenues>
+		</rOptions>
+	</rMonthly>
 </heldOrderRoutingPublicReport>
