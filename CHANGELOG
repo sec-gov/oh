@@ -1,7 +1,11 @@
-1/15/2015 update:
-* Correct regressions of validation and rendering behavior from pre-3/19/2020 version.
+1/15/2021 update:
+
+* Correct regressions of validation and rendering behavior to pre-3/19/2020 version.
+* Add optional mpid to 606(a)(1) and 606(b)(1) venue descriptions.
+* Relax validation on 606(b)(3) to permit both or neither mic and mpid.
 
 12/19/2020 update:
+
 * Relax the pattern for MIC codes, to permit digits as well as uppercase letters.
 * Add a footnote regarding the providedLiquidtyShr element to the technical guide.
 * Enhance the pdfmake package in ./lib to support marked ("tagged") PDF-UA output.
