@@ -95,6 +95,7 @@ const monthEnum = {
 
 const NS = ''; /* null string */
 const WS = ' '; /* one whitespace */
+const ZWSP = '\u200B'; /* zero width space */
 const NL = '\n';
 const SEMI = ';'; /* one semicolon */
 const AUTO = 'auto';
@@ -156,7 +157,8 @@ function createHeldExemptNotHeldOrderRoutingCustomerReport() { /* b1 */
 			}
 			if ((accumulated + cellSize) > threshold) {
 				if (truncate) {
-					failText = 'Unable to render more than '+threshold+' '+title+' transactions.\nOpen larger 606(b)(1) XML files in a spreadsheet or other application.'
+					failText = 'Unable to render more than '+threshold+' '+title+' transactions.' 
+							+ NL +'Open larger 606(b)(1) XML files in a spreadsheet or other application.'
 					alert(failText);
 				}
 				chunks.push(chunk);
@@ -230,7 +232,7 @@ function createHeldExemptNotHeldOrderRoutingCustomerReport() { /* b1 */
 			const pdf = pdfMake.createPdf(docDefinition);
 			const filename = name + '.pdf';
 			docDefinition = null;
-			pdf.download(name + '.pdf')
+			pdf.download(filename)
 			// memoryStat('After generating '+filename,false);
 		}
 	}
@@ -243,7 +245,7 @@ function getprivateData(orderType) { /* b1 */
 	var orderlist = xmlDoc.getElementsByTagName(orderType);
 	var orders = [];
 	var rows = [];
-	$.each(orderlist, function(index, val) {
+	$.each(orderlist, function(_index, val) {
 		orders = val.getElementsByTagName('order');
 		var row = [];
 		$.each(b1TableHeaders, function(index, val) {
@@ -256,14 +258,12 @@ function getprivateData(orderType) { /* b1 */
 			});
 		});
 		rows.push(row);
-		$.each(orders, function(orderIndex, order) {
-			var isFirstOrder = (orderIndex == 0);
-			var isLastOrder = (orderIndex == (order.length - 1));
+		$.each(orders, function(_orderIndex, order) {
 			var routes = [];
 			var type = NS;
 			var orderId = NS;
 			var orderChildNodes = order.childNodes;
-			$.each(orderChildNodes, function(oChildIndex, oChild) {
+			$.each(orderChildNodes, function(_oChildIndex, oChild) {
 				if (oChild.tagName == b1OrderTags[0]) {
 					orderId = getNodeValue(oChild, true);
 				} else if (oChild.tagName == b1OrderTags[1]) {
@@ -277,9 +277,9 @@ function getprivateData(orderType) { /* b1 */
 				}
 			});
 			var orderRowSpan = 0;
-			$.each(routes, function(rtIndex, route) {
+			$.each(routes, function(_rtIndex, route) {
 				var transactionCount = 0;
-				$.each(route.childNodes, function(rtChildIndex, rtChild) {
+				$.each(route.childNodes, function(_rtChildIndex, rtChild) {
 					if (rtChild.tagName == b1RouteTags[2]) {
 						transactionCount += 1;
 					}
@@ -291,22 +291,20 @@ function getprivateData(orderType) { /* b1 */
 			if (routes.length < 1) {
 				row = [];
 				bdr = [true,true,true,true]; /* l,t,r,b */
-				row.push({text: orderId, tags: ['TR','TD','/TD'], style: TABLEVALUE, unbreakable:true,border: bdr});
-				row.push({text: type, tags: ['TD','/TD'], style: TABLEVALUE, unbreakable:true,border: bdr});
-				row.push({text: WS, tags: ['TD','/TD'], style: TABLEVALUE, unbreakable:true,border:bdr});
-				row.push({text: WS, tags: ['TD','/TD','/TR'], style: TABLEVALUE, unbreakable:true,border:bdr});
+				row.push({text: ((orderId=="")?ZWSP:orderId), tags: ['TR','TD','/TD'], style: TABLEVALUE, unbreakable:true,border: bdr});
+				row.push({text: ((type=="")?ZWSP:type), tags: ['TD','/TD'], style: TABLEVALUE, unbreakable:true,border: bdr});
+				row.push({text: ZWSP, tags: ['TD','/TD'], style: TABLEVALUE, unbreakable:true,border:bdr});
+				row.push({text: ZWSP, tags: ['TD','/TD','/TR'], style: TABLEVALUE, unbreakable:true,border:bdr});
 				rows.push(row);
 			} else {
 				$.each(routes, function(rtIndex, route) {
 					row = [];
 					var venueName = NS;
-					var mic = NS;
-					var mpid = NS;
 					var isFirstRoute = (rtIndex == 0);
 					var isLastRoute = (rtIndex == (routes.length - 1))
 					var rtChildNodes = route.childNodes;
 					var transactions = [];
-					$.each(rtChildNodes, function(rtChildIndex, rtChild) {
+					$.each(rtChildNodes, function(_rtChildIndex, rtChild) {
 						/* construct venue name and count transactions */
 						if (rtChild.tagName == b1RouteTags[0]) {
 							venueName = getNodeValue(rtChild,true);
@@ -322,8 +320,8 @@ function getprivateData(orderType) { /* b1 */
 					});
 					if (transactions.length == 0) {
 						row = [];
-						col1 = ((isFirstRoute)?orderId:WS);
-						col2 = ((isFirstRoute)?type:WS);
+						col1 = ((isFirstRoute)?orderId:ZWSP);
+						col2 = ((isFirstRoute)?type:ZWSP);
 						col3 = (venueName);
 						col4 = ('-');
 						bdr = [true,isFirstRoute,true,isLastRoute]; /* l,t,r,b */
@@ -361,7 +359,7 @@ function getprivateData(orderType) { /* b1 */
 
 function getTransactionDate(transaction) { /* b1 */
 	var date = NS;
-	$.each(transaction.childNodes, function(txChildIndex, txChild) {
+	$.each(transaction.childNodes, function(_txChildIndex, txChild) {
 		if (txChild.tagName == b1TransactionTags[0]) {
 			date += getNodeValue(txChild, true);
 		} else if (txChild.tagName == b1TransactionTags[1]) {
@@ -373,7 +371,7 @@ function getTransactionDate(transaction) { /* b1 */
 
 /****** b3 *******/
 
-function createNotHeldOrderHandlingCustomerReportPDF(opts) { /* b3 */
+function createNotHeldOrderHandlingCustomerReportPDF(_opts) { /* b3 */
 	var content = [];
 	var outname = ((basename == null) ? '606b3_NotHeldOrderHandling' : removeExtension(basename.name));
 	var title = 'Not-Held NMS Stocks Order Handling Report';
@@ -397,13 +395,13 @@ function createNotHeldOrderHandlingCustomerReportPDF(opts) { /* b3 */
 		 ]});
 	var years = getAllYears();
 	$.each(years,
-			function(yearIndex, year) {
+			function(_yearIndex, year) {
 				$.each(monthEnum,
 				function(monthName, monthVal) {
 				 var dateElements = xmlDoc.getElementsByTagName('mon');
 				 var monthFound = false;
 				 $.each(dateElements,
-						function(dateIndex,dateNode)
+						function(_dateIndex,dateNode)
 						{ var date = getNodeValue(dateNode,true);
 					      if (date == monthVal && getYearForMonth(dateNode) == year) {
 							 monthFound = true;
@@ -412,54 +410,63 @@ function createNotHeldOrderHandlingCustomerReportPDF(opts) { /* b3 */
 						});
 				 if (!monthFound) {return;}
 				 for (var r = 0; r < 2; r++) { // r = 0:directed, 1:non directed.
-					 var isDirected = (r == 0);
-					 var ioiExposedVenues = getDetailData(isDirected, monthVal, year);
-					 var ioiExpsdVenuesArr = []; // holds tagged rows, if any.
-					 var temp = [];
-					 var hasIoIExposedVenues = ioiExposedVenues.length > 0;
-					 if (hasIoIExposedVenues) {
-						 temp.push({text: 'Venues', style: 'tableHeader', unbreakable:true, tags: ['Table','TR','TH','/TH','/TR']});
-						 ioiExpsdVenuesArr.push(temp);
-						 for (index = 0; index < ioiExposedVenues.length; index++) {
-							 temp = [];
-							 temp.push({text: ioiExposedVenues[index], style: 'tableNameValue', unbreakable:true, tags: ['TR','TD','/TD','/TR']});
-							 ioiExpsdVenuesArr.push(temp);
-						 }
-					 }
-					content.push(// Month Header
-								 {text: monthName + WS + year + ' - ' + ((isDirected) ? 'Directed ' : 'Non-directed ') + 'Orders', style: 'sectionHeader', unbreakable:true, tags: ['H2']},
+					var isDirected = (r == 0);
+
+					var summaryData = getSummaryData(isDirected,monthVal,year);
+					var hasSummaryData = (summaryData.length > 1);
+					if (hasSummaryData) {
+						content.push(// Month Header
+								 {text: monthName + WS + year + ' - ' + ((isDirected) ? 'Directed ' : 'Non-directed ') + 'Orders', style: 'sectionHeader', unbreakable:true, tags: ['H2','/H2']},
 								  // Horizontal Line
 								  {canvas : [ {type : 'line',x1 : 0,y1 : 5, x2 : 762, y2 : 5, lineWidth : 1 } ] },
 								 // Summary
 								  {text: 'Summary', style: 'subSectionHeader', unbreakable:true, tags: ['Caption','/Caption'] },
 								  {table: {headerRows : 1,
 									  		widths : [AUTO,AUTO,AUTO ],
-									  		body : getSummaryData(isDirected,monthVal,year)
-								  			},
-								  	},
-								 // IOI exposed Venues
-								  ((hasIoIExposedVenues) ? {
-									  text: 'Actionable IOI Exposed Venues', 
-									  style: 'subSectionHeader', 
-									  unbreakable:true, tags: ['Caption','/Caption']} 
-								  : NS),
-								  ((hasIoIExposedVenues) ? {
-									  table: { body : ioiExpsdVenuesArr,
-										  		headerRows : 1, widths : [ AUTO ]}} 
-								  : NS),
-								// Non-IOI exposed Venues Header
-								  ((detailData.length > 1) ? { text: 'Order Routing Venues',
-												              style: 'subSectionHeader', unbreakable:true,
-												              tags: (hasIoIExposedVenues?['/Table']:[]).concat(['Caption','/Caption']) } : NS),
-								  ((detailData.length > 1) ? { table: { body : detailData,
-									  									headerRows : 1,
-									  								    widths : [ 40,
-																				AUTO, AUTO, AUTO, AUTO, AUTO,
-																				AUTO, AUTO, AUTO, AUTO, AUTO,
-																				AUTO, AUTO, AUTO, AUTO, AUTO,
-																				AUTO, AUTO, AUTO, AUTO, AUTO,
-																				AUTO ] // 22 columns
-																		 } } : NS))}})});
+									  		body : summaryData}})}
+
+					var ioiExposedVenues = getDetailData(isDirected, monthVal, year); /* side-effected detailData */
+					var ioiExpsdVenuesArr = []; // holds tagged rows, if any.
+					var hasIoIExposedVenues = (ioiExposedVenues.length > 0);					
+					if (hasIoIExposedVenues) {
+						var temp = [];
+						temp.push({text: 'Venues', style: 'tableHeader', unbreakable:true,
+									tags: ['Table','TR','TH','/TH','/TR']});
+						ioiExpsdVenuesArr.push(temp);
+						for (index = 0; index < ioiExposedVenues.length; index++) {
+							var row = [];
+							var isLastRow = (index == (ioiExposedVenues.length - 1));
+							row.push({text: ioiExposedVenues[index], style: 'tableNameValue', unbreakable:true, 
+										tags: ['TR','TD','/TD','/TR'].concat((isLastRow?['/Table']:[]))});
+							ioiExpsdVenuesArr.push(row);
+						}
+						content.push(// IOI exposed Venues
+									{text: 'Actionable IOI Exposed Venues', 
+										style: 'subSectionHeader', 
+									  	unbreakable:true, tags: ['Caption','/Caption']}
+									,{table: { body : ioiExpsdVenuesArr,
+													headerRows : 1, widths : [ AUTO ]}})}
+
+					var hasDetailData = (detailData.length > 1);
+					if (hasDetailData) {
+						content.push(
+							{text: 'Order Routing Venues',
+								style: 'subSectionHeader', unbreakable:true,
+								tags: ['Caption','/Caption'] }
+							,{table: { body : detailData,
+										headerRows : 1,
+										widths : [ 40,
+												AUTO, AUTO, AUTO, AUTO, AUTO,
+													AUTO, AUTO, AUTO, AUTO, AUTO,
+													AUTO, AUTO, AUTO, AUTO, AUTO,
+													AUTO, AUTO, AUTO, AUTO, AUTO,
+													AUTO ] /* 22 columns */
+									 } }
+							)
+							} // if
+						} // for
+						})}
+		);
 
 	var docDefinition = { /* b3 */
 		info: {title : title},
@@ -487,77 +494,92 @@ function createNotHeldOrderHandlingCustomerReportPDF(opts) { /* b3 */
 	pdfMake.createPdf(docDefinition).download(outname + '.pdf');
 }
 
-function getSummaryHeader() { /* b3 */
+function getSummaryHeader(isLastRow) { /* b3 */
 	var row = [];
 	for (var i = 0; i < b3SummaryTableHeaders.length; i++) {
 		var summaryTableHeader = b3SummaryTableHeaders[i];
 		verified(summaryTableHeader);
 		isFirst = (i==0);
-		isLast = (i==(b3SummaryTableHeaders.length - 1));
+		isLastCol = (i==(b3SummaryTableHeaders.length - 1));
 		row.push({
 			text: summaryTableHeader,
 			style: 'tableHeader', unbreakable:true,
-			tags: (isFirst?['Table','TR']:[]).concat(['TH','/TH']).concat(isLast?['/TR']:[])
+			tags: (isFirst?['Table','TR']:[])
+					.concat(['TH','/TH'])
+					.concat(isLastCol?['/TR']:[]) /* close row */
+					.concat((isLastCol && isLastRow)?['/Table']:[]) /* close table */
 		});
 	}
 	return row;
 }
 
-function getDetailedHeader() { /* b3 */
+function getDetailedHeader(isLastRow) { /* b3 */
 	var row = [];
-	for (var i = 0; i < b3DetailTableHeaders.length; i++) {
-		var detailTableHeader = b3DetailTableHeaders[i];
+	for (var col = 0; col < b3DetailTableHeaders.length; col++) {
+		var detailTableHeader = b3DetailTableHeaders[col];
 		verified(detailTableHeader);
-		isFirst = (i==0);
-		isLast = (i==(b3DetailTableHeaders.length - 1));
+		var isFirstCol = (col == 0);
+		var isLastCol = (col == (b3DetailTableHeaders.length - 1));
 		row.push({
 			text: detailTableHeader,
 			style: 'tableHeader', unbreakable:true,
-			tags: ((isFirst)?['Table','TR']:[])
+			tags: ((isFirstCol)?['Table','TR']:[])
 					.concat(['TH','/TH'])
-					.concat((isLast)?['/TR']:[]) // close row
+					.concat((isLastCol)?['/TR']:[]) /* close row */
+					.concat((isLastCol && isLastRow)?['/Table']:[]) /* close table */
 		});
 	}
-	return row;
+	/* return value will not be used if there are no detail data */
+	return row; 
 }
 
 function getSummaryData(directed, month, year) { /* b3 */
 	var root = xmlDoc.getElementsByTagName((directed) ? 'hDirected' : 'hNondirected');
 	var dataRows = [];
-	dataRows.push(getSummaryHeader());
-	if (root.length != 0) {
-		var monthlyAllVenues = root[0].getElementsByTagName('mon');
-		for (var i = 0; i < monthlyAllVenues.length; i++) {
-			var node = monthlyAllVenues[i];
-			if (getNodeValue(node) != month || getYearForMonth(node) != year) {
-				continue;
-			}
-			var siblings = getNextSiblings(node);
-			var row = [];
-			for (l = 0; l < b3SummaryTableTags.length; l++) {
-				var isFirst = (l==0);
-				var isLast = (l==(b3SummaryTableTags.length - 1));
-				var summaryTableTag = b3SummaryTableTags[l];
-				for (m = 0; m < siblings.length; m++) {
-					var sibling = siblings[m];
-					if (sibling.tagName == summaryTableTag) {
-						var nodeVal = getNodeValue(sibling);
-						verified(nodeVal);
-						row.push({
-							text: nodeVal,
-							style: TABLEVALUE, unbreakable:true,
-							tags: (isFirst?['TR']:[])
-									.concat(['TD','/TD'])
-									.concat(isLast?['/TR','/Table']:[])
-						});
-						break;
-					}
-				}
-			}
-			if (row.length > 0) {
-				dataRows.push(row);
+	if (root.length==0) {return dataRows};
+	var monthlyAllVenues = root[0].getElementsByTagName('mon');
+	var allVenuesOfMonth = []; /* each month may have a different list of venues */
+	var allNonemptyVenuesOfMonth = []; 
+	for (var i = 0; i < monthlyAllVenues.length; i++) {
+		var node = monthlyAllVenues[i];
+		if (getNodeValue(node) == month && getYearForMonth(node) == year) {
+			allVenuesOfMonth.push(i);
+			if (getNextSiblings(node).length > 0) {
+				allNonemptyVenuesOfMonth.push(i)
 			}
 		}
+	}	
+	dataRows.push(getSummaryHeader(allVenuesOfMonth.length==0));
+	for (var i = 0; i < allVenuesOfMonth.length; i++) {
+		var indexOfNode = allVenuesOfMonth[i];
+		node = monthlyAllVenues[indexOfNode];
+		var j = allNonemptyVenuesOfMonth.indexOf(indexOfNode);		
+		var isLastRow = (allNonemptyVenuesOfMonth.length == 0 || j == (allNonemptyVenuesOfMonth.length - 1));
+		var row = [];
+		var siblings = getNextSiblings(node);
+		for (var col = 0; col < b3SummaryTableTags.length; col++) {
+			var isFirstCol = (col==0);
+			var isLastCol = (col==(b3SummaryTableTags.length - 1));		
+			var summaryTableTag = b3SummaryTableTags[col];
+			for (var m = 0; m < siblings.length; m++) {
+				var sibling = siblings[m];
+				if (sibling.tagName == summaryTableTag) {
+					var nodeVal = getNodeValue(sibling);
+					verified(nodeVal);
+					
+					row.push({
+						text: ((nodeVal==NS)?ZWSP:nodeVal),
+						style: TABLEVALUE, unbreakable:true,
+						tags: (isFirstCol?['TR']:[])
+								.concat(['TD','/TD'])
+								.concat(isLastCol?['/TR']:[])
+								.concat((isLastCol && isLastRow)?['/Table']:[])
+					});
+					break;
+				}
+			}
+		}
+		dataRows.push(row);
 	}
 	return dataRows;
 }
@@ -565,9 +587,8 @@ function getSummaryData(directed, month, year) { /* b3 */
 function getDetailData(isDirected, month, year) { /* b3 */
 	var dataRows = [];
 	var ioiExpsdVenues = [];
-	var pushedHeader = false;
 	var root = xmlDoc.getElementsByTagName((isDirected) ? 'hDirected' : 'hNondirected');
-	dataRows.push(getDetailedHeader());
+	dataRows.push(getDetailedHeader(root.length == 0));
 	if (root.length != 0) {
 		var hMonthlyElts = root[0].getElementsByTagName('hMonthly');
 		for (var i = 0; i < hMonthlyElts.length; i++) {
@@ -593,29 +614,29 @@ function getDetailData(isDirected, month, year) { /* b3 */
 					var routingVenueElts = routingVenueListElt
 							.getElementsByTagName('iVenue');
 					for (var k = 0; k < routingVenueElts.length; k++) {
+						var isLastRow = (k == (routingVenueElts.length - 1));
 						var routingVenueElt = routingVenueElts[k];
 						var venueChildElts = routingVenueElt.children;
 						var netRow = [];
 						var nodeVal = null;
-						var isLastVenue = (k == (routingVenueElts.length - 1));
 						var venueNameVal = getVenueName(routingVenueElt);
 						netRow.push({text: venueNameVal, style: 'tableNameValue', unbreakable:true, tags: ['TR','TD','/TD']});
 						b3DetailTableTags.forEach(
 								function (tag, j) {
 									var isLastCol = (j == (b3DetailTableTags.length - 1));
-									nodeVal = WS;
-									$.each(venueChildElts,function(index,elt) {
+									nodeVal = NS;
+									$.each(venueChildElts,function(_index,elt) {
 										if (elt.tagName == tag) {
 											nodeVal = getNodeValue(elt);
 											verified(nodeVal, 'nodeVal');
 											return true;
 										};
 									});
-									var n = {text: ((nodeVal==NS)?WS:nodeVal),
+									var n = {text: ((nodeVal==NS)?ZWSP:nodeVal),
 											style: TABLEVALUE, unbreakable:true,
 											tags: ['TD','/TD']
 												.concat(isLastCol?['/TR']:[])
-												.concat((isLastCol && isLastVenue)?['/Table','/H2']:[])};
+												.concat((isLastCol && isLastRow)?['/Table']:[])};
 									netRow.push(n);
 								});
 						dataRows.push(netRow);
@@ -623,7 +644,7 @@ function getDetailData(isDirected, month, year) { /* b3 */
 				} // routingVenueListElts
 			} // monthlyElts
 		}
-	};
+	} 
 	/* detailData is global */
 	detailData = dataRows;
 	return ioiExpsdVenues;
@@ -652,11 +673,11 @@ function createHeldOrderRoutingPublicReportPDF() { /* a1 */
 					NL);
 	var years = getAllYears();
 
-	$.each(years, function(yearIndex, year) {
+	$.each(years, function(_yearIndex, year) {
 		$.each(monthEnum, function(monthName, monthVal) {
 			var dateElements = xmlDoc.getElementsByTagName('mon');
 			var monthFound = false;
-			$.each(dateElements, function(dateIndex, dateNode) {
+			$.each(dateElements, function(_dateIndex, dateNode) {
 				if (getNodeValue(dateNode) == monthVal
 						&& getYearForMonth(dateNode) == year) {
 					monthFound = true;
@@ -741,8 +762,7 @@ function getVenuesByMonth(month, year, securityType) { /* a1 */
 	var netRows = [];
 	matrAspectsArr = [];
 	var name = 'mon';
-	var parentName = 'rVenue';
-	var venueName, code, materialAspects;
+	var venueName;
 	var x = xmlDoc.getElementsByTagName(name);
 	for (var i = 0; i < x.length; i++) {
 		var node = x[i];
@@ -761,7 +781,7 @@ function getVenuesByMonth(month, year, securityType) { /* a1 */
 					var isFirstCol = (index==0);
 					var isLastCol = (index==(a1VenueTableHeaders.length - 1));
 					row.push({
-						text: val,
+						text: ((val==NS)?ZWSP:val),
 						style: 'tableHeader', unbreakable:true,
 						tags: ((isFirstCol)?['Table','TR']:[])
 								.concat(['TH','/TH'])
@@ -783,12 +803,12 @@ function getVenuesByMonth(month, year, securityType) { /* a1 */
 							var isLastCol = (index==(a1VenueTableTags.length - 1));
 							var nodeVal = WS;
 							$.each(venueChildNodes,
-									function (index,elt) {
+									function (_index,elt) {
 								if (elt.tagName == tag) {
 									nodeVal = getNodeValue(elt);
 									if (tag != 'materialAspects') {
 										row.push({
-											text: ((nodeVal==NS)?WS:nodeVal),
+											text: ((nodeVal==NS)?ZWSP:nodeVal),
 											tags: ['TD','/TD']
 											.concat((isLastCol)?['/TR']:[])
 											.concat((isLastCol && isLastRow)?['/Table']:[]),
@@ -796,7 +816,7 @@ function getVenuesByMonth(month, year, securityType) { /* a1 */
 									} else if (nodeVal != NS) {
 										nodeVal = getNodeValue(elt,true);
 										matrAspectsArr.push({text: venueName + ':', style: TEXTSTYLE, unbreakable:true, tags: ((isFirstMa)?['L']:[]).concat(['LI','Lbl','/Lbl'])});
-										matrAspectsArr.push({text: nodeVal + '\n\n', style: TEXTSTYLE, unbreakable:true, tags: ['LBody','/LBody','/LI']});
+										matrAspectsArr.push({text: nodeVal + NL + NL, style: TEXTSTYLE, unbreakable:true, tags: ['LBody','/LBody','/LI']});
 										isFirstMa = false;
 									} // if
 								} // if
@@ -910,7 +930,7 @@ function getQuarter(num) { /* a1 */
 function getAllYears() { /* a1 and b3 */
 	var years = xmlDoc.getElementsByTagName('year');
 	var yearArray = [];
-	$.each(years, function(yearIndex, yearNode) {
+	$.each(years, function(_yearIndex, yearNode) {
 		var year = getNodeValue(yearNode, true);
 		if (yearArray.indexOf(year) < 0) {
 			yearArray.push(year)
@@ -922,7 +942,7 @@ function getAllYears() { /* a1 and b3 */
 function getYearForMonth(month) { /* a1 and b3 */
 	var year;
 	var siblings = getPreviousSiblings(month);
-	$.each(siblings, function(index, node) {
+	$.each(siblings, function(_index, node) {
 		if (node.tagName == 'year') {
 			year = getNodeValue(node, true);
 			return false;
@@ -938,8 +958,7 @@ function getVenueName(venueElt) {
 	['venueName','name','services','mic','mpid','otherNames'].forEach(
 			function (tag) {
 				var nodeVal = NS;
-				var node = null;
-				$.each(venueChildNodes,function(index,elt) {
+				$.each(venueChildNodes,function(_index,elt) {
 					if (elt.tagName == tag) {
 						node = elt;
 						nodeVal = getNodeValue(elt, true);
@@ -962,7 +981,7 @@ function getVenueName(venueElt) {
 					break;
 				} // switch
 			}); // function
-    return venueNameVal;
+    return ((venueNameVal==NS)?ZWSP:venueNameVal);
 }
 
 /****** a1, b1 and b3 ******/
