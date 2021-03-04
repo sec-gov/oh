@@ -314,7 +314,7 @@ function getprivateData(orderType) { /* b1 */
 							} else {
 								venueName = getNodeValue(rtChild,true);
 							};
-						} else if (rtChild.tagName == b1RouteTags[2]) { /* b1RouteTags = [ 'venueName', 'mic', 'mpid', 'transaction' ] */
+						} else if (rtChild.tagName == b1RouteTags[3]) { /* b1RouteTags = [ 'venueName', 'mic', 'mpid', 'transaction' ] */
 							transactions.push(rtChild);
 						}
 					});

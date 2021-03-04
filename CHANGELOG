@@ -1,3 +1,10 @@
+3/4/2021 update:
+* Correct missing transaction timestamps in 606b1 report.
+
+2/14/2021 update:
+* Fix bugs in tagged table page breaks and multi-line cells.
+* Cleanup of b3 reports
+
 1/15/2021 update:
 
 * Correct regressions of validation and rendering behavior to pre-3/19/2020 version.
