@@ -206,7 +206,7 @@ function createHeldExemptNotHeldOrderRoutingCustomerReport() { /* b1 */
 			{table: {
 					body : chunk,
 					tags: ['Table'],
-					headerRows : 1,
+					headerRows : 1, dontBreakRows: true,
 					widths : [ AUTO, AUTO, AUTO, AUTO ]
 				}
 			});
@@ -421,7 +421,7 @@ function createNotHeldOrderHandlingCustomerReportPDF(_opts) { /* b3 */
 								  {canvas : [ {type : 'line',x1 : 0,y1 : 5, x2 : 762, y2 : 5, lineWidth : 1 } ] },
 								 // Summary
 								  {text: 'Summary', style: 'subSectionHeader', unbreakable:true, tags: ['Caption','/Caption'] },
-								  {table: {headerRows : 1,
+								  {table: {headerRows : 1, dontBreakRows : true,
 									  		widths : [AUTO,AUTO,AUTO ],
 									  		body : summaryData}})}
 
@@ -444,7 +444,7 @@ function createNotHeldOrderHandlingCustomerReportPDF(_opts) { /* b3 */
 									{text: 'Actionable IOI Exposed Venues', 
 										style: 'subSectionHeader', 
 									  	unbreakable:true, tags: ['Caption','/Caption']}
-									,{table: { body : ioiExpsdVenuesArr,
+									,{table: { body : ioiExpsdVenuesArr, dontBreakRows : true,
 													headerRows : 1, widths : [ AUTO ]}})}
 
 					var hasDetailData = (detailData.length > 1);
@@ -454,7 +454,7 @@ function createNotHeldOrderHandlingCustomerReportPDF(_opts) { /* b3 */
 								style: 'subSectionHeader', unbreakable:true,
 								tags: ['Caption','/Caption'] }
 							,{table: { body : detailData,
-										headerRows : 1,
+										headerRows : 1, dontBreakRows : true,
 										widths : [ 40,
 												AUTO, AUTO, AUTO, AUTO, AUTO,
 													AUTO, AUTO, AUTO, AUTO, AUTO,
@@ -881,7 +881,7 @@ function a1body(n, monthVal, monthName, year) { /* a1 */
 				style: 'subSectionHeader', unbreakable:true
 			},
 			{	table: { body : getPublicRoutingBody(section, monthVal, year),
-					headerRows : 1,
+					headerRows : 1, dontBreakRows: true,
 					widths : [ 60, 60, 60, 60, 60 ]
 
 				}
