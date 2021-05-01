@@ -858,9 +858,10 @@ function getPublicRoutingBody(section, monthVal, year) { // a1
 function a1body(n, monthVal, monthName, year) { /* a1 */
 	var sectionText = a1SectionHeaders[n];
 	var section = a1SectionTags[n];
+	var body1 = getPublicRoutingBody(section, monthVal, year);
+	var body2 = getVenuesByMonth(monthVal, year, section);
 	return [
 			NL,
-			// Month Header
 			{	text: monthName + WS + year,
 				tags: ['H3'],
 				style: 'sectionHeader', unbreakable:true
@@ -875,38 +876,40 @@ function a1body(n, monthVal, monthName, year) { /* a1 */
 				bold : true,
 				alignment : 'left'
 			},
-			// NMS Stock Header
-			{	text: 'Summary',
-				tags: ['Caption','/Caption'],
-				style: 'subSectionHeader', unbreakable:true
-			},
-			{	table: { body : getPublicRoutingBody(section, monthVal, year),
-					headerRows : 1, dontBreakRows: true,
-					widths : [ 60, 60, 60, 60, 60 ]
-
-				}
-			},
-			// Venues Header
-			{ 	text: 'Venues',
-				tags: ['Caption','/Caption'],
-				style: 'subSectionHeader', unbreakable:true
-			},
-			{	table: { body : getVenuesByMonth(monthVal, year, section),
-						headerRows : 1,
-						dontBreakRows : true,
-						widths : [ AUTO, AUTO, AUTO, AUTO, AUTO, AUTO, AUTO, AUTO,
-									AUTO, AUTO, AUTO, AUTO, AUTO, AUTO ] /* 14 columns */
-				}
-			},
-			NL,
-			{	text: 'Material Aspects:',
-				tags: ['Caption','/Caption'],
-				style: 'subSectionHeader', unbreakable:true
-			}, matrAspectsArr
-			,{  text: NL,
-				tags: ((matrAspectsArr.length > 0)?['/L']:[]),
-				style: TEXTSTYLE, unbreakable:true }
-			]
+			(body1.length===0)?NS:[
+				NL,
+				{	text: 'Summary',
+					tags: ['Caption','/Caption'],
+					style: 'subSectionHeader', unbreakable:true
+				},
+				{	table: { body : body1,
+						headerRows : 1, dontBreakRows: true,
+						widths : [ 60, 60, 60, 60, 60 ]
+					}
+			}],
+			(body2.length===0)?NS:[
+				NL,
+				{ 	text: 'Venues',
+					tags: ['Caption','/Caption'],
+					style: 'subSectionHeader', unbreakable:true
+					},
+				{	table: { body : body2,
+							headerRows : 1,
+							dontBreakRows : true,
+							widths : [ AUTO, AUTO, AUTO, AUTO, AUTO, AUTO, AUTO, AUTO,
+										AUTO, AUTO, AUTO, AUTO, AUTO, AUTO ] /* 14 columns */
+					}
+			}],
+			(matrAspectsArr.length==0)?NS:[
+				NL,
+				{	text: 'Material Aspects:',
+					tags: ['Caption','/Caption'],
+					style: 'subSectionHeader', unbreakable:true
+				}, matrAspectsArr
+				,{  text: NL,
+					tags: ['/L'],
+					style: TEXTSTYLE, unbreakable:true }
+			]]
 }
 
 
