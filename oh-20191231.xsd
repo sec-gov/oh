@@ -74,7 +74,7 @@ are not subject to domestic copyright protection. 17 U.S.C. 105.
 	</xs:element>
 	<xs:element name="ndoOtherPct" type="PctOrNmType">
 		<xs:annotation>
-			<xs:documentation xml:lang="en"> The percentage of total non-directed orders (for this report section) that were not market orders and were not limit orders, supporting rule 242.606 (a)(1)(i). </xs:documentation>
+			<xs:documentation xml:lang="en"> The percentage of total non-directed orders (for this report section) that were other limit orders, supporting rule 242.606 (a)(1)(i). </xs:documentation>
 		</xs:annotation>
 	</xs:element>
 	<xs:element name="rVenues">
@@ -108,22 +108,22 @@ are not subject to domestic copyright protection. 17 U.S.C. 105.
 				<xs:element ref="orderPct"/>
 				<xs:element name="marketPct" type="PctOrNmType">
 					<xs:annotation>
-						<xs:documentation xml:lang="en"> The percentage of total non-directed orders (for this report section) that were market orders, supporting rule 242.606 (a)(1)(i) </xs:documentation>
+						<xs:documentation xml:lang="en"> The percentage of total non-directed market orders (for this report section) that were routed to the venue, supporting rule 242.606 (a)(1)(i) </xs:documentation>
 					</xs:annotation>
 				</xs:element>
 				<xs:element name="marketableLimitPct" type="PctOrNmType">
 					<xs:annotation>
-						<xs:documentation xml:lang="en"> The percentage of total non-directed orders (for this report section) that were marketable limit orders, supporting rule 242.606 (a)(1)(i) </xs:documentation>
+						<xs:documentation xml:lang="en"> The percentage of total non-directed marketable limit orders (for this report section) that were routed to the venue, supporting rule 242.606 (a)(1)(i) </xs:documentation>
 					</xs:annotation>
 				</xs:element>
 				<xs:element name="nonMarketableLimitPct" type="PctOrNmType">
 					<xs:annotation>
-						<xs:documentation xml:lang="en"> The percentage of total non-directed orders (for this report section) that were non marketable limit orders, supporting rule 242.606 (a)(1)(i). </xs:documentation>
+						<xs:documentation xml:lang="en"> The percentage of total non-directed non-marketable limit orders (for this report section) that were routed to the venue, supporting rule 242.606 (a)(1)(i). </xs:documentation>
 					</xs:annotation>
 				</xs:element>
 				<xs:element name="otherPct" type="PctOrNmType">
 					<xs:annotation>
-						<xs:documentation xml:lang="en"> The percentage of total non-directed orders (for this report section) that were not market orders and were not limit orders, supporting rule 242.606 (a)(1)(i). </xs:documentation>
+						<xs:documentation xml:lang="en"> The percentage of total non-directed other orders (for this report section) that were routed to the venue, supporting rule 242.606 (a)(1)(i). </xs:documentation>
 					</xs:annotation>
 				</xs:element>
 				<xs:element ref="netPmtPaidRecvMarketOrdersUsd"/>
