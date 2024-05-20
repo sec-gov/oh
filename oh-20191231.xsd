@@ -74,7 +74,7 @@ are not subject to domestic copyright protection. 17 U.S.C. 105.
 	</xs:element>
 	<xs:element name="ndoOtherPct" type="PctOrNmType">
 		<xs:annotation>
-			<xs:documentation xml:lang="en"> The percentage of total non-directed orders (for this report section) that were other limit orders, supporting rule 242.606 (a)(1)(i). </xs:documentation>
+			<xs:documentation xml:lang="en"> The percentage of total non-directed orders (for this report section) that were other orders, supporting rule 242.606 (a)(1)(i). </xs:documentation>
 		</xs:annotation>
 	</xs:element>
 	<xs:element name="rVenues">
@@ -86,9 +86,14 @@ are not subject to domestic copyright protection. 17 U.S.C. 105.
 				<xs:element ref="rVenue" minOccurs="0" maxOccurs="unbounded"/>
 			</xs:sequence>
 		</xs:complexType>
-		<xs:unique name="uniqueVenueNames">
+		<xs:unique name="uniqueVenues">
 			<xs:selector xpath="rVenue"/>
 			<xs:field xpath="name"/>
+			<xs:field xpath="mic"/>
+		</xs:unique>
+		<xs:unique name="uniqueMics">
+			<xs:selector xpath="rVenue"/>
+			<xs:field xpath="mic"/>
 		</xs:unique>
 	</xs:element>
 	<xs:element name="rVenue">
@@ -108,22 +113,22 @@ are not subject to domestic copyright protection. 17 U.S.C. 105.
 				<xs:element ref="orderPct"/>
 				<xs:element name="marketPct" type="PctOrNmType">
 					<xs:annotation>
-						<xs:documentation xml:lang="en"> The percentage of total non-directed market orders (for this report section) that were routed to the venue, supporting rule 242.606 (a)(1)(i) </xs:documentation>
+						<xs:documentation xml:lang="en"> The percentage of total non-directed market orders (for this report section) routed to this venue, supporting rule 242.606 (a)(1)(i) </xs:documentation>
 					</xs:annotation>
 				</xs:element>
 				<xs:element name="marketableLimitPct" type="PctOrNmType">
 					<xs:annotation>
-						<xs:documentation xml:lang="en"> The percentage of total non-directed marketable limit orders (for this report section) that were routed to the venue, supporting rule 242.606 (a)(1)(i) </xs:documentation>
+						<xs:documentation xml:lang="en"> The percentage of total non-directed marketable limit orders (for this report section) routed to this venue, supporting rule 242.606 (a)(1)(i) </xs:documentation>
 					</xs:annotation>
 				</xs:element>
 				<xs:element name="nonMarketableLimitPct" type="PctOrNmType">
 					<xs:annotation>
-						<xs:documentation xml:lang="en"> The percentage of total non-directed non-marketable limit orders (for this report section) that were routed to the venue, supporting rule 242.606 (a)(1)(i). </xs:documentation>
+						<xs:documentation xml:lang="en"> The percentage of total non-directed non-marketable limit orders (for this report section) routed to this venue, supporting rule 242.606 (a)(1)(i). </xs:documentation>
 					</xs:annotation>
 				</xs:element>
 				<xs:element name="otherPct" type="PctOrNmType">
 					<xs:annotation>
-						<xs:documentation xml:lang="en"> The percentage of total non-directed other orders (for this report section) that were routed to the venue, supporting rule 242.606 (a)(1)(i). </xs:documentation>
+						<xs:documentation xml:lang="en"> The percentage of total non-directed other orders (for this report section) routed to this venue, supporting rule 242.606 (a)(1)(i). </xs:documentation>
 					</xs:annotation>
 				</xs:element>
 				<xs:element ref="netPmtPaidRecvMarketOrdersUsd"/>
@@ -288,14 +293,10 @@ are not subject to domestic copyright protection. 17 U.S.C. 105.
 					<xs:sequence>
 						<xs:element ref="venueName"/>
 						<xs:element ref="mic" minOccurs="0"/>
-						<xs:element ref="mpid" minOccurs="0"/>
 					</xs:sequence>
-					<xs:sequence>
 						<xs:element ref="mic"/>
-						<xs:element ref="mpid" minOccurs="0"/>
-					</xs:sequence>
-					<xs:element ref="mpid"/>
 				</xs:choice>
+				<xs:element ref="mpid" minOccurs="0"/>
 				<xs:element ref="transaction" minOccurs="0" maxOccurs="unbounded"/>
 			</xs:sequence>
 		</xs:complexType>
@@ -423,7 +424,7 @@ A venue to which orders were exposed via Actionable IOI by the broker or dealer,
 	</xs:element>
 	<xs:element name="iVenue">
 		<xs:annotation>
-			<xs:documentation xml:lang="en"> order handling data in one execution venue, supporting rule 242.606 (b)(3). </xs:documentation>
+			<xs:documentation xml:lang="en"> Order handling data in one execution venue, supporting rule 242.606 (b)(3). </xs:documentation>
 		</xs:annotation>
 		<xs:complexType>
 			<xs:sequence>
@@ -543,7 +544,7 @@ A venue to which orders were exposed via Actionable IOI by the broker or dealer,
 	<!-- Simple type elements common to reports  -->
 	<xs:element name="version">
 		<xs:annotation>
-			<xs:documentation xml:lang="en"> The versions of the Order Handling Report schema instances validated, supporting rule 242.606. </xs:documentation>
+			<xs:documentation xml:lang="en"> The versions of Order Handling Report schema instances validated, supporting rule 242.606. </xs:documentation>
 		</xs:annotation>
 		<xs:simpleType>
 			<xs:restriction base="xs:string">
