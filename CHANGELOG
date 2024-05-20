@@ -1,6 +1,34 @@
-12/??/2020 update:
+5/20/2024 update:
+Reconcile differences in the schema between the marked-pdf and master branches.
+
+2/22/2022 update:
+* Edit documentation in section 606(a)(1) to clarify non-directed order percentages
+* Alter 606(a)(1) sample file to make consistent arithmetic between order percentage table cells.
+
+5/1/2021 update:
+* Correct layout problem resulting from empty tables.
+
+3/14/2021 update:
+* Prevent table rows from breaking across pages.
+
+3/4/2021 update:
+* Correct missing transaction timestamps in 606b1 report.
+
+2/14/2021 update:
+* Fix bugs in tagged table page breaks and multi-line cells.
+* Cleanup of b3 reports
+
+1/15/2021 update:
+
+* Correct regressions of validation and rendering behavior to pre-3/19/2020 version.
+* Add optional mpid to 606(a)(1) and 606(b)(1) venue descriptions.
+* Relax validation on 606(b)(3) to permit both or neither mic and mpid.
+
+12/19/2020 update:
+
 * Relax the pattern for MIC codes, to permit digits as well as uppercase letters.
 * Add a footnote regarding the providedLiquidtyShr element to the technical guide.
+* Enhance the pdfmake package in ./lib to support marked ("tagged") PDF-UA output.
 
 10/27/2020 update:
 
